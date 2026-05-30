@@ -11,8 +11,8 @@ on:
         options:
           - pine
           - riva
-      boot_img_url:
-        description: Direct URL to matching stock/current boot.img. Empty uses repo variables.
+      boot_source_url:
+        description: Direct URL to matching boot.img or ROM zip. Empty uses repo variables.
         required: false
       kernel_repo:
         description: Optional kernel repo override
@@ -40,14 +40,14 @@ jobs:
             script: devices/pine/scripts/build-pine-docker-kernel.sh
             default_kernel_repo: https://github.com/hsx02/kernel_xiaomi_sdm439.git
             default_kernel_ref: a12/main
-            default_boot_url: ${{ vars.PINE_BOOT_IMG_URL }}
+            default_boot_url: ${{ vars.PINE_BOOT_SOURCE_URL }}
             base_boot: devices/pine/base/boot-current.img
             artifact_name: pine-docker-boot
           - device: riva
             script: devices/riva/scripts/build-riva-docker-kernel.sh
             default_kernel_repo: https://github.com/crdroidandroid/android_kernel_xiaomi_rova.git
             default_kernel_ref: "14.0"
-            default_boot_url: ${{ vars.RIVA_BOOT_IMG_URL }}
+            default_boot_url: ${{ vars.RIVA_BOOT_SOURCE_URL }}
             base_boot: devices/riva/base/boot-current.img
             artifact_name: riva-docker-boot
 
@@ -57,13 +57,13 @@ jobs:
 
       - name: Resolve boot URL
         env:
-          INPUT_BOOT_URL: ${{ inputs.boot_img_url }}
+          INPUT_BOOT_URL: ${{ inputs.boot_source_url }}
           DEFAULT_BOOT_URL: ${{ matrix.default_boot_url }}
         run: |
           BOOT_URL="${INPUT_BOOT_URL:-$DEFAULT_BOOT_URL}"
           if [ -z "$BOOT_URL" ]; then
             echo "Missing boot image URL."
-            echo "Set repository variable PINE_BOOT_IMG_URL or RIVA_BOOT_IMG_URL, or pass workflow_dispatch boot_img_url."
+            echo "Set repository variable PINE_BOOT_SOURCE_URL or RIVA_BOOT_SOURCE_URL, or pass workflow_dispatch boot_source_url."
             exit 1
           fi
           echo "BOOT_URL=$BOOT_URL" >> "$GITHUB_ENV"
@@ -71,9 +71,15 @@ jobs:
       - name: Download matching boot image
         run: |
           mkdir -p "$(dirname "${{ matrix.base_boot }}")"
+          TMP_BOOT_SOURCE="$(mktemp)"
           curl -L --fail --retry 5 --retry-delay 5 \
-            -o "${{ matrix.base_boot }}" \
+            -o "$TMP_BOOT_SOURCE" \
             "$BOOT_URL"
+          if file "$TMP_BOOT_SOURCE" | grep -qi 'zip archive'; then
+            unzip -p "$TMP_BOOT_SOURCE" boot.img > "${{ matrix.base_boot }}"
+          else
+            cp -f "$TMP_BOOT_SOURCE" "${{ matrix.base_boot }}"
+          fi
           file "${{ matrix.base_boot }}"
           sha256sum "${{ matrix.base_boot }}"
 
@@ -99,7 +105,7 @@ jobs:
             echo "device=${{ matrix.device }}"
             echo "date_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
             echo "github_sha=${GITHUB_SHA}"
-            echo "boot_img_url=${BOOT_URL}"
+            echo "boot_source_url=${BOOT_URL}"
             echo "upstream_repo=$(cat devices/${{ matrix.device }}/artifacts/upstream-repo)"
             echo "upstream_ref=$(cat devices/${{ matrix.device }}/artifacts/upstream-ref)"
             echo "upstream_commit=$(cat devices/${{ matrix.device }}/artifacts/upstream-commit)"

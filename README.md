@@ -9,13 +9,13 @@
 手动运行 `.github/workflows/build-boot.yml`：
 
 - `device`: `pine` 或 `riva`
-- `boot_img_url`: 与目标 ROM 完全匹配的 `boot.img` 直链；留空则用 repo variables
+- `boot_source_url`: 与目标 ROM 完全匹配的 `boot.img` 或 ROM zip 直链；留空则用 repo variables
 - `kernel_repo`: 可选，上游内核源码仓库覆盖
 - `kernel_ref`: 可选，上游分支/tag/commit 覆盖
 
 workflow 会：
 
-1. 从 `boot_img_url` 下载匹配 boot.img。
+1. 从 `boot_source_url` 下载匹配 boot.img；如果是 ROM zip，则从里面抽 `boot.img`。
 2. 从上游 kernel repo/ref 拉源码。
 3. 用本仓库的 `current.config` 和 Docker fragment 构建 `Image.gz-dtb`。
 4. 用下载的 boot.img 作为基线 repack 出 `boot-docker.img`。
@@ -23,10 +23,10 @@ workflow 会：
 
 定时构建需要在私有仓库设置 repo variables：
 
-- `PINE_BOOT_IMG_URL`
-- `RIVA_BOOT_IMG_URL`
+- `PINE_BOOT_SOURCE_URL`
+- `RIVA_BOOT_SOURCE_URL`
 
-这两个值必须是匹配 ROM 的 `boot.img` 直链，不能跨版本复用。
+这两个值必须是匹配 ROM 的 `boot.img` 或 ROM zip 直链，不能跨版本复用。
 
 ## Devices
 
@@ -50,6 +50,6 @@ workflow 会：
 
 ## Notes
 
-- `boot_img_url` 必须和 ROM、设备、boot header 匹配。
+- `boot_source_url` 必须和 ROM、设备、boot header 匹配。
 - 不跨设备、不跨 ROM 复用 boot 基线。
 - scheduled workflow 会使用 repo variables 里的 boot URL；没有对应变量时会停止，避免生成不匹配 boot。

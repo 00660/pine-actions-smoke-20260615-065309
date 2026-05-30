@@ -10,8 +10,8 @@
 
 - 不把 `boot.img`、已构建 `boot-docker.img`、Docker runtime zip 进 git。
 - 不把大文件放 Release 长期保存。
-- workflow 手动触发时通过 `boot_img_url` 下载匹配 ROM 的 boot.img。
-- workflow 定时触发时通过 repo variables `PINE_BOOT_IMG_URL` / `RIVA_BOOT_IMG_URL` 下载匹配 ROM 的 boot.img。
+- workflow 手动触发时通过 `boot_source_url` 下载匹配 ROM 的 boot.img 或 ROM zip。
+- workflow 定时触发时通过 repo variables `PINE_BOOT_SOURCE_URL` / `RIVA_BOOT_SOURCE_URL` 下载匹配 ROM 的 boot.img 或 ROM zip。
 - kernel source 始终从上游仓库拉取。
 
 ## 仓库内容
