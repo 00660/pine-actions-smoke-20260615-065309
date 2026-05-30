@@ -28,6 +28,11 @@ workflow 会：
 
 这两个值必须是匹配 ROM 的 `boot.img` 或 ROM zip 直链，不能跨版本复用。
 
+当前 repo variables 已按已验证 ROM 设置：
+
+- `PINE_BOOT_SOURCE_URL=https://sourceforge.net/projects/pixelextended/files/pine/PixelExtended_pine-12.0-20220227-0902-OFFICIAL.zip/download`
+- `RIVA_BOOT_SOURCE_URL=https://sourceforge.net/projects/crdroid/files/rova/10.x/crDroidAndroid-14.0-20241015-rova-v10.9.zip/download`
+
 ## Devices
 
 ### pine

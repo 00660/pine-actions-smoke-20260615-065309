@@ -30,3 +30,8 @@
 
 - `pine`：verified。
 - `riva`：experimental，boot 可进系统，但 Docker runtime 曾触发 soft reboot 风险。
+
+## repo variables
+
+- `PINE_BOOT_SOURCE_URL=https://sourceforge.net/projects/pixelextended/files/pine/PixelExtended_pine-12.0-20220227-0902-OFFICIAL.zip/download`
+- `RIVA_BOOT_SOURCE_URL=https://sourceforge.net/projects/crdroid/files/rova/10.x/crDroidAndroid-14.0-20241015-rova-v10.9.zip/download`
