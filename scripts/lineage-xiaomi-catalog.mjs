@@ -469,8 +469,27 @@ async function main() {
   await fs.mkdir(options.outputDir, { recursive: true });
   await fs.mkdir(options.recipeDir, { recursive: true });
 
-  const entries = await listLineageWikiDeviceFiles();
-  const allDevices = await mapLimit(entries, 8, async (entry) => readWikiDevice(entry));
+  const entries = options.device
+    ? [
+        { name: `${options.device}.yml` },
+        ...Array.from({ length: 20 }, (_, index) => ({
+          name: `${options.device}_variant${index + 1}.yml`,
+        })),
+      ]
+    : await listLineageWikiDeviceFiles();
+  const allDevices = (
+    await mapLimit(entries, 8, async (entry) => {
+      try {
+        return await readWikiDevice(entry);
+      } catch (error) {
+        if (options.device && /404/.test(error.message)) return null;
+        throw error;
+      }
+    })
+  ).filter(Boolean);
+  if (options.device && allDevices.length === 0) {
+    throw new Error(`No LineageOS wiki device YAML found for ${options.device}`);
+  }
   const parsed = allDevices.filter(
     (device) => device.vendor_short === "xiaomi" || /^xiaomi$/i.test(device.vendor || ""),
   );
