@@ -40,14 +40,12 @@ jobs:
             script: devices/pine/scripts/build-pine-docker-kernel.sh
             default_kernel_repo: https://github.com/hsx02/kernel_xiaomi_sdm439.git
             default_kernel_ref: a12/main
-            default_boot_url: ${{ vars.PINE_BOOT_SOURCE_URL }}
             base_boot: devices/pine/base/boot-current.img
             artifact_name: pine-docker-boot
           - device: riva
             script: devices/riva/scripts/build-riva-docker-kernel.sh
             default_kernel_repo: https://github.com/crdroidandroid/android_kernel_xiaomi_rova.git
             default_kernel_ref: "14.0"
-            default_boot_url: ${{ vars.RIVA_BOOT_SOURCE_URL }}
             base_boot: devices/riva/base/boot-current.img
             artifact_name: riva-docker-boot
 
@@ -58,8 +56,15 @@ jobs:
       - name: Resolve boot URL
         env:
           INPUT_BOOT_URL: ${{ inputs.boot_source_url }}
-          DEFAULT_BOOT_URL: ${{ matrix.default_boot_url }}
+          DEVICE: ${{ matrix.device }}
+          PINE_BOOT_SOURCE_URL: ${{ vars.PINE_BOOT_SOURCE_URL }}
+          RIVA_BOOT_SOURCE_URL: ${{ vars.RIVA_BOOT_SOURCE_URL }}
         run: |
+          case "$DEVICE" in
+            pine) DEFAULT_BOOT_URL="$PINE_BOOT_SOURCE_URL" ;;
+            riva) DEFAULT_BOOT_URL="$RIVA_BOOT_SOURCE_URL" ;;
+            *) echo "Unknown device: $DEVICE"; exit 1 ;;
+          esac
           BOOT_URL="${INPUT_BOOT_URL:-$DEFAULT_BOOT_URL}"
           if [ -z "$BOOT_URL" ]; then
             echo "Missing boot image URL."
