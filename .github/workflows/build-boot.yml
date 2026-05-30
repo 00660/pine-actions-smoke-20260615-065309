@@ -6,12 +6,20 @@ on:
       device:
         description: Device to build
         required: true
-        default: all
+        default: pine
         type: choice
         options:
-          - all
           - pine
           - riva
+      boot_img_url:
+        description: Direct URL to matching stock/current boot.img
+        required: true
+      kernel_repo:
+        description: Optional kernel repo override
+        required: false
+      kernel_ref:
+        description: Optional kernel ref override
+        required: false
   schedule:
     - cron: "17 3 * * *"
 
@@ -23,19 +31,21 @@ jobs:
     name: build ${{ matrix.device }}
     runs-on: ubuntu-22.04
     timeout-minutes: 150
-    if: github.event_name != 'workflow_dispatch' || inputs.device == 'all' || inputs.device == matrix.device
+    if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
     strategy:
       fail-fast: false
       matrix:
         include:
           - device: pine
             script: devices/pine/scripts/build-pine-docker-kernel.sh
-            base_asset: pine-boot-current.img
+            default_kernel_repo: https://github.com/hsx02/kernel_xiaomi_sdm439.git
+            default_kernel_ref: a12/main
             base_boot: devices/pine/base/boot-current.img
             artifact_name: pine-docker-boot
           - device: riva
             script: devices/riva/scripts/build-riva-docker-kernel.sh
-            base_asset: riva-boot-current.img
+            default_kernel_repo: https://github.com/crdroidandroid/android_kernel_xiaomi_rova.git
+            default_kernel_ref: "14.0"
             base_boot: devices/riva/base/boot-current.img
             artifact_name: riva-docker-boot
 
@@ -43,18 +53,27 @@ jobs:
       - name: Checkout build inputs
         uses: actions/checkout@v4
 
-      - name: Download base boot from private release assets
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Refuse scheduled build without boot URL
+        if: github.event_name == 'schedule'
         run: |
-          gh release download boot-inputs \
-            --repo "${{ github.repository }}" \
-            --pattern "${{ matrix.base_asset }}" \
-            --dir "devices/${{ matrix.device }}/base" \
-            --clobber
-          mv -f "devices/${{ matrix.device }}/base/${{ matrix.base_asset }}" "${{ matrix.base_boot }}"
+          echo "Scheduled source tracking is enabled, but boot repack needs a matching boot.img URL."
+          echo "Run workflow_dispatch with boot_img_url for a flashable boot.img."
+          exit 1
+
+      - name: Download matching boot image
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p "$(dirname "${{ matrix.base_boot }}")"
+          curl -L --fail --retry 5 --retry-delay 5 \
+            -o "${{ matrix.base_boot }}" \
+            "${{ inputs.boot_img_url }}"
+          file "${{ matrix.base_boot }}"
+          sha256sum "${{ matrix.base_boot }}"
 
       - name: Build kernel from upstream
+        env:
+          KERNEL_REPO: ${{ inputs.kernel_repo || matrix.default_kernel_repo }}
+          KERNEL_REF: ${{ inputs.kernel_ref || matrix.default_kernel_ref }}
         run: |
           chmod +x "${{ matrix.script }}"
           "${{ matrix.script }}"
@@ -73,6 +92,7 @@ jobs:
             echo "device=${{ matrix.device }}"
             echo "date_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
             echo "github_sha=${GITHUB_SHA}"
+            echo "boot_img_url=${{ inputs.boot_img_url }}"
             echo "upstream_repo=$(cat devices/${{ matrix.device }}/artifacts/upstream-repo)"
             echo "upstream_ref=$(cat devices/${{ matrix.device }}/artifacts/upstream-ref)"
             echo "upstream_commit=$(cat devices/${{ matrix.device }}/artifacts/upstream-commit)"

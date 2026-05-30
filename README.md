@@ -1,6 +1,25 @@
 # Android Docker Boot Builder
 
-私有仓库，用来自动跟随上游 kernel source，为已经验证过的机型重新构建 Docker 支持 boot。
+私有轻量构建仓库。仓库只保留 recipe、kernel config fragment、当前 ROM 导出的 config、mkbootimg 工具和 GitHub Actions workflow。
+
+不把本地 boot.img、已构建 boot.img、Docker runtime zip 塞进 git。
+
+## Build
+
+手动运行 `.github/workflows/build-boot.yml`：
+
+- `device`: `pine` 或 `riva`
+- `boot_img_url`: 与目标 ROM 完全匹配的 `boot.img` 直链
+- `kernel_repo`: 可选，上游内核源码仓库覆盖
+- `kernel_ref`: 可选，上游分支/tag/commit 覆盖
+
+workflow 会：
+
+1. 从 `boot_img_url` 下载匹配 boot.img。
+2. 从上游 kernel repo/ref 拉源码。
+3. 用本仓库的 `current.config` 和 Docker fragment 构建 `Image.gz-dtb`。
+4. 用下载的 boot.img 作为基线 repack 出 `boot-docker.img`。
+5. 上传 Actions artifact。
 
 ## Devices
 
@@ -9,53 +28,21 @@
 - 设备：Redmi 7A / `pine`
 - ROM：`PixelExtended_pine-12.0-20220227-0902-OFFICIAL`
 - 上游内核：`https://github.com/hsx02/kernel_xiaomi_sdm439.git`
-- 分支：`a12/main`
+- 默认分支：`a12/main`
 - defconfig：`pine-perf_defconfig`
-- 状态：verified。当前已验证 boot 和 Docker runtime 包放在 GitHub Release `boot-inputs` 里。
+- 状态：verified。已在本地实机验证过 Docker Engine、容器、bridge 网络和 Web panel。
 
 ### riva
 
 - 设备：Redmi 5A / `riva`，ROM family `rova`
 - ROM：`crDroidAndroid-14.0-20241015-rova-v10.9`
 - 上游内核：`https://github.com/crdroidandroid/android_kernel_xiaomi_rova.git`
-- 分支：`14.0`
+- 默认分支：`14.0`
 - defconfig：`vendor/msm8937-perf_defconfig`
-- 状态：experimental。boot 已验证能进 Android，但 Docker runtime 曾触发 userspace soft reboot 风险。
+- 状态：experimental。boot 可进系统，但 Docker runtime 曾触发 userspace soft reboot 风险。
 
-## Automation
+## Notes
 
-`.github/workflows/build-boot.yml` 支持：
-
-- `workflow_dispatch` 手动选择 `all`、`pine` 或 `riva`
-- 每天 UTC `03:17` 定时跟随上游分支重新构建
-
-每次构建会输出：
-
-- `boot-docker.img`
-- `boot-docker.img.sha256`
-- `Image.gz-dtb`
-- `config-docker-final`
-- `kernel-release`
-- `upstream-repo`
-- `upstream-ref`
-- `upstream-commit`
-- `build-manifest.env`
-
-workflow 会先从私有 Release `boot-inputs` 下载对应 base boot：
-
-- `pine-boot-current.img`
-- `riva-boot-current.img`
-
-当前已出的交付文件也放在同一个 Release：
-
-- `pine-boot-docker-devicebase.img`
-- `pine-docker-engine-29.5.2-20260530-210819-magisk.zip`
-- `pine-docker-engine-29.5.2-20260530-210819-recovery.zip`
-- `riva-boot-docker.img`
-
-## Rules
-
-- 只对源码链闭合的机型自动构建。
-- `base/boot-current.img` 由 workflow 从 Release asset 下载，是 repack 基线，不能跨 ROM/机型复用。
-- `current.config` 是当前 ROM 的运行配置基线，避免无关硬件配置漂移。
-- `riva` artifact 只作为 experimental，未解决 runtime soft reboot 前不要标成 verified。
+- `boot_img_url` 必须和 ROM、设备、boot header 匹配。
+- 不跨设备、不跨 ROM 复用 boot 基线。
+- scheduled workflow 只保留占位；没有 boot URL 时不会生成可刷 boot。
