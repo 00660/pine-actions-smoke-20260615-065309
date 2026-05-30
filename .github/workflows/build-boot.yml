@@ -1,0 +1,95 @@
+name: Build Docker boot images
+
+on:
+  workflow_dispatch:
+    inputs:
+      device:
+        description: Device to build
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - pine
+          - riva
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: build ${{ matrix.device }}
+    runs-on: ubuntu-22.04
+    timeout-minutes: 150
+    if: github.event_name != 'workflow_dispatch' || inputs.device == 'all' || inputs.device == matrix.device
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - device: pine
+            script: devices/pine/scripts/build-pine-docker-kernel.sh
+            base_asset: pine-boot-current.img
+            base_boot: devices/pine/base/boot-current.img
+            artifact_name: pine-docker-boot
+          - device: riva
+            script: devices/riva/scripts/build-riva-docker-kernel.sh
+            base_asset: riva-boot-current.img
+            base_boot: devices/riva/base/boot-current.img
+            artifact_name: riva-docker-boot
+
+    steps:
+      - name: Checkout build inputs
+        uses: actions/checkout@v4
+
+      - name: Download base boot from private release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download boot-inputs \
+            --repo "${{ github.repository }}" \
+            --pattern "${{ matrix.base_asset }}" \
+            --dir "devices/${{ matrix.device }}/base" \
+            --clobber
+          mv -f "devices/${{ matrix.device }}/base/${{ matrix.base_asset }}" "${{ matrix.base_boot }}"
+
+      - name: Build kernel from upstream
+        run: |
+          chmod +x "${{ matrix.script }}"
+          "${{ matrix.script }}"
+
+      - name: Repack boot image
+        run: |
+          chmod +x scripts/repack-boot.sh
+          scripts/repack-boot.sh \
+            "${{ matrix.base_boot }}" \
+            "devices/${{ matrix.device }}/artifacts/Image.gz-dtb" \
+            "devices/${{ matrix.device }}/artifacts/boot-docker.img"
+
+      - name: Write build manifest
+        run: |
+          {
+            echo "device=${{ matrix.device }}"
+            echo "date_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "github_sha=${GITHUB_SHA}"
+            echo "upstream_repo=$(cat devices/${{ matrix.device }}/artifacts/upstream-repo)"
+            echo "upstream_ref=$(cat devices/${{ matrix.device }}/artifacts/upstream-ref)"
+            echo "upstream_commit=$(cat devices/${{ matrix.device }}/artifacts/upstream-commit)"
+            echo "kernel_release=$(cat devices/${{ matrix.device }}/artifacts/kernel-release)"
+            echo "boot_sha256=$(cut -d ' ' -f 1 devices/${{ matrix.device }}/artifacts/boot-docker.img.sha256)"
+          } > "devices/${{ matrix.device }}/artifacts/build-manifest.env"
+
+      - name: Upload boot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact_name }}
+          path: |
+            devices/${{ matrix.device }}/artifacts/boot-docker.img
+            devices/${{ matrix.device }}/artifacts/boot-docker.img.sha256
+            devices/${{ matrix.device }}/artifacts/Image.gz-dtb
+            devices/${{ matrix.device }}/artifacts/config-docker-final
+            devices/${{ matrix.device }}/artifacts/kernel-release
+            devices/${{ matrix.device }}/artifacts/upstream-*
+            devices/${{ matrix.device }}/artifacts/build-manifest.env
+          if-no-files-found: error

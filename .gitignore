@@ -1,0 +1,5 @@
+work/
+devices/*/work/
+devices/*/artifacts/
+*.log
+*.tmp
