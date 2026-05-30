@@ -97,11 +97,15 @@
 按用户要求，构建成功后发布到 GitHub Releases 下载区：
 
 - 新增 `scripts/prepare-lineage-release.sh`
-- Release tag: `lineage-<version>-<date>-<codename>-docker-boot`
-- boot asset: `<codename>-<model>-lineage-<version>-<date>-docker-boot.img`
+- Release tag: `lineage-<version>-<date>-<public-models>-docker-boot`
+- boot asset: `<public-models>-lineage-<version>-<date>-docker-boot.img`
 - 同时上传 `.sha256`、`.config`、`.recipe.json`
 - 单机 workflow 和全量 ready workflow 都会发布 release；如果 release 已存在就 `--clobber` 覆盖同名 asset。
 - 旧的全量构建 run `26696044385` 已取消，因为它还没有 release 发布逻辑。
+
+codename 只保留在 release notes 和 recipe 技术元数据里。
+
+README 已清理为项目使用说明，只保留 workflow、输入、产物和命名规则；调试过程、失败记录和备份记录只放在本交接文档里。
 
 本次修改前备份：
 
@@ -122,3 +126,6 @@
 - `.github/workflows/build-lineage-xiaomi-ready.yml.bak-20260531-060242`
 - `README.md.bak-20260531-060242`
 - `SYNC-HANDOFF.md.bak-20260531-060242`
+- `scripts/prepare-lineage-release.sh.bak-20260531-060814`
+- `README.md.bak-20260531-060814`
+- `SYNC-HANDOFF.md.bak-20260531-060814`

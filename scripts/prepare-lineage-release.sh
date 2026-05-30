@@ -30,6 +30,7 @@ shell_env() {
 
 DEVICE="$(jq -r '.build.device' "$RECIPE")"
 MODEL_NAME="$(jq -r '.source_facts.names[0] // .build.device' "$RECIPE")"
+PUBLIC_NAMES="$(jq -r '[.source_facts.names[]?] | unique | join(" ")' "$RECIPE")"
 OTA_FILENAME="$(jq -r '.source_facts.latest_official_build.filename // empty' "$RECIPE")"
 OTA_URL="$(jq -r '.build.boot_source_url // empty' "$RECIPE")"
 KERNEL_REPO="$(jq -r '.build.kernel_repo // empty' "$RECIPE")"
@@ -49,15 +50,17 @@ if [[ -z "$BUILD_DATE" || "$BUILD_DATE" == "null" ]]; then
   BUILD_DATE="$(date -u +%Y%m%d)"
 fi
 
-MODEL_SLUG="$(printf '%s' "$MODEL_NAME" | slugify)"
-if [[ -n "$MODEL_SLUG" && "$MODEL_SLUG" != "$(printf '%s' "$DEVICE" | slugify)" ]]; then
-  BASE="${DEVICE}-${MODEL_SLUG}-lineage-${VERSION}-${BUILD_DATE}-docker-boot"
-else
-  BASE="${DEVICE}-lineage-${VERSION}-${BUILD_DATE}-docker-boot"
+MODEL_SLUG="$(printf '%s' "${PUBLIC_NAMES:-$MODEL_NAME}" | slugify)"
+if [[ -z "$MODEL_SLUG" ]]; then
+  MODEL_SLUG="$(printf '%s' "$MODEL_NAME" | slugify)"
+fi
+if [[ -z "$MODEL_SLUG" ]]; then
+  MODEL_SLUG="unknown-xiaomi-device"
 fi
 
-RELEASE_TAG="lineage-${VERSION}-${BUILD_DATE}-${DEVICE}-docker-boot"
-RELEASE_TITLE="${MODEL_NAME} (${DEVICE}) LineageOS ${VERSION} ${BUILD_DATE} Docker boot"
+BASE="${MODEL_SLUG}-lineage-${VERSION}-${BUILD_DATE}-docker-boot"
+RELEASE_TAG="lineage-${VERSION}-${BUILD_DATE}-${MODEL_SLUG}-docker-boot"
+RELEASE_TITLE="${MODEL_NAME} LineageOS ${VERSION} ${BUILD_DATE} Docker boot"
 BOOT_ASSET="${BASE}.img"
 SHA_ASSET="${BASE}.img.sha256"
 CONFIG_ASSET="${BASE}.config"
@@ -73,7 +76,9 @@ if [[ -f "$CONFIG_FILE" ]]; then
 fi
 
 cat > "$NOTES_FILE" <<EOF
-Device: ${MODEL_NAME} (${DEVICE})
+Device: ${MODEL_NAME}
+Public model names: ${PUBLIC_NAMES:-$MODEL_NAME}
+LineageOS codename: ${DEVICE}
 LineageOS: ${VERSION}
 Build date: ${BUILD_DATE}
 
