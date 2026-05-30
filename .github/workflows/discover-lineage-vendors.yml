@@ -1,0 +1,150 @@
+name: Discover LineageOS vendor recipes
+
+on:
+  workflow_dispatch:
+    inputs:
+      vendors:
+        description: "Optional comma-separated vendor_short values. Empty or * discovers every vendor."
+        required: false
+        default: "*"
+      commit_catalog:
+        description: "Commit generated catalog and recipes back to the repository."
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+  schedule:
+    - cron: "31 3 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  prepare:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      count: ${{ steps.matrix.outputs.count }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: List vendors
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LINEAGE_LIST_VENDORS: "1"
+          LINEAGE_VENDOR_SHORTS: ${{ github.event.inputs.vendors || '*' }}
+          LINEAGE_OUTPUT_PREFIX: lineage-vendors
+          LINEAGE_RECIPE_LAYOUT: vendor
+          LINEAGE_SUPPORTED_ARCHES: arm64
+        run: node scripts/lineage-xiaomi-catalog.mjs
+
+      - name: Build vendor matrix
+        id: matrix
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const vendors = JSON.parse(fs.readFileSync('catalog/lineage-vendors-vendors.json', 'utf8')).vendors
+            .map((item) => item.vendor_short)
+            .sort();
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `matrix=${JSON.stringify({ include: vendors.map((vendor) => ({ vendor })) })}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `count=${vendors.length}\n`);
+          console.log(`vendor_count=${vendors.length}`);
+          console.log(vendors.join('\n'));
+          NODE
+
+  discover:
+    needs: prepare
+    if: needs.prepare.outputs.count != '0'
+    name: Discover ${{ matrix.vendor }}
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Discover ${{ matrix.vendor }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LINEAGE_VENDOR_SHORTS: ${{ matrix.vendor }}
+          LINEAGE_OUTPUT_PREFIX: lineage-vendor-${{ matrix.vendor }}
+          LINEAGE_RECIPE_DIR: recipes/lineage-vendors
+          LINEAGE_RECIPE_LAYOUT: vendor
+          LINEAGE_SUPPORTED_ARCHES: arm64
+        run: node scripts/lineage-xiaomi-catalog.mjs
+
+      - name: Upload ${{ matrix.vendor }} catalog artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lineage-vendor-${{ matrix.vendor }}
+          path: |
+            catalog/lineage-vendor-${{ matrix.vendor }}-*.json
+            recipes/lineage-vendors/${{ matrix.vendor }}/*.json
+          if-no-files-found: error
+
+  merge:
+    needs:
+      - prepare
+      - discover
+    if: needs.prepare.outputs.count != '0'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Download vendor artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: lineage-vendor-*
+          path: .vendor-artifacts
+          merge-multiple: true
+
+      - name: Merge vendor catalog
+        env:
+          LINEAGE_OUTPUT_PREFIX: lineage-vendors
+        run: |
+          rsync -a .vendor-artifacts/recipes/lineage-vendors/ recipes/lineage-vendors/
+          node scripts/merge-lineage-vendor-catalog.mjs .vendor-artifacts
+
+      - name: Upload merged catalog artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lineage-vendors-catalog
+          path: |
+            catalog/lineage-vendors-*.json
+            recipes/lineage-vendors/**/*.json
+          if-no-files-found: error
+
+      - name: Commit catalog
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.commit_catalog == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/lineage-vendors-*.json recipes/lineage-vendors
+          if git diff --cached --quiet; then
+            echo "No catalog changes"
+          else
+            git commit -m "Update LineageOS vendor catalog"
+            git push
+          fi

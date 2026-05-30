@@ -1,14 +1,16 @@
-name: Build all ready LineageOS Xiaomi boot images
+name: Build all ready LineageOS vendor boot images
 
 on:
   workflow_dispatch:
     inputs:
-      devices:
-        description: "Optional comma-separated codenames. Empty builds every build_ready Xiaomi recipe."
+      vendors:
+        description: "Optional comma-separated vendor_short values. Empty builds every vendor in the catalog."
         required: false
         default: ""
-  schedule:
-    - cron: "11 4 * * 0"
+      devices:
+        description: "Optional comma-separated codenames or vendor_short/codename entries."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -26,50 +28,76 @@ jobs:
       - name: Build matrix
         id: matrix
         env:
+          INPUT_VENDORS: ${{ github.event.inputs.vendors || '' }}
           INPUT_DEVICES: ${{ github.event.inputs.devices || '' }}
         run: |
           node <<'NODE'
           const fs = require('node:fs');
-          const recipes = JSON.parse(fs.readFileSync('catalog/lineage-xiaomi-recipes.json', 'utf8')).recipes;
+          const recipes = JSON.parse(fs.readFileSync('catalog/lineage-vendors-recipes.json', 'utf8')).recipes;
           const supportedArchitectures = new Set(['arm64']);
           const slugify = (value) =>
             String(value || '')
               .toLowerCase()
               .replace(/[^a-z0-9]+/g, '-')
               .replace(/^-+|-+$/g, '');
+          const parseSet = (value) =>
+            new Set(
+              String(value || '')
+                .split(',')
+                .map((item) => item.trim())
+                .filter(Boolean),
+            );
+          const requestedVendors = parseSet(process.env.INPUT_VENDORS);
+          const requestedDevices = parseSet(process.env.INPUT_DEVICES);
           const publicModel = (recipe) => {
             const names = Array.from(new Set((recipe.source_facts?.names || []).filter(Boolean)));
             return names.join(' ') || recipe.build.device;
           };
-          const requested = new Set(
-            (process.env.INPUT_DEVICES || '')
-              .split(',')
-              .map((item) => item.trim())
-              .filter(Boolean),
-          );
+          const matchesDevice = (recipe) => {
+            if (requestedDevices.size === 0) return true;
+            const key = `${recipe.build.vendor_short}/${recipe.build.device}`;
+            return requestedDevices.has(recipe.build.device) || requestedDevices.has(key);
+          };
           const ready = recipes
             .filter((recipe) => recipe.status === 'build_ready')
             .filter((recipe) => supportedArchitectures.has(recipe.build.arch))
-            .filter((recipe) => requested.size === 0 || requested.has(recipe.build.device))
-            .map((recipe) => ({
-              device: recipe.build.device,
-              model: publicModel(recipe),
-              model_slug: slugify(publicModel(recipe)) || recipe.build.device,
-              recipe: `recipes/lineage/${recipe.build.device}.json`,
-            }))
-            .sort((a, b) => a.device.localeCompare(b.device));
-          if (requested.size > 0) {
-            const found = new Set(ready.map((item) => item.device));
-            const missing = Array.from(requested).filter((device) => !found.has(device));
+            .filter((recipe) => requestedVendors.size === 0 || requestedVendors.has(recipe.build.vendor_short))
+            .filter(matchesDevice)
+            .map((recipe) => {
+              const model = publicModel(recipe);
+              return {
+                device: recipe.build.device,
+                vendor: recipe.build.vendor_short,
+                model,
+                model_slug: slugify(model) || recipe.build.device,
+                recipe: `recipes/lineage-vendors/${recipe.build.vendor_short}/${recipe.build.device}.json`,
+              };
+            })
+            .sort((a, b) => `${a.vendor}/${a.device}`.localeCompare(`${b.vendor}/${b.device}`));
+          if (requestedVendors.size > 0) {
+            const found = new Set(ready.map((item) => item.vendor));
+            const missing = Array.from(requestedVendors).filter((vendor) => !found.has(vendor));
             if (missing.length) {
-              console.error(`Requested devices are not build_ready: ${missing.join(', ')}`);
+              console.error(`Requested vendors have no build_ready arm64 recipes: ${missing.join(', ')}`);
               process.exit(1);
             }
+          }
+          if (requestedDevices.size > 0) {
+            const found = new Set(ready.flatMap((item) => [item.device, `${item.vendor}/${item.device}`]));
+            const missing = Array.from(requestedDevices).filter((device) => !found.has(device));
+            if (missing.length) {
+              console.error(`Requested devices are not build_ready arm64 recipes: ${missing.join(', ')}`);
+              process.exit(1);
+            }
+          }
+          if (ready.length > 250) {
+            console.error(`Refusing to create ${ready.length} matrix jobs. Use the vendors or devices input to split the run.`);
+            process.exit(1);
           }
           fs.appendFileSync(process.env.GITHUB_OUTPUT, `matrix=${JSON.stringify({ include: ready })}\n`);
           fs.appendFileSync(process.env.GITHUB_OUTPUT, `count=${ready.length}\n`);
           console.log(`build_ready_count=${ready.length}`);
-          console.log(ready.map((item) => item.device).join('\n'));
+          console.log(ready.map((item) => `${item.vendor}/${item.device} ${item.model}`).join('\n'));
           NODE
 
   build:

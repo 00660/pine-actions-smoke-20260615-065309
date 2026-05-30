@@ -9,10 +9,26 @@ const rootDir = path.resolve(__dirname, "..");
 const options = {
   outputDir: process.env.LINEAGE_OUTPUT_DIR || path.join(rootDir, "catalog"),
   recipeDir: process.env.LINEAGE_RECIPE_DIR || path.join(rootDir, "recipes", "lineage"),
+  outputPrefix: process.env.LINEAGE_OUTPUT_PREFIX || "lineage-xiaomi",
+  recipeLayout: process.env.LINEAGE_RECIPE_LAYOUT || "flat",
   maxDevices: Number(process.env.LINEAGE_MAX_DEVICES || "0"),
   device: process.env.LINEAGE_DEVICE || "",
+  listVendors: process.env.LINEAGE_LIST_VENDORS === "1",
   includeUnofficial: process.env.LINEAGE_INCLUDE_UNOFFICIAL === "1",
 };
+const supportedArchitectures = new Set(
+  (process.env.LINEAGE_SUPPORTED_ARCHES || "arm64")
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean),
+);
+const vendorFilters = new Set(
+  (process.env.LINEAGE_VENDOR_SHORTS || "xiaomi")
+    .split(",")
+    .map((item) => item.trim().toLowerCase())
+    .filter(Boolean),
+);
+const includeAllVendors = vendorFilters.has("*") || vendorFilters.has("all");
 
 const githubApi = "https://api.github.com";
 const lineageWikiRepo = "LineageOS/lineage_wiki";
@@ -124,6 +140,17 @@ function normalizeList(value) {
   return [String(value)];
 }
 
+function architectureKey(value) {
+  if (!value) return "unknown";
+  if (typeof value === "string") return value;
+  if (typeof value === "object") {
+    const cpu = String(value.cpu || "unknown");
+    const userspace = String(value.userspace || cpu);
+    return userspace === cpu ? cpu : `${cpu}-${userspace}`;
+  }
+  return String(value);
+}
+
 function groupDevices(devices) {
   const groups = new Map();
   for (const device of devices) {
@@ -167,22 +194,6 @@ function groupDevices(devices) {
 }
 
 async function listLineageWikiDeviceFiles() {
-  if (process.env.GITHUB_TOKEN) {
-    const query = encodeURIComponent("repo:LineageOS/lineage_wiki path:_data/devices vendor_short: xiaomi");
-    const found = [];
-    for (let page = 1; page <= 10; page += 1) {
-      const result = await fetchJson(`${githubApi}/search/code?q=${query}&per_page=100&page=${page}`);
-      found.push(...(result.items || []));
-      if (found.length >= Number(result.total_count || 0) || (result.items || []).length === 0) break;
-    }
-    if (found.length > 0) {
-      return Array.from(new Map(found.map((item) => [item.path, item])).values()).map((item) => ({
-        name: path.basename(item.path),
-        path: item.path,
-      }));
-    }
-  }
-
   const url = `${githubApi}/repos/${lineageWikiRepo}/contents/_data/devices?ref=main`;
   const entries = await fetchJson(url);
   return entries.filter((entry) => entry.name.endsWith(".yml"));
@@ -321,11 +332,11 @@ function extractMakeScalar(text, variable) {
 function extractIncludes(text) {
   const includes = [];
   for (const line of text.split(/\r?\n/)) {
-    const match = line.match(/^\s*(?:-)?include\s+device\/xiaomi\/([^/\s]+)\/([A-Za-z0-9_.-]+\.mk)\s*$/);
+    const match = line.match(/^\s*(?:-)?include\s+device\/([^/\s]+)\/([^/\s]+)\/([A-Za-z0-9_.-]+\.mk)\s*$/);
     if (!match) continue;
     includes.push({
-      repo: `LineageOS/android_device_xiaomi_${match[1]}`,
-      file: match[2],
+      repo: `LineageOS/android_device_${match[1]}_${match[2]}`,
+      file: match[3],
     });
   }
   return includes;
@@ -381,14 +392,21 @@ async function latestLineageBuild(codename) {
 }
 
 async function inspectDevice(device) {
-  const treeRepoName = device.tree || `android_device_xiaomi_${device.codename}`;
+  const vendorShort = vendorShortOf(device);
+  const treeRepoName = device.tree || `android_device_${vendorShort}_${device.codename}`;
   const kernelRepoName = device.kernel?.repo || "";
   const deviceRepo = `LineageOS/${treeRepoName}`;
   const kernelRepo = kernelRepoName ? `LineageOS/${kernelRepoName}` : "";
   const candidates = branchCandidates(device.current_branch, device.versions);
   const lineageBranch = kernelRepo ? await resolveSharedBranch(deviceRepo, kernelRepo, candidates) : "";
+  const architecture = architectureKey(device.architecture);
   const blocked = [];
 
+  if (!supportedArchitectures.has(architecture)) {
+    blocked.push(
+      `Device architecture is ${architecture}; only ${Array.from(supportedArchitectures).join(", ")} devices are built.`,
+    );
+  }
   if (!kernelRepoName) blocked.push("Lineage wiki device entry has no kernel.repo.");
   if (!device.tree) blocked.push("Lineage wiki device entry has no tree.");
   if (!lineageBranch) blocked.push("No shared LineageOS branch found for device tree and kernel repo.");
@@ -426,6 +444,8 @@ async function inspectDevice(device) {
       latest_official_build: download.latest,
       names: device.names,
       models: device.models,
+      vendor: device.vendor || "",
+      vendor_short: vendorShort,
       architecture: device.architecture,
       current_branch: device.current_branch,
       versions: device.versions,
@@ -445,12 +465,14 @@ async function inspectDevice(device) {
     },
     build: {
       device: device.codename,
+      vendor: device.vendor || "",
+      vendor_short: vendorShort,
       lineage_branch: lineageBranch,
       boot_source_url: download.latest?.url || "",
       boot_source_sha256: download.latest?.sha256 || "",
       kernel_repo: kernelRepo ? `https://github.com/${kernelRepo}.git` : "",
       kernel_ref: lineageBranch,
-      arch: device.architecture || "arm64",
+      arch: architecture,
       kernel_configs: boardFacts.kernel_configs,
       image_target: boardFacts.kernel_image_name,
       fragment_path: "config/docker-required.fragment",
@@ -463,6 +485,33 @@ async function inspectDevice(device) {
 async function writeJson(filePath, data) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, `${JSON.stringify(data, null, 2)}\n`, "utf8");
+}
+
+function vendorShortOf(device) {
+  return String(device.vendor_short || device.vendor || "unknown")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function recipePathFor(device) {
+  if (options.recipeLayout === "vendor") {
+    return path.join(options.recipeDir, vendorShortOf(device), `${device.codename}.json`);
+  }
+  return path.join(options.recipeDir, `${device.codename}.json`);
+}
+
+function catalogMetadata() {
+  return {
+    generated_at: new Date().toISOString(),
+    source_policy:
+      "Only official LineageOS device metadata, official LineageOS GitHub repos, and official LineageOS download API are used.",
+    lineage_devices_url: "https://wiki.lineageos.org/devices/",
+    lineage_github_url: "https://github.com/LineageOS",
+    supported_architectures: Array.from(supportedArchitectures),
+    vendor_filters: includeAllVendors ? ["*"] : Array.from(vendorFilters),
+    recipe_layout: options.recipeLayout,
+  };
 }
 
 async function main() {
@@ -490,9 +539,36 @@ async function main() {
   if (options.device && allDevices.length === 0) {
     throw new Error(`No LineageOS wiki device YAML found for ${options.device}`);
   }
-  const parsed = allDevices.filter(
-    (device) => device.vendor_short === "xiaomi" || /^xiaomi$/i.test(device.vendor || ""),
-  );
+  const parsed = allDevices.filter((device) => {
+    if (includeAllVendors) return true;
+    const short = vendorShortOf(device);
+    const rawShort = String(device.vendor_short || "").toLowerCase();
+    const vendor = String(device.vendor || "").toLowerCase();
+    return vendorFilters.has(short) || vendorFilters.has(rawShort) || vendorFilters.has(vendor);
+  });
+
+  if (options.listVendors) {
+    const byVendor = new Map();
+    for (const device of parsed) {
+      const vendorShort = vendorShortOf(device);
+      const current = byVendor.get(vendorShort) || {
+        vendor_short: vendorShort,
+        vendor: device.vendor || "",
+        device_count: 0,
+      };
+      current.device_count += 1;
+      if (!current.vendor && device.vendor) current.vendor = device.vendor;
+      byVendor.set(vendorShort, current);
+    }
+    const vendors = Array.from(byVendor.values()).sort((a, b) => a.vendor_short.localeCompare(b.vendor_short));
+    await writeJson(path.join(options.outputDir, `${options.outputPrefix}-vendors.json`), {
+      metadata: catalogMetadata(),
+      vendors,
+    });
+    console.log(`vendors=${vendors.length}`);
+    console.log(vendors.map((item) => `${item.vendor_short} ${item.device_count}`).join("\n"));
+    return;
+  }
 
   let devices = groupDevices(parsed).sort((a, b) => a.codename.localeCompare(b.codename));
   if (options.device) {
@@ -501,30 +577,25 @@ async function main() {
   if (options.maxDevices > 0) devices = devices.slice(0, options.maxDevices);
 
   const recipes = await mapLimit(devices, 4, async (device) => {
-    console.log(`LineageOS Xiaomi device: ${device.codename}`);
+    console.log(`LineageOS ${device.vendor_short || device.vendor} device: ${device.codename}`);
     const recipe = await inspectDevice(device);
-    await writeJson(path.join(options.recipeDir, `${device.codename}.json`), recipe);
+    await writeJson(recipePathFor(device), recipe);
     return recipe;
   });
   const blocked = recipes
     .filter((recipe) => recipe.status !== "build_ready")
     .map((recipe) => ({
       device: recipe.build.device,
+      vendor_short: recipe.build.vendor_short,
       names: recipe.source_facts.names,
       reasons: recipe.blocked_reasons,
     }));
 
-  const metadata = {
-    generated_at: new Date().toISOString(),
-    source_policy:
-      "Only official LineageOS device metadata, official LineageOS GitHub repos, and official LineageOS download API are used.",
-    lineage_devices_url: "https://wiki.lineageos.org/devices/",
-    lineage_github_url: "https://github.com/LineageOS",
-  };
+  const metadata = catalogMetadata();
 
-  await writeJson(path.join(options.outputDir, "lineage-xiaomi-devices.json"), { metadata, devices });
-  await writeJson(path.join(options.outputDir, "lineage-xiaomi-recipes.json"), { metadata, recipes });
-  await writeJson(path.join(options.outputDir, "lineage-xiaomi-blocked.json"), { metadata, blocked });
+  await writeJson(path.join(options.outputDir, `${options.outputPrefix}-devices.json`), { metadata, devices });
+  await writeJson(path.join(options.outputDir, `${options.outputPrefix}-recipes.json`), { metadata, recipes });
+  await writeJson(path.join(options.outputDir, `${options.outputPrefix}-blocked.json`), { metadata, blocked });
 
   console.log(`devices=${devices.length}`);
   console.log(`recipes=${recipes.length}`);
