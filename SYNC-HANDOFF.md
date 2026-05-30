@@ -94,6 +94,15 @@
 - 每个机型上传独立 artifact：`lineage-docker-boot-<codename>`。
 - 矩阵 `max-parallel=3`，避免一次性拉爆 runner/下载/编译资源。
 
+按用户要求，构建成功后发布到 GitHub Releases 下载区：
+
+- 新增 `scripts/prepare-lineage-release.sh`
+- Release tag: `lineage-<version>-<date>-<codename>-docker-boot`
+- boot asset: `<codename>-<model>-lineage-<version>-<date>-docker-boot.img`
+- 同时上传 `.sha256`、`.config`、`.recipe.json`
+- 单机 workflow 和全量 ready workflow 都会发布 release；如果 release 已存在就 `--clobber` 覆盖同名 asset。
+- 旧的全量构建 run `26696044385` 已取消，因为它还没有 release 发布逻辑。
+
 本次修改前备份：
 
 - `README.md.bak-20260530-225835`
@@ -109,3 +118,7 @@
 - `SYNC-HANDOFF.md.bak-20260531-021421`
 - `README.md.bak-20260531-055900`
 - `SYNC-HANDOFF.md.bak-20260531-055900`
+- `.github/workflows/build-lineage-recipe.yml.bak-20260531-060242`
+- `.github/workflows/build-lineage-xiaomi-ready.yml.bak-20260531-060242`
+- `README.md.bak-20260531-060242`
+- `SYNC-HANDOFF.md.bak-20260531-060242`

@@ -11,7 +11,7 @@ on:
     - cron: "11 4 * * 0"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   prepare:
@@ -82,10 +82,37 @@ jobs:
           chmod +x scripts/build-lineage-recipe.sh
           scripts/build-lineage-recipe.sh "${{ matrix.recipe }}"
 
+      - name: Prepare ${{ matrix.device }} release assets
+        run: |
+          chmod +x scripts/prepare-lineage-release.sh
+          scripts/prepare-lineage-release.sh artifacts/lineage-recipe
+
       - name: Upload ${{ matrix.device }} boot artifact
         uses: actions/upload-artifact@v4
         with:
           name: lineage-docker-boot-${{ matrix.device }}
           path: |
-            artifacts/lineage-recipe/*
+            artifacts/lineage-recipe/release/*
+            artifacts/lineage-recipe/release.env
           if-no-files-found: error
+
+      - name: Publish ${{ matrix.device }} release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          . artifacts/lineage-recipe/release.env
+          ASSETS=(
+            "$RELEASE_DIR/$BOOT_ASSET"
+            "$RELEASE_DIR/$SHA_ASSET"
+            "$RELEASE_DIR/$CONFIG_ASSET"
+            "$RELEASE_DIR/$RECIPE_ASSET"
+          )
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" "${ASSETS[@]}" --clobber
+            gh release edit "$RELEASE_TAG" --title "$RELEASE_TITLE" --notes-file "$NOTES_FILE"
+          else
+            gh release create "$RELEASE_TAG" "${ASSETS[@]}" \
+              --title "$RELEASE_TITLE" \
+              --notes-file "$NOTES_FILE" \
+              --latest=false
+          fi

@@ -80,3 +80,5 @@ workflow 会：
 缺任何一项就进 `lineage-xiaomi-blocked.json`，不猜分支、不猜 config、不跨 ROM 复用 boot。
 
 全量 ready 机型可以运行 `.github/workflows/build-lineage-xiaomi-ready.yml`。它从 `catalog/lineage-xiaomi-recipes.json` 读取所有 `build_ready` recipe，按矩阵构建并分别上传 `lineage-docker-boot-<codename>` artifact。也可以在 `devices` 输入里传逗号分隔 codename，只构建指定机型。
+
+构建成功后会发布到 GitHub Releases 下载区。Release tag 格式是 `lineage-<version>-<date>-<codename>-docker-boot`，boot 文件名格式是 `<codename>-<model>-lineage-<version>-<date>-docker-boot.img`，同时上传 sha256、最终 config 和 recipe。
