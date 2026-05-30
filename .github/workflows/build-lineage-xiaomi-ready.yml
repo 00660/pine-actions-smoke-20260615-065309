@@ -1,0 +1,91 @@
+name: Build all ready LineageOS Xiaomi boot images
+
+on:
+  workflow_dispatch:
+    inputs:
+      devices:
+        description: "Optional comma-separated codenames. Empty builds every build_ready Xiaomi recipe."
+        required: false
+        default: ""
+  schedule:
+    - cron: "11 4 * * 0"
+
+permissions:
+  contents: read
+
+jobs:
+  prepare:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      count: ${{ steps.matrix.outputs.count }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build matrix
+        id: matrix
+        env:
+          INPUT_DEVICES: ${{ github.event.inputs.devices || '' }}
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const recipes = JSON.parse(fs.readFileSync('catalog/lineage-xiaomi-recipes.json', 'utf8')).recipes;
+          const requested = new Set(
+            (process.env.INPUT_DEVICES || '')
+              .split(',')
+              .map((item) => item.trim())
+              .filter(Boolean),
+          );
+          const ready = recipes
+            .filter((recipe) => recipe.status === 'build_ready')
+            .filter((recipe) => requested.size === 0 || requested.has(recipe.build.device))
+            .map((recipe) => ({
+              device: recipe.build.device,
+              recipe: `recipes/lineage/${recipe.build.device}.json`,
+            }))
+            .sort((a, b) => a.device.localeCompare(b.device));
+          if (requested.size > 0) {
+            const found = new Set(ready.map((item) => item.device));
+            const missing = Array.from(requested).filter((device) => !found.has(device));
+            if (missing.length) {
+              console.error(`Requested devices are not build_ready: ${missing.join(', ')}`);
+              process.exit(1);
+            }
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `matrix=${JSON.stringify({ include: ready })}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `count=${ready.length}\n`);
+          console.log(`build_ready_count=${ready.length}`);
+          console.log(ready.map((item) => item.device).join('\n'));
+          NODE
+
+  build:
+    needs: prepare
+    if: needs.prepare.outputs.count != '0'
+    runs-on: ubuntu-22.04
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+
+      - name: Build ${{ matrix.device }}
+        run: |
+          chmod +x scripts/build-lineage-recipe.sh
+          scripts/build-lineage-recipe.sh "${{ matrix.recipe }}"
+
+      - name: Upload ${{ matrix.device }} boot artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lineage-docker-boot-${{ matrix.device }}
+          path: |
+            artifacts/lineage-recipe/*
+          if-no-files-found: error

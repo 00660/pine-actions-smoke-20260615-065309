@@ -77,6 +77,23 @@
 - `boot-docker.img` size: `55,001,088` bytes
 - artifact 内容包含 `boot-docker.img`、`boot-docker.img.sha256`、`Image`、`config-docker-final`、`recipe.json`、`upstream-commit`、`upstream-ref`、`upstream-repo`
 
+2026-05-31 全量 LineageOS Xiaomi discover 验证成功：
+
+- workflow run: `https://github.com/00660/android-docker-boot-builder/actions/runs/26695933160`
+- commit: `ea969bc5e7e4689800d9b809523242994a25a68b`
+- 官方页面 Xiaomi recipe: `81`
+- `build_ready`: `54`
+- blocked: `27`
+- blocked 只记录官方来源缺失原因，不猜参数。
+
+新增全量 ready 构建入口：
+
+- `.github/workflows/build-lineage-xiaomi-ready.yml`
+- 默认构建 `catalog/lineage-xiaomi-recipes.json` 里所有 `build_ready` 机型。
+- 可用 `devices` 输入指定逗号分隔 codename 子集。
+- 每个机型上传独立 artifact：`lineage-docker-boot-<codename>`。
+- 矩阵 `max-parallel=3`，避免一次性拉爆 runner/下载/编译资源。
+
 本次修改前备份：
 
 - `README.md.bak-20260530-225835`
@@ -90,3 +107,5 @@
 - `scripts/lineage-xiaomi-catalog.mjs.bak-20260531-011048`
 - `SYNC-HANDOFF.md.bak-20260531-011048`
 - `SYNC-HANDOFF.md.bak-20260531-021421`
+- `README.md.bak-20260531-055900`
+- `SYNC-HANDOFF.md.bak-20260531-055900`

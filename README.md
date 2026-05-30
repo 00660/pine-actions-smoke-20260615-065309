@@ -78,3 +78,5 @@ workflow 会：
 `build_ready` recipe 可以用 `.github/workflows/build-lineage-recipe.yml` 构建 Docker boot artifact。workflow 可以直接输入 LineageOS codename，例如 `alioth`；如果没有传 recipe 文件，它会先从官方 LineageOS 来源生成该机型 recipe，再下载官方 LineageOS OTA，从 `boot.img` 或 `payload.bin` 取 boot 基线，编译同分支 LineageOS kernel，并 repack 出 `boot-docker.img`。
 
 缺任何一项就进 `lineage-xiaomi-blocked.json`，不猜分支、不猜 config、不跨 ROM 复用 boot。
+
+全量 ready 机型可以运行 `.github/workflows/build-lineage-xiaomi-ready.yml`。它从 `catalog/lineage-xiaomi-recipes.json` 读取所有 `build_ready` recipe，按矩阵构建并分别上传 `lineage-docker-boot-<codename>` artifact。也可以在 `devices` 输入里传逗号分隔 codename，只构建指定机型。
