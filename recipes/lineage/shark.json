@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/shark/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/shark.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/shark/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779800954,
+      "filename": "lineage-22.2-20260526-nightly-shark-signed.zip",
+      "filepath": "/full/shark/20260526/lineage-22.2-20260526-nightly-shark-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3571:118605,payload.bin:3571:1019897528,payload_properties.txt:1019901157:156,apex_info.pb:1767:1157,care_map.pb:2971:553,metadata:69:681,metadata.pb:818:901                         ",
+      "sha1": "d2ac16024d509de043c7c2d87e39bffc39d16caa",
+      "sha256": "44b84bc0e4617433c23fc416c7b3957b74e5e57abc697d92f749b2e7e87771b1",
+      "size": 1019904308,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/shark/20260526/lineage-22.2-20260526-nightly-shark-signed.zip"
+    },
+    "names": [
+      "Black Shark"
+    ],
+    "models": [
+      "SKR-A0",
+      "SKR-H0"
+    ],
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_shark",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_shark",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_shark",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "shark_defconfig"
+      ],
+      "kernel_source_path": "kernel/xiaomi/shark",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "shark",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/shark/20260526/lineage-22.2-20260526-nightly-shark-signed.zip",
+    "boot_source_sha256": "44b84bc0e4617433c23fc416c7b3957b74e5e57abc697d92f749b2e7e87771b1",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_shark.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "shark_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

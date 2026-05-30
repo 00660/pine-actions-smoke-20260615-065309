@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-30T21:56:22.064Z",
+    "source_policy": "Only official LineageOS device metadata, official LineageOS GitHub repos, and official LineageOS download API are used.",
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_github_url": "https://github.com/LineageOS"
+  },
+  "blocked": [
+    {
+      "device": "armani",
+      "names": [
+        "Redmi 1S"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "cancro",
+      "names": [
+        "Mi 4",
+        "Mi 3"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "capricorn",
+      "names": [
+        "Mi 5s"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hydrogen",
+      "names": [
+        "Mi Max"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ido",
+      "names": [
+        "Redmi 3 Prime",
+        "Redmi 3"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jasmine_sprout",
+      "names": [
+        "Mi A2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jason",
+      "names": [
+        "Mi Note 3"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kenzo",
+      "names": [
+        "Redmi Note 3"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lancelot",
+      "names": [
+        "Redmi 9"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "land",
+      "names": [
+        "Redmi 3S / 3X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "laurel_sprout",
+      "names": [
+        "Mi A3"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lavender",
+      "names": [
+        "Redmi Note 7"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "libra",
+      "names": [
+        "Mi 4c"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lithium",
+      "names": [
+        "Mi MIX"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mars",
+      "names": [
+        "Mi 11 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "merlinx",
+      "names": [
+        "Redmi Note 9"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Mi8917",
+      "names": [
+        "Redmi Note 5A Lite",
+        "Redmi 4A",
+        "Redmi Y1 Lite",
+        "Redmi 5A"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "mido",
+      "names": [
+        "Redmi Note 4"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "monet",
+      "names": [
+        "Mi 10 Lite 5G"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "onclite",
+      "names": [
+        "Redmi Y3",
+        "Redmi 7"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "platina",
+      "names": [
+        "Mi 8 Lite"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "santoni",
+      "names": [
+        "Redmi 4(X)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "tissot",
+      "names": [
+        "Mi A1"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "twolip",
+      "names": [
+        "Redmi Note 6 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "wayne",
+      "names": [
+        "Mi 6X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "whyred",
+      "names": [
+        "Redmi Note 5 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "xmsirius",
+      "names": [
+        "Mi 8 SE"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    }
+  ]
+}

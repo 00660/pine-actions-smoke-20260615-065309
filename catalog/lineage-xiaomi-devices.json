@@ -1,0 +1,2590 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-30T21:56:22.064Z",
+    "source_policy": "Only official LineageOS device metadata, official LineageOS GitHub repos, and official LineageOS download API are used.",
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_github_url": "https://github.com/LineageOS"
+  },
+  "devices": [
+    {
+      "codename": "alioth",
+      "names": [
+        "Redmi K40",
+        "POCO F3",
+        "Mi 11X"
+      ],
+      "yaml_files": [
+        "alioth_variant2.yml",
+        "alioth_variant1.yml",
+        "alioth_variant3.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2012K11AC",
+        "M2012K11AG",
+        "M2012K11AI"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8250",
+        "version": "4.19"
+      },
+      "name": "Redmi K40",
+      "recovery_partition_name": "vendor_boot",
+      "tree": "android_device_xiaomi_alioth",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "apollon",
+      "names": [
+        "Mi 10T",
+        "Redmi K30S Ultra",
+        "Mi 10T Pro"
+      ],
+      "yaml_files": [
+        "apollon_variant1.yml",
+        "apollon_variant3.yml",
+        "apollon_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2007J3SY",
+        "M2007J3SC",
+        "M2007J3SG"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8250",
+        "version": "4.19"
+      },
+      "name": "Mi 10T",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_apollon",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "armani",
+      "names": [
+        "Redmi 1S"
+      ],
+      "yaml_files": [
+        "armani.yml"
+      ],
+      "versions": [
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm",
+      "current_branch": "14.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_armani",
+        "version": "3.4"
+      },
+      "name": "Redmi 1S",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_armani",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "beryllium",
+      "names": [
+        "POCO F1"
+      ],
+      "yaml_files": [
+        "beryllium.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1",
+        "17.1",
+        "16.0"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm845",
+        "version": "4.9"
+      },
+      "name": "POCO F1",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_beryllium",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "cancro",
+      "names": [
+        "Mi 4",
+        "Mi 3"
+      ],
+      "yaml_files": [
+        "cancro_variant2.yml",
+        "cancro_variant1.yml"
+      ],
+      "versions": [
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm",
+      "current_branch": "14.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_cancro",
+        "version": "3.4"
+      },
+      "name": "Mi 4",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_cancro",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "capricorn",
+      "names": [
+        "Mi 5s"
+      ],
+      "yaml_files": [
+        "capricorn.yml"
+      ],
+      "versions": [
+        "16.0",
+        "15.1",
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "16.0",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8996",
+        "version": "3.18"
+      },
+      "name": "Mi 5s",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_capricorn",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "chiron",
+      "names": [
+        "Mi MIX 2"
+      ],
+      "yaml_files": [
+        "chiron.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8998",
+        "version": "4.4"
+      },
+      "name": "Mi MIX 2",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_chiron",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "cmi",
+      "names": [
+        "Mi 10 Pro"
+      ],
+      "yaml_files": [
+        "cmi.yml"
+      ],
+      "versions": [
+        "23.2",
+        "22.2",
+        "22.1",
+        "21"
+      ],
+      "models": [
+        "M2001J1G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8250",
+        "version": "4.19"
+      },
+      "name": "Mi 10 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_cmi",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "cupid",
+      "names": [
+        "12"
+      ],
+      "yaml_files": [
+        "cupid.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "2201123C",
+        "2201123G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "12",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_cupid",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "davinci",
+      "names": [
+        "Redmi K20 (India)",
+        "Redmi K20 (China)",
+        "Mi 9T"
+      ],
+      "yaml_files": [
+        "davinci_variant3.yml",
+        "davinci_variant2.yml",
+        "davinci_variant1.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "17.1"
+      ],
+      "models": [
+        "M1903F10I",
+        "M1903F10A",
+        "M1903F10C",
+        "M1903F10G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm6150",
+        "version": "4.14"
+      },
+      "name": "Redmi K20 (India)",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_davinci",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "dipper",
+      "names": [
+        "Mi 8"
+      ],
+      "yaml_files": [
+        "dipper.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1",
+        "17.1",
+        "16.0"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm845",
+        "version": "4.9"
+      },
+      "name": "Mi 8",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_dipper",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "diting",
+      "names": [
+        "12T Pro",
+        "Redmi K50 Ultra"
+      ],
+      "yaml_files": [
+        "diting_variant1.yml",
+        "diting_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "22081212UG",
+        "22081212R",
+        "22200414R",
+        "A201XM",
+        "22081212C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "12T Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_diting",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "earth",
+      "names": [
+        "POCO C55",
+        "Redmi 12C NFC",
+        "Redmi 12C"
+      ],
+      "yaml_files": [
+        "earth_variant3.yml",
+        "earth_variant2.yml",
+        "earth_variant1.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "22.1",
+        "21"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_earth",
+        "version": "4.19"
+      },
+      "name": "POCO C55",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_earth",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "equuleus",
+      "names": [
+        "Mi 8 Pro"
+      ],
+      "yaml_files": [
+        "equuleus.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm845",
+        "version": "4.9"
+      },
+      "name": "Mi 8 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_equuleus",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "fuxi",
+      "names": [
+        "13"
+      ],
+      "yaml_files": [
+        "fuxi.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "2211133G",
+        "2211133C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8550",
+        "version": "5.15"
+      },
+      "name": "13",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_fuxi",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "garnet",
+      "names": [
+        "Redmi Note 13 Pro 5G (India)",
+        "Redmi Note 13 Pro 5G (China)",
+        "POCO X6 5G",
+        "POCO X6 5G (India)",
+        "Redmi Note 13 Pro 5G"
+      ],
+      "yaml_files": [
+        "garnet_variant2.yml",
+        "garnet_variant3.yml",
+        "garnet_variant4.yml",
+        "garnet_variant5.yml",
+        "garnet_variant1.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0"
+      ],
+      "models": [
+        "2312DRA50I",
+        "2312DRA50C",
+        "2312CRAD3C",
+        "23122PCD1G",
+        "23122PCD1I",
+        "2312DRA50G",
+        "XIG05"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm7435",
+        "version": "5.10"
+      },
+      "name": "Redmi Note 13 Pro 5G (India)",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_garnet",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "gauguin",
+      "names": [
+        "Mi 10T Lite 5G",
+        "Mi 10i 5G",
+        "Redmi Note 9 Pro 5G"
+      ],
+      "yaml_files": [
+        "gauguin_variant1.yml",
+        "gauguin_variant2.yml",
+        "gauguin_variant3.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2007J17G",
+        "M2007J17I",
+        "M2007J17C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_gauguin",
+        "version": "4.19"
+      },
+      "name": "Mi 10T Lite 5G",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_gauguin",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "gemini",
+      "names": [
+        "Mi 5"
+      ],
+      "yaml_files": [
+        "gemini.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1",
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8996",
+        "version": "4.4"
+      },
+      "name": "Mi 5",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_gemini",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "ginkgo",
+      "names": [
+        "Redmi Note 8T",
+        "Redmi Note 8"
+      ],
+      "yaml_files": [
+        "ginkgo_variant2.yml",
+        "ginkgo_variant1.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "18.1",
+        "17.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm6125",
+        "version": "4.14"
+      },
+      "name": "Redmi Note 8T",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_ginkgo",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "grus",
+      "names": [
+        "Mi 9 SE"
+      ],
+      "yaml_files": [
+        "grus.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "M1903F2G",
+        "M1903F2A"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm710",
+        "version": "4.9"
+      },
+      "name": "Mi 9 SE",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_grus",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "haydn",
+      "names": [
+        "Redmi K40 Pro",
+        "Redmi K40 Pro+",
+        "Mi 11X Pro",
+        "Mi 11i"
+      ],
+      "yaml_files": [
+        "haydn_variant2.yml",
+        "haydn_variant3.yml",
+        "haydn_variant4.yml",
+        "haydn_variant1.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "M2012K11C",
+        "M2012K11I",
+        "M2012K11G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8350",
+        "version": "5.4"
+      },
+      "name": "Redmi K40 Pro",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_haydn",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "hydrogen",
+      "names": [
+        "Mi Max"
+      ],
+      "yaml_files": [
+        "hydrogen.yml"
+      ],
+      "versions": [
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "14.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8956",
+        "version": "3.10"
+      },
+      "name": "Mi Max",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_hydrogen",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "ido",
+      "names": [
+        "Redmi 3 Prime",
+        "Redmi 3"
+      ],
+      "yaml_files": [
+        "ido_variant2.yml",
+        "ido_variant1.yml"
+      ],
+      "versions": [
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "14.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8916",
+        "version": "3.10"
+      },
+      "name": "Redmi 3 Prime",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_ido",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "jasmine_sprout",
+      "names": [
+        "Mi A2"
+      ],
+      "yaml_files": [
+        "jasmine_sprout.yml"
+      ],
+      "versions": [
+        "18.1",
+        "17.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm660",
+        "version": "4.4"
+      },
+      "name": "Mi A2",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_jasmine_sprout",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "jason",
+      "names": [
+        "Mi Note 3"
+      ],
+      "yaml_files": [
+        "jason.yml"
+      ],
+      "versions": [
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm660",
+        "version": "4.4"
+      },
+      "name": "Mi Note 3",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_jason",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "kenzo",
+      "names": [
+        "Redmi Note 3"
+      ],
+      "yaml_files": [
+        "kenzo.yml"
+      ],
+      "versions": [
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "14.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8956",
+        "version": "3.10"
+      },
+      "name": "Redmi Note 3",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_kenzo",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "lancelot",
+      "names": [
+        "Redmi 9"
+      ],
+      "yaml_files": [
+        "lancelot.yml"
+      ],
+      "versions": [
+        "20"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "20",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_mt6768",
+        "version": "4.14"
+      },
+      "name": "Redmi 9",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_lancelot",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "land",
+      "names": [
+        "Redmi 3S / 3X"
+      ],
+      "yaml_files": [
+        "land.yml"
+      ],
+      "versions": [
+        "16.0",
+        "15.1",
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "16.0",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8937",
+        "version": "3.18"
+      },
+      "name": "Redmi 3S / 3X",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_land",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "laurel_sprout",
+      "names": [
+        "Mi A3"
+      ],
+      "yaml_files": [
+        "laurel_sprout.yml"
+      ],
+      "versions": [
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "M1906F9SH",
+        "M1906F9SI"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.0",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm6125",
+        "version": "4.14"
+      },
+      "name": "Mi A3",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_laurel_sprout",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "lavender",
+      "names": [
+        "Redmi Note 7"
+      ],
+      "yaml_files": [
+        "lavender.yml"
+      ],
+      "versions": [
+        "18.1",
+        "17.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm660",
+        "version": "4.4"
+      },
+      "name": "Redmi Note 7",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_lavender",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "libra",
+      "names": [
+        "Mi 4c"
+      ],
+      "yaml_files": [
+        "libra.yml"
+      ],
+      "versions": [
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "14.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8992",
+        "version": "3.10"
+      },
+      "name": "Mi 4c",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_libra",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "lisa",
+      "names": [
+        "11 Lite NE 5G",
+        "11 Lite 5G NE",
+        "Mi 11 LE"
+      ],
+      "yaml_files": [
+        "lisa_variant2.yml",
+        "lisa_variant1.yml",
+        "lisa_variant3.yml"
+      ],
+      "versions": [
+        "23.2",
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "2109119DI",
+        "2109119DG",
+        "2107119DC"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8350",
+        "version": "5.4"
+      },
+      "name": "11 Lite NE 5G",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_lisa",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "lithium",
+      "names": [
+        "Mi MIX"
+      ],
+      "yaml_files": [
+        "lithium.yml"
+      ],
+      "versions": [
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1",
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8996",
+        "version": "3.18"
+      },
+      "name": "Mi MIX",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_lithium",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "lmi",
+      "names": [
+        "Redmi K30 Pro Zoom Edition",
+        "POCO F2 Pro",
+        "Redmi K30 Pro"
+      ],
+      "yaml_files": [
+        "lmi_variant3.yml",
+        "lmi_variant1.yml",
+        "lmi_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2001J11C",
+        "M2001J11E",
+        "M2004J11G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "20",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8250",
+        "version": "4.19"
+      },
+      "name": "Redmi K30 Pro Zoom Edition",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_lmi",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "marble",
+      "names": [
+        "Redmi Note 12 Turbo",
+        "POCO F5 (Global)",
+        "POCO F5 (India)"
+      ],
+      "yaml_files": [
+        "marble_variant3.yml",
+        "marble_variant1.yml",
+        "marble_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "23049RAD8C",
+        "23049PCD8G",
+        "23049PCD8I"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "Redmi Note 12 Turbo",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_marble",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "mars",
+      "names": [
+        "Mi 11 Pro"
+      ],
+      "yaml_files": [
+        "mars.yml"
+      ],
+      "versions": [
+        "22.1",
+        "21",
+        "20"
+      ],
+      "models": [
+        "M2102K1AC"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8350",
+        "version": "5.4"
+      },
+      "name": "Mi 11 Pro",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_mars",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "mayfly",
+      "names": [
+        "12S"
+      ],
+      "yaml_files": [
+        "mayfly.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "2206123SC"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "12S",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_mayfly",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "merlinx",
+      "names": [
+        "Redmi Note 9"
+      ],
+      "yaml_files": [
+        "merlinx.yml"
+      ],
+      "versions": [
+        "20"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "20",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_mt6768",
+        "version": "4.14"
+      },
+      "name": "Redmi Note 9",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_merlinx",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "Mi439",
+      "names": [
+        "Redmi 8A",
+        "Redmi 8A Dual",
+        "Redmi 8",
+        "Redmi 7A"
+      ],
+      "yaml_files": [
+        "Mi439_variant3.yml",
+        "Mi439_variant4.yml",
+        "Mi439_variant2.yml",
+        "Mi439_variant1.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "M1908C3KE",
+        "M1908C3KG",
+        "M1908C3KH",
+        "M1908C3KI",
+        "M2001C3K3I",
+        "M1908C3IC",
+        "M1908C3IE",
+        "M1908C3IG",
+        "M1908C3IH",
+        "M1908C3II",
+        "M1903C3EC",
+        "M1903C3EE",
+        "M1903C3EG",
+        "M1903C3EH",
+        "M1903C3EI",
+        "M1903C3ET"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8937",
+        "version": "4.19"
+      },
+      "name": "Redmi 8A",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_Mi439",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "Mi8917",
+      "names": [
+        "Redmi Note 5A Lite",
+        "Redmi 4A",
+        "Redmi Y1 Lite",
+        "Redmi 5A"
+      ],
+      "yaml_files": [
+        "Mi8917_variant3.yml",
+        "Mi8917_variant1.yml",
+        "Mi8917_variant4.yml",
+        "Mi8917_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "MDE6",
+        "MDG6",
+        "MDT6",
+        "2016111",
+        "2016112",
+        "2016116",
+        "2016117",
+        "MDI6",
+        "MCE3B",
+        "MCG3B",
+        "MCI3B",
+        "MCT3B"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8937",
+        "version": "4.19"
+      },
+      "name": "Redmi Note 5A Lite",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_Mi8917",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "Mi8937",
+      "names": [
+        "Redmi 3S",
+        "Redmi 3X",
+        "Redmi 4X",
+        "Redmi 4 (India)",
+        "Redmi Y1 Prime",
+        "Redmi Note 5A Prime"
+      ],
+      "yaml_files": [
+        "Mi8937_variant1.yml",
+        "Mi8937_variant2.yml",
+        "Mi8937_variant4.yml",
+        "Mi8937_variant3.yml",
+        "Mi8937_variant6.yml",
+        "Mi8937_variant5.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "2016031",
+        "2016037",
+        "2016032",
+        "2016030",
+        "2016036",
+        "2016035",
+        "2016033",
+        "MAG138",
+        "MAE136",
+        "MAT136",
+        "MAI132",
+        "MDI6S",
+        "MDE6S",
+        "MDG6S",
+        "MDT6S"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8937",
+        "version": "4.19"
+      },
+      "name": "Redmi 3S",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_Mi8937",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "miatoll",
+      "names": [
+        "Redmi Note 9S",
+        "Redmi Note 9 Pro Max",
+        "Redmi Note 9 Pro (Global)",
+        "Redmi Note 10 Lite",
+        "Redmi Note 9 Pro (India)",
+        "POCO M2 Pro"
+      ],
+      "yaml_files": [
+        "miatoll_variant2.yml",
+        "miatoll_variant5.yml",
+        "miatoll_variant3.yml",
+        "miatoll_variant6.yml",
+        "miatoll_variant4.yml",
+        "miatoll_variant1.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2003J6A1G",
+        "M2003J6A1R",
+        "M2003J6B1I",
+        "M2003J6B2G",
+        "2109106A1I",
+        "M2003J6A1I",
+        "M2003J6CI"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm6250",
+        "version": "4.14"
+      },
+      "name": "Redmi Note 9S",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_miatoll",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "mido",
+      "names": [
+        "Redmi Note 4"
+      ],
+      "yaml_files": [
+        "mido.yml"
+      ],
+      "versions": [
+        "16.0",
+        "15.1",
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "16.0",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8953",
+        "version": "4.9"
+      },
+      "name": "Redmi Note 4",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_mido",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "mondrian",
+      "names": [
+        "POCO F5 Pro",
+        "Redmi K60"
+      ],
+      "yaml_files": [
+        "mondrian_variant1.yml",
+        "mondrian_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "23013PC75G",
+        "23013RK75C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "POCO F5 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_mondrian",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "monet",
+      "names": [
+        "Mi 10 Lite 5G"
+      ],
+      "yaml_files": [
+        "monet.yml"
+      ],
+      "versions": [
+        "22.1",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2002J9G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm7250",
+        "version": "4.19"
+      },
+      "name": "Mi 10 Lite 5G",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_monet",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "munch",
+      "names": [
+        "POCO F4",
+        "Redmi K40S"
+      ],
+      "yaml_files": [
+        "munch_variant1.yml",
+        "munch_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "22.2",
+        "22.1",
+        "21"
+      ],
+      "models": [
+        "22021211RG",
+        "22021211RI",
+        "22021211RC"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8250",
+        "version": "4.19"
+      },
+      "name": "POCO F4",
+      "recovery_partition_name": "vendor_boot",
+      "tree": "android_device_xiaomi_munch",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "natrium",
+      "names": [
+        "Mi 5s Plus"
+      ],
+      "yaml_files": [
+        "natrium.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1",
+        "14.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8996",
+        "version": "4.4"
+      },
+      "name": "Mi 5s Plus",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_natrium",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "nuwa",
+      "names": [
+        "13 Pro"
+      ],
+      "yaml_files": [
+        "nuwa.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "2210132G",
+        "2210132C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8550",
+        "version": "5.15"
+      },
+      "name": "13 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_nuwa",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "onclite",
+      "names": [
+        "Redmi Y3",
+        "Redmi 7"
+      ],
+      "yaml_files": [
+        "onclite_variant2.yml",
+        "onclite_variant1.yml"
+      ],
+      "versions": [
+        "21",
+        "20",
+        "19.1",
+        "18.1",
+        "17.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "21",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_onclite",
+        "version": "4.9"
+      },
+      "name": "Redmi Y3",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_onclite",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "peridot",
+      "names": [
+        "POCO F6",
+        "Redmi Turbo 3"
+      ],
+      "yaml_files": [
+        "peridot_variant1.yml",
+        "peridot_variant2.yml"
+      ],
+      "versions": [
+        "23.2"
+      ],
+      "models": [
+        "24069PC21G",
+        "24069PC21I",
+        "24069RA21C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8635",
+        "version": "6.1"
+      },
+      "name": "POCO F6",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_peridot",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "perseus",
+      "names": [
+        "Mi MIX 3"
+      ],
+      "yaml_files": [
+        "perseus.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm845",
+        "version": "4.9"
+      },
+      "name": "Mi MIX 3",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_perseus",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "platina",
+      "names": [
+        "Mi 8 Lite"
+      ],
+      "yaml_files": [
+        "platina.yml"
+      ],
+      "versions": [
+        "18.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm660",
+        "version": "4.4"
+      },
+      "name": "Mi 8 Lite",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_platina",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "polaris",
+      "names": [
+        "Mi MIX 2S"
+      ],
+      "yaml_files": [
+        "polaris.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1",
+        "17.1",
+        "16.0"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm845",
+        "version": "4.9"
+      },
+      "name": "Mi MIX 2S",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_polaris",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "pyxis",
+      "names": [
+        "Mi CC9",
+        "Mi 9 Lite"
+      ],
+      "yaml_files": [
+        "pyxis_variant1.yml",
+        "pyxis_variant2.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "M1904F3BC",
+        "M1904F3BG"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm710",
+        "version": "4.9"
+      },
+      "name": "Mi CC9",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_pyxis",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "renoir",
+      "names": [
+        "Mi 11 Lite 5G"
+      ],
+      "yaml_files": [
+        "renoir.yml"
+      ],
+      "versions": [
+        "23.2",
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "M2101K9G",
+        "M2101K9C",
+        "M2101K9R"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8350",
+        "version": "5.4"
+      },
+      "name": "Mi 11 Lite 5G",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_renoir",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "rosemary",
+      "names": [
+        "Redmi Note 10S Latin America",
+        "Redmi Note 10S",
+        "Redmi Note 10S NFC",
+        "POCO M5s"
+      ],
+      "yaml_files": [
+        "rosemary_variant3.yml",
+        "rosemary_variant1.yml",
+        "rosemary_variant2.yml",
+        "rosemary_variant4.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "21",
+        "20"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_mt6785",
+        "version": "4.19"
+      },
+      "name": "Redmi Note 10S Latin America",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_rosemary",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "sagit",
+      "names": [
+        "Mi 6"
+      ],
+      "yaml_files": [
+        "sagit.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1",
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8998",
+        "version": "4.4"
+      },
+      "name": "Mi 6",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_sagit",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "santoni",
+      "names": [
+        "Redmi 4(X)"
+      ],
+      "yaml_files": [
+        "santoni.yml"
+      ],
+      "versions": [
+        "16.0",
+        "15.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "16.0",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8937",
+        "version": "3.18"
+      },
+      "name": "Redmi 4(X)",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_santoni",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "scorpio",
+      "names": [
+        "Mi Note 2"
+      ],
+      "yaml_files": [
+        "scorpio.yml"
+      ],
+      "versions": [
+        "22.2",
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8996",
+        "version": "4.4"
+      },
+      "name": "Mi Note 2",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_scorpio",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "shark",
+      "names": [
+        "Black Shark"
+      ],
+      "yaml_files": [
+        "shark.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21"
+      ],
+      "models": [
+        "SKR-A0",
+        "SKR-H0"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_shark",
+        "version": "4.9"
+      },
+      "name": "Black Shark",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_shark",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "socrates",
+      "names": [
+        "Redmi K60 Pro"
+      ],
+      "yaml_files": [
+        "socrates.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "22.1",
+        "21"
+      ],
+      "models": [
+        "22127RK46C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8550",
+        "version": "5.15"
+      },
+      "name": "Redmi K60 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_socrates",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "surya",
+      "names": [
+        "POCO X3 NFC"
+      ],
+      "yaml_files": [
+        "surya.yml"
+      ],
+      "versions": [
+        "22.2",
+        "21",
+        "20",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2007J20CG",
+        "M2007J20CI"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_surya",
+        "version": "4.14"
+      },
+      "name": "POCO X3 NFC",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_surya",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "sweet",
+      "names": [
+        "Redmi Note 10 Pro Max (India)",
+        "Redmi Note 10 Pro",
+        "Redmi Note 10 Pro (India)"
+      ],
+      "yaml_files": [
+        "sweet_variant3.yml",
+        "sweet_variant1.yml",
+        "sweet_variant2.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "22.1",
+        "21",
+        "20"
+      ],
+      "models": [
+        "M2101K6I",
+        "M2101K6G",
+        "M2101K6R",
+        "M2101K6P"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm6150",
+        "version": "4.14"
+      },
+      "name": "Redmi Note 10 Pro Max (India)",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_sweet",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "thor",
+      "names": [
+        "12S Ultra"
+      ],
+      "yaml_files": [
+        "thor.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "2203121C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "12S Ultra",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_thor",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "thyme",
+      "names": [
+        "Mi 10S"
+      ],
+      "yaml_files": [
+        "thyme.yml"
+      ],
+      "versions": [
+        "23.2",
+        "22.2",
+        "22.1",
+        "21"
+      ],
+      "models": [
+        "M2102J2SC"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8250",
+        "version": "4.19"
+      },
+      "name": "Mi 10S",
+      "recovery_partition_name": "vendor_boot",
+      "tree": "android_device_xiaomi_thyme",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "tissot",
+      "names": [
+        "Mi A1"
+      ],
+      "yaml_files": [
+        "tissot.yml"
+      ],
+      "versions": [
+        "20",
+        "19.1",
+        "18.1",
+        "17.1",
+        "16.0",
+        "15.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "20",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_msm8953",
+        "version": "4.9"
+      },
+      "name": "Mi A1",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_tissot",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "tucana",
+      "names": [
+        "Mi Note 10 Pro",
+        "Mi Note 10",
+        "Mi CC9 Pro"
+      ],
+      "yaml_files": [
+        "tucana_variant2.yml",
+        "tucana_variant1.yml",
+        "tucana_variant3.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "M1910F4S",
+        "M1910F4G",
+        "M1910F4E"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm6150",
+        "version": "4.14"
+      },
+      "name": "Mi Note 10 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_tucana",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "twolip",
+      "names": [
+        "Redmi Note 6 Pro"
+      ],
+      "yaml_files": [
+        "twolip.yml"
+      ],
+      "versions": [
+        "18.1",
+        "17.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm660",
+        "version": "4.4"
+      },
+      "name": "Redmi Note 6 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_twolip",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "umi",
+      "names": [
+        "Mi 10"
+      ],
+      "yaml_files": [
+        "umi.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "22.1",
+        "21"
+      ],
+      "models": [
+        "M2001J2G",
+        "M2001J2I"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8250",
+        "version": "4.19"
+      },
+      "name": "Mi 10",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_umi",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "unicorn",
+      "names": [
+        "12S Pro"
+      ],
+      "yaml_files": [
+        "unicorn.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "2206122SC"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "12S Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_unicorn",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "ursa",
+      "names": [
+        "Mi 8 Explorer Edition"
+      ],
+      "yaml_files": [
+        "ursa.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20",
+        "19.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm845",
+        "version": "4.9"
+      },
+      "name": "Mi 8 Explorer Edition",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_ursa",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "vayu",
+      "names": [
+        "POCO X3 Pro"
+      ],
+      "yaml_files": [
+        "vayu.yml"
+      ],
+      "versions": [
+        "22.2",
+        "20",
+        "19.1",
+        "18.1"
+      ],
+      "models": [
+        "M2102J20SG",
+        "M2102J20SI"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8150",
+        "version": "4.14"
+      },
+      "name": "POCO X3 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_vayu",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "vela",
+      "names": [
+        "Mi CC9 Meitu Edition"
+      ],
+      "yaml_files": [
+        "vela.yml"
+      ],
+      "versions": [
+        "22.2",
+        "22.1",
+        "21",
+        "20"
+      ],
+      "models": [
+        "M1904F3BT"
+      ],
+      "architecture": "arm64",
+      "current_branch": "22.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm710",
+        "version": "4.9"
+      },
+      "name": "Mi CC9 Meitu Edition",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_vela",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "venus",
+      "names": [
+        "Mi 11"
+      ],
+      "yaml_files": [
+        "venus.yml"
+      ],
+      "versions": [
+        "23.2"
+      ],
+      "models": [
+        "M2011K2C",
+        "M2011K2G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8350",
+        "version": "5.4"
+      },
+      "name": "Mi 11",
+      "recovery_partition_name": "boot",
+      "tree": "android_device_xiaomi_venus",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "vermeer",
+      "names": [
+        "Redmi K70",
+        "POCO F6 Pro"
+      ],
+      "yaml_files": [
+        "vermeer_variant2.yml",
+        "vermeer_variant1.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0"
+      ],
+      "models": [
+        "23113RKC6C",
+        "23113RKC6G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8550",
+        "version": "5.15"
+      },
+      "name": "Redmi K70",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_vermeer",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "violet",
+      "names": [
+        "Redmi Note 7 Pro"
+      ],
+      "yaml_files": [
+        "violet.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2",
+        "20",
+        "16.0"
+      ],
+      "models": [
+        "M1901F7S",
+        "M1901F7BE"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm6150",
+        "version": "4.14"
+      },
+      "name": "Redmi Note 7 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_violet",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "wayne",
+      "names": [
+        "Mi 6X"
+      ],
+      "yaml_files": [
+        "wayne.yml"
+      ],
+      "versions": [
+        "18.1",
+        "17.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm660",
+        "version": "4.4"
+      },
+      "name": "Mi 6X",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_wayne",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "whyred",
+      "names": [
+        "Redmi Note 5 Pro"
+      ],
+      "yaml_files": [
+        "whyred.yml"
+      ],
+      "versions": [
+        "18.1",
+        "17.1",
+        "15.1"
+      ],
+      "models": [],
+      "architecture": "arm64",
+      "current_branch": "18.1",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm660",
+        "version": "4.4"
+      },
+      "name": "Redmi Note 5 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_whyred",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "xmsirius",
+      "names": [
+        "Mi 8 SE"
+      ],
+      "yaml_files": [
+        "xmsirius.yml"
+      ],
+      "versions": [
+        "20",
+        "19.1"
+      ],
+      "models": [
+        "M1805E2A"
+      ],
+      "architecture": "arm64",
+      "current_branch": "20",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sdm710",
+        "version": "4.9"
+      },
+      "name": "Mi 8 SE",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_xmsirius",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "zeus",
+      "names": [
+        "12 Pro"
+      ],
+      "yaml_files": [
+        "zeus.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "2201122C",
+        "2201122G"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "12 Pro",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_zeus",
+      "type": "phone",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    },
+    {
+      "codename": "zizhan",
+      "names": [
+        "MIX Fold 2"
+      ],
+      "yaml_files": [
+        "zizhan.yml"
+      ],
+      "versions": [
+        "23.2",
+        "23.0",
+        "22.2"
+      ],
+      "models": [
+        "22061218C"
+      ],
+      "architecture": "arm64",
+      "current_branch": "23.2",
+      "kernel": {
+        "repo": "android_kernel_xiaomi_sm8450",
+        "version": "5.10"
+      },
+      "name": "MIX Fold 2",
+      "recovery_partition_name": "recovery",
+      "tree": "android_device_xiaomi_zizhan",
+      "type": "foldable",
+      "vendor": "Xiaomi",
+      "vendor_short": "xiaomi"
+    }
+  ]
+}

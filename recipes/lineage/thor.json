@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/thor/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/thor.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/thor/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780143167,
+      "filename": "lineage-23.2-20260530-nightly-thor-signed.zip",
+      "filepath": "/full/thor/20260530/lineage-23.2-20260530-nightly-thor-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4541:191471,payload.bin:4541:1959018979,payload_properties.txt:1959023578:156,apex_info.pb:2136:1279,care_map.pb:3462:1032,metadata:69:674,metadata.pb:811:1277                        ",
+      "sha1": "f70853afe1921768afc88314a78e32d8f1b6dcf8",
+      "sha256": "8096290a2753f9f56fa096605e57a0884b4d24d43c6fe70b0a81538856ecc2f9",
+      "size": 1959026725,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/thor/20260530/lineage-23.2-20260530-nightly-thor-signed.zip"
+    },
+    "names": [
+      "12S Ultra"
+    ],
+    "models": [
+      "2203121C"
+    ],
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_thor",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8450",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8450-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_thor",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/waipio_GKI.config",
+        "vendor/xiaomi_GKI.config",
+        "vendor/$(PRODUCT_DEVICE)_GKI.config",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8450",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "thor",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/thor/20260530/lineage-23.2-20260530-nightly-thor-signed.zip",
+    "boot_source_sha256": "8096290a2753f9f56fa096605e57a0884b4d24d43c6fe70b0a81538856ecc2f9",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8450.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/waipio_GKI.config",
+      "vendor/xiaomi_GKI.config",
+      "vendor/$(PRODUCT_DEVICE)_GKI.config",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/vayu/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/vayu.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/vayu/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779617553,
+      "filename": "lineage-22.2-20260524-nightly-vayu-signed.zip",
+      "filepath": "/full/vayu/20260524/lineage-22.2-20260524-nightly-vayu-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:335,metadata.pb:472:220                 ",
+      "sha1": "2be87b4fb0f2f07af77a657c43bfaa33b128956a",
+      "sha256": "cc4ba51d350a057e47a3be182ac9fac93e680b0b40a428ba4d41886d6dbe7e81",
+      "size": 1473364571,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/vayu/20260524/lineage-22.2-20260524-nightly-vayu-signed.zip"
+    },
+    "names": [
+      "POCO X3 Pro"
+    ],
+    "models": [
+      "M2102J20SG",
+      "M2102J20SI"
+    ],
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_vayu",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8150",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8150-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_vayu",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/sm8150-perf_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi/sm8150-common.config",
+        "vendor/xiaomi/vayu.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8150",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "vayu",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/vayu/20260524/lineage-22.2-20260524-nightly-vayu-signed.zip",
+    "boot_source_sha256": "cc4ba51d350a057e47a3be182ac9fac93e680b0b40a428ba4d41886d6dbe7e81",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8150.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/sm8150-perf_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi/sm8150-common.config",
+      "vendor/xiaomi/vayu.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/apollon/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/apollon_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/apollon_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/apollon_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/apollon/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780112273,
+      "filename": "lineage-23.2-20260530-nightly-apollon-signed.zip",
+      "filepath": "/full/apollon/20260530/lineage-23.2-20260530-nightly-apollon-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:353,metadata.pb:490:253                 ",
+      "sha1": "8f024168c24444bd965fee402d205df73ebe0427",
+      "sha256": "f56a3d73c178b54771867f24d339c517d0b90d2f73ebd7eb677cdb46c233d101",
+      "size": 1567051246,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/apollon/20260530/lineage-23.2-20260530-nightly-apollon-signed.zip"
+    },
+    "names": [
+      "Mi 10T",
+      "Redmi K30S Ultra",
+      "Mi 10T Pro"
+    ],
+    "models": [
+      "M2007J3SY",
+      "M2007J3SC",
+      "M2007J3SG"
+    ],
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_apollon",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_apollon",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi/sm8250-common.config",
+        "vendor/xiaomi/apollo.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "apollon",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/apollon/20260530/lineage-23.2-20260530-nightly-apollon-signed.zip",
+    "boot_source_sha256": "f56a3d73c178b54771867f24d339c517d0b90d2f73ebd7eb677cdb46c233d101",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi/sm8250-common.config",
+      "vendor/xiaomi/apollo.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

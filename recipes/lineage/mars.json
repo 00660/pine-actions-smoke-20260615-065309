@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/mars/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/mars.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/mars/builds",
+    "latest_official_build": null,
+    "names": [
+      "Mi 11 Pro"
+    ],
+    "models": [
+      "M2102K1AC"
+    ],
+    "architecture": "arm64",
+    "current_branch": "22.1",
+    "versions": [
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_mars",
+      "ref": "lineage-22.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8350",
+      "ref": "lineage-22.1",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8350-common",
+          "ref": "lineage-22.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_mars",
+          "ref": "lineage-22.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lahaina-qgki_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi_QGKI.config",
+        "vendor/star_QGKI.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8350",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "mars",
+    "lineage_branch": "lineage-22.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8350.git",
+    "kernel_ref": "lineage-22.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lahaina-qgki_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi_QGKI.config",
+      "vendor/star_QGKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/grus/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/grus.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/grus/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779618664,
+      "filename": "lineage-22.2-20260524-nightly-grus-signed.zip",
+      "filepath": "/full/grus/20260524/lineage-22.2-20260524-nightly-grus-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:322,metadata.pb:459:201                 ",
+      "sha1": "1c168ea0bb8b0bd9900dc058b2930ace1a4528fe",
+      "sha256": "6c3ab3d97bb471794d0b541165d6c45f4d28357cd260fbff4e3ac51b1f48c616",
+      "size": 1227590467,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/grus/20260524/lineage-22.2-20260524-nightly-grus-signed.zip"
+    },
+    "names": [
+      "Mi 9 SE"
+    ],
+    "models": [
+      "M1903F2G",
+      "M1903F2A"
+    ],
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_grus",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sdm710-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_grus",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "sdm670-perf_defconfig",
+        "xiaomi/sdm710-common.config",
+        "xiaomi/grus.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sdm710",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "grus",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/grus/20260524/lineage-22.2-20260524-nightly-grus-signed.zip",
+    "boot_source_sha256": "6c3ab3d97bb471794d0b541165d6c45f4d28357cd260fbff4e3ac51b1f48c616",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "sdm670-perf_defconfig",
+      "xiaomi/sdm710-common.config",
+      "xiaomi/grus.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

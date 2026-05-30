@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/vermeer/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/vermeer_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/vermeer_variant1.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/vermeer/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780138224,
+      "filename": "lineage-23.2-20260530-nightly-vermeer-signed.zip",
+      "filepath": "/full/vermeer/20260530/lineage-23.2-20260530-nightly-vermeer-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4955:205805,payload.bin:4955:2802045142,payload_properties.txt:2802050155:156,apex_info.pb:2317:1279,care_map.pb:3643:1265,metadata:69:693,metadata.pb:830:1439                        ",
+      "sha1": "3b5936caf55bf2c6d2b8a73d1dec83c4af50ad4a",
+      "sha256": "18414b494a6c2f036d18aae8084d2c9a8667bd276932dcfa2fbe41b6b2db5273",
+      "size": 2802053302,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/vermeer/20260530/lineage-23.2-20260530-nightly-vermeer-signed.zip"
+    },
+    "names": [
+      "Redmi K70",
+      "POCO F6 Pro"
+    ],
+    "models": [
+      "23113RKC6C",
+      "23113RKC6G"
+    ],
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_vermeer",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8550-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_vermeer",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/kalama_GKI.config",
+        "vendor/$(PRODUCT_DEVICE)_GKI.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "vermeer",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/vermeer/20260530/lineage-23.2-20260530-nightly-vermeer-signed.zip",
+    "boot_source_sha256": "18414b494a6c2f036d18aae8084d2c9a8667bd276932dcfa2fbe41b6b2db5273",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/kalama_GKI.config",
+      "vendor/$(PRODUCT_DEVICE)_GKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/garnet/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/garnet_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/garnet_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/garnet_variant4.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/garnet_variant5.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/garnet_variant1.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/garnet/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779840122,
+      "filename": "lineage-23.2-20260527-nightly-garnet-signed.zip",
+      "filepath": "/full/garnet/20260527/lineage-23.2-20260527-nightly-garnet-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4629:136795,payload.bin:4629:1614808013,payload_properties.txt:1614812700:156,apex_info.pb:2151:1279,care_map.pb:3477:1105,metadata:69:688,metadata.pb:825:1278                        ",
+      "sha1": "7fa48ba4fd5b129e0a74d3456868bd3d1eae456d",
+      "sha256": "f880d9097cef2fca6c21fc6ea2d98457a281755a264749d48e5c988302c5057a",
+      "size": 1614815847,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/garnet/20260527/lineage-23.2-20260527-nightly-garnet-signed.zip"
+    },
+    "names": [
+      "Redmi Note 13 Pro 5G (India)",
+      "Redmi Note 13 Pro 5G (China)",
+      "POCO X6 5G",
+      "POCO X6 5G (India)",
+      "Redmi Note 13 Pro 5G"
+    ],
+    "models": [
+      "2312DRA50I",
+      "2312DRA50C",
+      "2312CRAD3C",
+      "23122PCD1G",
+      "23122PCD1I",
+      "2312DRA50G",
+      "XIG05"
+    ],
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_garnet",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm7435",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_garnet",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/parrot_GKI.config",
+        "vendor/garnet_GKI.config",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm7435",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "garnet",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/garnet/20260527/lineage-23.2-20260527-nightly-garnet-signed.zip",
+    "boot_source_sha256": "f880d9097cef2fca6c21fc6ea2d98457a281755a264749d48e5c988302c5057a",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm7435.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/parrot_GKI.config",
+      "vendor/garnet_GKI.config",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

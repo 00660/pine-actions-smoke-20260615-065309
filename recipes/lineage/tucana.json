@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/tucana/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/tucana_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/tucana_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/tucana_variant3.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/tucana/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779686424,
+      "filename": "lineage-23.2-20260525-nightly-tucana-signed.zip",
+      "filepath": "/full/tucana/20260525/lineage-23.2-20260525-nightly-tucana-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:328,metadata.pb:465:209                 ",
+      "sha1": "5f62a9c7c180ca5d01518c6ed14a4b820d6364b9",
+      "sha256": "e51fece6632417726c052f7a00b322d643b30abd423a94e05cec426b9324efb9",
+      "size": 1551531792,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/tucana/20260525/lineage-23.2-20260525-nightly-tucana-signed.zip"
+    },
+    "names": [
+      "Mi Note 10 Pro",
+      "Mi Note 10",
+      "Mi CC9 Pro"
+    ],
+    "models": [
+      "M1910F4S",
+      "M1910F4G",
+      "M1910F4E"
+    ],
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_tucana",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6150",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm6150-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_tucana",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/sdmsteppe-perf_defconfig",
+        "vendor/tucana.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm6150",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "tucana",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/tucana/20260525/lineage-23.2-20260525-nightly-tucana-signed.zip",
+    "boot_source_sha256": "e51fece6632417726c052f7a00b322d643b30abd423a94e05cec426b9324efb9",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6150.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/sdmsteppe-perf_defconfig",
+      "vendor/tucana.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

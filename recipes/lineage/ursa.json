@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/ursa/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/ursa.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/ursa/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779800964,
+      "filename": "lineage-22.2-20260526-nightly-ursa-signed.zip",
+      "filepath": "/full/ursa/20260526/lineage-22.2-20260526-nightly-ursa-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:324,metadata.pb:461:203                 ",
+      "sha1": "547e17c6460cb066770ab70e63299a46ff44a310",
+      "sha256": "5c22c18b0155735cc0b0827092b1a8d2860856f7b90b8f533e875680685404ef",
+      "size": 1250870643,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/ursa/20260526/lineage-22.2-20260526-nightly-ursa-signed.zip"
+    },
+    "names": [
+      "Mi 8 Explorer Edition"
+    ],
+    "models": [],
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_ursa",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_ursa",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/xiaomi/mi845_defconfig",
+        "vendor/xiaomi/ursa.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "ursa",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/ursa/20260526/lineage-22.2-20260526-nightly-ursa-signed.zip",
+    "boot_source_sha256": "5c22c18b0155735cc0b0827092b1a8d2860856f7b90b8f533e875680685404ef",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/xiaomi/mi845_defconfig",
+      "vendor/xiaomi/ursa.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}
