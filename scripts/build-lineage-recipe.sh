@@ -33,6 +33,15 @@ if [[ "$(jq -r '.status // empty' "$RECIPE")" != "build_ready" ]]; then
 fi
 
 DEVICE="$(need '.build.device')"
+
+expand_recipe_value() {
+  local value="$1"
+  value="${value//'$(PRODUCT_DEVICE)'/$DEVICE}"
+  value="${value//\$PRODUCT_DEVICE/$DEVICE}"
+  value="${value//\$\{PRODUCT_DEVICE\}/$DEVICE}"
+  printf '%s' "$value"
+}
+
 BOOT_SOURCE_URL="$(need '.build.boot_source_url')"
 BOOT_SOURCE_SHA256="$(jq -r '.build.boot_source_sha256 // empty' "$RECIPE")"
 KERNEL_REPO="$(need '.build.kernel_repo')"
@@ -123,6 +132,9 @@ if [[ "${#KERNEL_CONFIGS[@]}" -eq 0 ]]; then
   echo "recipe has no kernel configs" >&2
   exit 1
 fi
+for i in "${!KERNEL_CONFIGS[@]}"; do
+  KERNEL_CONFIGS[$i]="$(expand_recipe_value "${KERNEL_CONFIGS[$i]}")"
+done
 BASE_DEFCONFIG=""
 FRAGMENT_CONFIGS=()
 for config in "${KERNEL_CONFIGS[@]}"; do
@@ -141,7 +153,7 @@ log "Prepare kernel config"
 make "${MAKE_ARGS[@]}" "$BASE_DEFCONFIG"
 FRAGMENTS=()
 for config in "${FRAGMENT_CONFIGS[@]}"; do
-  config="${config//'$(PRODUCT_DEVICE)'/$DEVICE}"
+  config="$(expand_recipe_value "$config")"
   FRAGMENTS+=("$SRC_DIR/arch/$ARCH/configs/$config")
 done
 FRAGMENTS+=("$ROOT_DIR/$FRAGMENT_PATH")
