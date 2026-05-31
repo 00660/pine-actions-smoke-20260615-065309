@@ -157,7 +157,12 @@ Xiaomi 全量构建 run `26696815773` 当前观察到 `beryllium`、`alioth`、`
 - `build_ready` 前几名：`xiaomi=54`、`motorola=47`、`oneplus=33`、`samsung=32`、`sony=21`、`lge=10`
 - 全厂商 `build_ready` 数量 239，低于 `build-lineage-vendors-ready.yml` 的 250 matrix 上限，可以单次触发全厂商 build；但当前先不抢 Xiaomi 全量编译资源。
 
-按用户要求准备触发“排除 Xiaomi 的全厂商 build”。`build-lineage-vendors-ready.yml` 已新增 `max_parallel` 输入，默认 3；本次排除 Xiaomi 的 run 使用 `max_parallel=1`，降低对 Xiaomi run `26696815773` 的并发挤压。排除 Xiaomi 后共有 185 个 `build_ready` recipe。
+按用户要求触发“排除 Xiaomi 的全厂商 build”。`build-lineage-vendors-ready.yml` 已新增 `max_parallel` 输入，默认 3；本次排除 Xiaomi 的 run 使用 `max_parallel=1`，降低对 Xiaomi run `26696815773` 的并发挤压。排除 Xiaomi 后共有 185 个 `build_ready` recipe。
+
+- workflow run: `https://github.com/00660/android-docker-boot-builder/actions/runs/26702623715`
+- commit: `41127b9a2de7dd5e3fa16fa3c1a9666fd0bacc16`
+- vendors: `asus,essential,fairphone,fxtec,google,lenovo,lge,motorola,nintendo,nokia,nothing,nubia,nvidia,oneplus,osom,razer,realme,samsung,shift,smartisan,sony,vsmart,xelex,zte`
+- 初始状态：prepare 成功，`ZenFone 8` 开始编译，后续构建按 `max_parallel=1` 串行推进。
 
 本次修改前备份：
 
@@ -199,3 +204,4 @@ Xiaomi 全量构建 run `26696815773` 当前观察到 `beryllium`、`alioth`、`
 - `.github/workflows/build-lineage-vendors-ready.yml.bak-20260531-115331`
 - `README.md.bak-20260531-115331`
 - `SYNC-HANDOFF.md.bak-20260531-115331`
+- `SYNC-HANDOFF.md.bak-20260531-115625`
