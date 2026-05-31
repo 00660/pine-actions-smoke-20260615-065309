@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gtowifi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gtowifi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gtowifi/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779884461,
+      "filename": "lineage-22.2-20260527-nightly-gtowifi-signed.zip",
+      "filepath": "/full/gtowifi/20260527/lineage-22.2-20260527-nightly-gtowifi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:329,metadata.pb:466:211                 ",
+      "sha1": "a6b8a1294fe651587f6721da42994c2aeb9b8e9f",
+      "sha256": "f6de344b4d22915bfe6815b28f90c5b607413986e8bf5e045317b342347217e0",
+      "size": 1029733355,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gtowifi/20260527/lineage-22.2-20260527-nightly-gtowifi-signed.zip"
+    },
+    "names": [
+      "Galaxy Tab A 8.0 (2019)"
+    ],
+    "models": [
+      "SM-T290"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_gtowifi",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sdm429",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gtowifi",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_gtowifi_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/sdm429",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "gtowifi",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gtowifi/20260527/lineage-22.2-20260527-nightly-gtowifi-signed.zip",
+    "boot_source_sha256": "f6de344b4d22915bfe6815b28f90c5b607413986e8bf5e045317b342347217e0",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sdm429.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_gtowifi_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

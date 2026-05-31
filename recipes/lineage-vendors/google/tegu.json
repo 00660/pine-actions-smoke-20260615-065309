@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/tegu/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/tegu.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/tegu/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779783403,
+      "filename": "lineage-23.2-20260526-nightly-tegu-signed.zip",
+      "filepath": "/full/tegu/20260526/lineage-23.2-20260526-nightly-tegu-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4712:138112,payload.bin:4712:1391222545,payload_properties.txt:1391227315:156,apex_info.pb:1976:1632,care_map.pb:3655:1010,metadata:69:665,metadata.pb:802:1126                        ",
+      "sha1": "f8f48aeebe93321b858df35a129586d63e60e3f1",
+      "sha256": "5e1a0449a53fe61f1e21e8ac38a80ef4e2d346f2ac49f0ad9a3fbeca5f22b996",
+      "size": 1391230462,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/tegu/20260526/lineage-23.2-20260526-nightly-tegu-signed.zip"
+    },
+    "names": [
+      "Pixel 9a"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_tegu",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "tegu",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/tegu/20260526/lineage-23.2-20260526-nightly-tegu-signed.zip",
+    "boot_source_sha256": "5e1a0449a53fe61f1e21e8ac38a80ef4e2d346f2ac49f0ad9a3fbeca5f22b996",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

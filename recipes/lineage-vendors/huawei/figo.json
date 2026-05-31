@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/figo/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/figo.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/figo/builds",
+    "latest_official_build": null,
+    "names": [
+      "P Smart"
+    ],
+    "models": [
+      "FIG-LX1",
+      "FIG-LA1",
+      "FIG-LX2",
+      "FIG-LX3",
+      "FIG-TL10",
+      "FIG-AL10"
+    ],
+    "vendor": "Huawei",
+    "vendor_short": "huawei",
+    "architecture": "arm64",
+    "current_branch": "16.0",
+    "versions": [
+      "16.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_huawei_figo",
+      "ref": "lineage-16.0",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_huawei_hi6250",
+      "ref": "lineage-16.0",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_huawei_hi6250-common",
+          "ref": "lineage-16.0",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_huawei_figo",
+          "ref": "lineage-16.0",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "merge_hi6250_defconfig"
+      ],
+      "kernel_source_path": "kernel/huawei/hi6250",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "figo",
+    "vendor": "Huawei",
+    "vendor_short": "huawei",
+    "lineage_branch": "lineage-16.0",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_huawei_hi6250.git",
+    "kernel_ref": "lineage-16.0",
+    "arch": "arm64",
+    "kernel_configs": [
+      "merge_hi6250_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

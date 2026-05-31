@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/evert/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/evert.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/evert/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779620395,
+      "filename": "lineage-22.2-20260524-nightly-evert-signed.zip",
+      "filepath": "/full/evert/20260524/lineage-22.2-20260524-nightly-evert-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2766:105401,payload.bin:2766:934030992,payload_properties.txt:934033816:155,apex_info.pb:1562:1157,metadata:69:604,metadata.pb:741:773                  ",
+      "sha1": "9e10b1181d52cf3b10abcee3f2f88380732c0347",
+      "sha256": "9b08161bd339a7f5f9ac4d285cf4882b1fa3802488b9ddb9ffaeec3735181dd3",
+      "size": 934036903,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/evert/20260524/lineage-22.2-20260524-nightly-evert-signed.zip"
+    },
+    "names": [
+      "moto g6 plus"
+    ],
+    "models": [
+      "XT1926-2",
+      "XT1926-3",
+      "XT1926-5",
+      "XT1926-6",
+      "XT1926-7",
+      "XT1926-8",
+      "XT1926-9"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_evert",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_evert",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_evert_defconfig"
+      ],
+      "kernel_source_path": "kernel/motorola/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "evert",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/evert/20260524/lineage-22.2-20260524-nightly-evert-signed.zip",
+    "boot_source_sha256": "9b08161bd339a7f5f9ac4d285cf4882b1fa3802488b9ddb9ffaeec3735181dd3",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_evert_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

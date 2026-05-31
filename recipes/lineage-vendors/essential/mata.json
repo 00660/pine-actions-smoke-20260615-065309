@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/mata/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/mata.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/mata/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780151930,
+      "filename": "lineage-22.2-20260530-nightly-mata-signed.zip",
+      "filepath": "/full/mata/20260530/lineage-22.2-20260530-nightly-mata-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2765:149711,payload.bin:2765:952409872,payload_properties.txt:952412695:155,apex_info.pb:1561:1157,metadata:69:604,metadata.pb:741:772                  ",
+      "sha1": "95a538a8876da16c7d358fa842c8c8ca8fab3904",
+      "sha256": "34d71eb291b76edeb297ab21312f1c48a8e4f5f618dd0bce96370e1459a9e89c",
+      "size": 952415782,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/mata/20260530/lineage-22.2-20260530-nightly-mata-signed.zip"
+    },
+    "names": [
+      "PH-1"
+    ],
+    "models": [],
+    "vendor": "Essential",
+    "vendor_short": "essential",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_essential_mata",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_essential_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_essential_mata",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_mata_defconfig"
+      ],
+      "kernel_source_path": "kernel/essential/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "mata",
+    "vendor": "Essential",
+    "vendor_short": "essential",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/mata/20260530/lineage-22.2-20260530-nightly-mata-signed.zip",
+    "boot_source_sha256": "34d71eb291b76edeb297ab21312f1c48a8e4f5f618dd0bce96370e1459a9e89c",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_essential_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_mata_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

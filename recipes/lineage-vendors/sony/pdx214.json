@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pdx214/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pdx214.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pdx214/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780057639,
+      "filename": "lineage-23.2-20260529-nightly-pdx214-signed.zip",
+      "filepath": "/full/pdx214/20260529/lineage-23.2-20260529-nightly-pdx214-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4609:137206,payload.bin:4609:1264537606,payload_properties.txt:1264542273:156,apex_info.pb:2144:1279,care_map.pb:3470:1092,metadata:69:687,metadata.pb:824:1272                        ",
+      "sha1": "f956be993d9edbc5a336ecd6fc4cf315143f50e7",
+      "sha256": "eaf59db77037a2260bfb187258f70b69de9792e5c9b1b3c9ae7965e1ee2c3531",
+      "size": 1264545420,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pdx214/20260529/lineage-23.2-20260529-nightly-pdx214-signed.zip"
+    },
+    "names": [
+      "Xperia 5 III"
+    ],
+    "models": [
+      "XQ-BQ72",
+      "XQ-BQ62",
+      "XQ-BQ52",
+      "XQ-BQ42"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_pdx214",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sm8350",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_sm8350-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_pdx214",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lahaina-qgki_defconfig",
+        "vendor/sagami.config",
+        "vendor/pdx214.config"
+      ],
+      "kernel_source_path": "kernel/sony/sm8350",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "pdx214",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pdx214/20260529/lineage-23.2-20260529-nightly-pdx214-signed.zip",
+    "boot_source_sha256": "eaf59db77037a2260bfb187258f70b69de9792e5c9b1b3c9ae7965e1ee2c3531",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sm8350.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lahaina-qgki_defconfig",
+      "vendor/sagami.config",
+      "vendor/pdx214.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

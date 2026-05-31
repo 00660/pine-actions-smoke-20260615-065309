@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/taimen/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/taimen.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/taimen/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779950793,
+      "filename": "lineage-22.2-20260528-nightly-taimen-signed.zip",
+      "filepath": "/full/taimen/20260528/lineage-22.2-20260528-nightly-taimen-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3347:89429,payload.bin:3347:968994848,payload_properties.txt:968998253:154,apex_info.pb:1700:1191,care_map.pb:2938:362,metadata:69:662,metadata.pb:799:853                       ",
+      "sha1": "51dd1c22206adfcd9ec7e54357c6ccdde73fe1ce",
+      "sha256": "9f595736150cc3c2880d2249aed189b6c2f62dd27e1c6dfac9f569fed3944554",
+      "size": 969001402,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/taimen/20260528/lineage-22.2-20260528-nightly-taimen-signed.zip"
+    },
+    "names": [
+      "Pixel 2 XL"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_taimen",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_wahoo",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_google_wahoo",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_google_taimen",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_taimen_defconfig"
+      ],
+      "kernel_source_path": "kernel/google/wahoo",
+      "kernel_image_name": "Image.lz4-dtb"
+    }
+  },
+  "build": {
+    "device": "taimen",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/taimen/20260528/lineage-22.2-20260528-nightly-taimen-signed.zip",
+    "boot_source_sha256": "9f595736150cc3c2880d2249aed189b6c2f62dd27e1c6dfac9f569fed3944554",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_wahoo.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_taimen_defconfig"
+    ],
+    "image_target": "Image.lz4-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

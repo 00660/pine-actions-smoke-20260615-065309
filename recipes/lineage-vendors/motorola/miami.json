@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/miami/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/miami.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/miami/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779580992,
+      "filename": "lineage-23.2-20260524-nightly-miami-signed.zip",
+      "filepath": "/full/miami/20260524/lineage-23.2-20260524-nightly-miami-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4160:133369,payload.bin:4160:1173246936,payload_properties.txt:1173251154:156,apex_info.pb:1978:1279,care_map.pb:3304:809,metadata:69:679,metadata.pb:816:1114                        ",
+      "sha1": "5ec4aa27adb9e71583a7ccdf95dd278d3d1b533a",
+      "sha256": "699d45453be3d1c6b0b377a6be12c3f94d86a58b74be2c754bcf3171c6ad2a5d",
+      "size": 1173254301,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/miami/20260524/lineage-23.2-20260524-nightly-miami-signed.zip"
+    },
+    "names": [
+      "edge 30 neo"
+    ],
+    "models": [
+      "XT2245-1"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_miami",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm6375",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm6375-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_miami",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/holi-qgki_defconfig",
+        "vendor/ext_config/lineage_moto-holi.config",
+        "vendor/ext_config/moto-holi-miami.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm6375",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "miami",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/miami/20260524/lineage-23.2-20260524-nightly-miami-signed.zip",
+    "boot_source_sha256": "699d45453be3d1c6b0b377a6be12c3f94d86a58b74be2c754bcf3171c6ad2a5d",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm6375.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/holi-qgki_defconfig",
+      "vendor/ext_config/lineage_moto-holi.config",
+      "vendor/ext_config/moto-holi-miami.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

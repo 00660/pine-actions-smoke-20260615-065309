@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/benz/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/benz.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/benz/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780114323,
+      "filename": "lineage-23.2-20260530-nightly-benz-signed.zip",
+      "filepath": "/full/benz/20260530/lineage-23.2-20260530-nightly-benz-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:5047:188587,payload.bin:5047:2276902295,payload_properties.txt:2276907400:156,apex_info.pb:2375:1279,care_map.pb:3701:1299,metadata:69:699,metadata.pb:836:1491                        ",
+      "sha1": "244e3d421160b5f837c19df0b1bdaf2450b9bda9",
+      "sha256": "88f4f021919e8a3310532ffd348cfa4ee58d9d324e157191d9f78e0127dfdc74",
+      "size": 2276910547,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/benz/20260530/lineage-23.2-20260530-nightly-benz-signed.zip"
+    },
+    "names": [
+      "Nord CE4"
+    ],
+    "models": [
+      "CPH2613"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_benz",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_benz",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/kalama_GKI.config",
+        "vendor/oplus/kalama_GKI.config",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "benz",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/benz/20260530/lineage-23.2-20260530-nightly-benz-signed.zip",
+    "boot_source_sha256": "88f4f021919e8a3310532ffd348cfa4ee58d9d324e157191d9f78e0127dfdc74",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/kalama_GKI.config",
+      "vendor/oplus/kalama_GKI.config",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

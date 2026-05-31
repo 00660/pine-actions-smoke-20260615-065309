@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/dodge/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/dodge.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/dodge/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779764538,
+      "filename": "lineage-23.2-20260526-nightly-dodge-signed.zip",
+      "filepath": "/full/dodge/20260526/lineage-23.2-20260526-nightly-dodge-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:5229:215657,payload.bin:5229:3099174517,payload_properties.txt:3099179804:156,apex_info.pb:2430:1369,care_map.pb:3846:1336,metadata:69:711,metadata.pb:848:1534                        ",
+      "sha1": "5edeb4a0ca3703f298f1bd37f01ae57db39b8a82",
+      "sha256": "ccd50daba6c42a1866dc22160d41b52854b10cba7ef9763b9c016a1c01e8cab5",
+      "size": 3099182951,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/dodge/20260526/lineage-23.2-20260526-nightly-dodge-signed.zip"
+    },
+    "names": [
+      "13"
+    ],
+    "models": [
+      "CPH2649",
+      "CPH2653",
+      "CPH2655",
+      "PJZ110"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_dodge",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8750",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "6.6"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm8750-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_dodge",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/sun_perf.config",
+        "vendor/oplus/sun_perf.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8750",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "dodge",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/dodge/20260526/lineage-23.2-20260526-nightly-dodge-signed.zip",
+    "boot_source_sha256": "ccd50daba6c42a1866dc22160d41b52854b10cba7ef9763b9c016a1c01e8cab5",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8750.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/sun_perf.config",
+      "vendor/oplus/sun_perf.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

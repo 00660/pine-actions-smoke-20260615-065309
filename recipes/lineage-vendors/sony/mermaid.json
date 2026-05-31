@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/mermaid/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/mermaid.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/mermaid/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780146926,
+      "filename": "lineage-23.2-20260530-nightly-mermaid-signed.zip",
+      "filepath": "/full/mermaid/20260530/lineage-23.2-20260530-nightly-mermaid-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:2910:107857,payload.bin:2910:913766607,payload_properties.txt:913769575:155,apex_info.pb:1584:1279,metadata:69:608,metadata.pb:745:791                  ",
+      "sha1": "bf8ea23cad294e926eb3072171c2923c19e751f0",
+      "sha256": "b8b10d4b55f150c8d26aff43da4faef9feae7f81ecf53a8e206f9249f3029633",
+      "size": 913772658,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/mermaid/20260530/lineage-23.2-20260530-nightly-mermaid-signed.zip"
+    },
+    "names": [
+      "Xperia 10 Plus"
+    ],
+    "models": [
+      "I3213",
+      "I3223",
+      "I4213",
+      "I4293"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_mermaid",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sdm660",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_nile-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_mermaid",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/sdm660-perf_defconfig",
+        "vendor/sony/common.config",
+        "vendor/sony/mermaid.config"
+      ],
+      "kernel_source_path": "kernel/sony/sdm660",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "mermaid",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/mermaid/20260530/lineage-23.2-20260530-nightly-mermaid-signed.zip",
+    "boot_source_sha256": "b8b10d4b55f150c8d26aff43da4faef9feae7f81ecf53a8e206f9249f3029633",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sdm660.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/sdm660-perf_defconfig",
+      "vendor/sony/common.config",
+      "vendor/sony/mermaid.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

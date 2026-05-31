@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/a71/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/a71.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/a71/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779866929,
+      "filename": "lineage-23.2-20260527-nightly-a71-signed.zip",
+      "filepath": "/full/a71/20260527/lineage-23.2-20260527-nightly-a71-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:321,metadata.pb:458:199                 ",
+      "sha1": "1b28079502b56c3e205de860534738563ea60f12",
+      "sha256": "4b891de4002d0dfecfcb5b33f30dbcc145d695f9684c73ec8a606f93b3865689",
+      "size": 1233117015,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/a71/20260527/lineage-23.2-20260527-nightly-a71-signed.zip"
+    },
+    "names": [
+      "Galaxy A71"
+    ],
+    "models": [
+      "SM-A715F",
+      "SM-A715F/DS",
+      "SM-A715F/DSN",
+      "SM-A715F/DSM"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_a71",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_a71",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_a71-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_a71",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "a71_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/a71",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "a71",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/a71/20260527/lineage-23.2-20260527-nightly-a71-signed.zip",
+    "boot_source_sha256": "4b891de4002d0dfecfcb5b33f30dbcc145d695f9684c73ec8a606f93b3865689",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_a71.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "a71_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

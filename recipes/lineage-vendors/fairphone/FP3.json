@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/FP3/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/FP3_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/FP3_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/FP3/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779891144,
+      "filename": "lineage-22.2-20260527-nightly-FP3-signed.zip",
+      "filepath": "/full/FP3/20260527/lineage-22.2-20260527-nightly-FP3-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3473:123142,payload.bin:3473:1019422389,payload_properties.txt:1019425920:156,apex_info.pb:1682:1157,care_map.pb:2886:540,metadata:69:661,metadata.pb:798:836                         ",
+      "sha1": "eca4f9042fdf4ff7739f232dc89232780107f249",
+      "sha256": "79e18588d97ac033d6243256bad8881cd65c5ca4f63f6cd72e9cc93bd8ab66f9",
+      "size": 1019429071,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/FP3/20260527/lineage-22.2-20260527-nightly-FP3-signed.zip"
+    },
+    "names": [
+      "3",
+      "3+"
+    ],
+    "models": [],
+    "vendor": "Fairphone",
+    "vendor_short": "fairphone",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_fairphone_FP3",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_fairphone_sdm632",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_fairphone_FP3",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_FP3_defconfig"
+      ],
+      "kernel_source_path": "kernel/fairphone/sdm632",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "FP3",
+    "vendor": "Fairphone",
+    "vendor_short": "fairphone",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/FP3/20260527/lineage-22.2-20260527-nightly-FP3-signed.zip",
+    "boot_source_sha256": "79e18588d97ac033d6243256bad8881cd65c5ca4f63f6cd72e9cc93bd8ab66f9",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_fairphone_sdm632.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_FP3_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

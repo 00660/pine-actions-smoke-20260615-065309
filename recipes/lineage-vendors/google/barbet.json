@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/barbet/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/barbet.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/barbet/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780074221,
+      "filename": "lineage-23.2-20260529-nightly-barbet-signed.zip",
+      "filepath": "/full/barbet/20260529/lineage-23.2-20260529-nightly-barbet-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4227:132284,payload.bin:4227:1261165441,payload_properties.txt:1261169726:156,apex_info.pb:1931:1425,care_map.pb:3403:777,metadata:69:672,metadata.pb:809:1074                        ",
+      "sha1": "467298bbff243b8450b61959125680e35ad869b7",
+      "sha256": "62676d003d3c06a9f0541ddfdad7f213da45bd8b43fadb46118665825ca233af",
+      "size": 1261172873,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/barbet/20260529/lineage-23.2-20260529-nightly-barbet-signed.zip"
+    },
+    "names": [
+      "Pixel 5a"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_barbet",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_redbull",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "barbet",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/barbet/20260529/lineage-23.2-20260529-nightly-barbet-signed.zip",
+    "boot_source_sha256": "62676d003d3c06a9f0541ddfdad7f213da45bd8b43fadb46118665825ca233af",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_redbull.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/akari/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/akari.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/akari/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780042225,
+      "filename": "lineage-22.2-20260529-nightly-akari-signed.zip",
+      "filepath": "/full/akari/20260529/lineage-22.2-20260529-nightly-akari-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3540:144737,payload.bin:3540:1006957928,payload_properties.txt:1006961526:156,apex_info.pb:1747:1157,care_map.pb:2951:542,metadata:69:677,metadata.pb:814:885                         ",
+      "sha1": "001c0ef3d88fbe1b23f2f584102738a683b27a7a",
+      "sha256": "d27f4b21a0c42c813df9b2b8028b4fbd29e8b6a3d7bb1df4a43fe9ac7389df82",
+      "size": 1006964677,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/akari/20260529/lineage-22.2-20260529-nightly-akari-signed.zip"
+    },
+    "names": [
+      "Xperia XZ2"
+    ],
+    "models": [
+      "H8216",
+      "H8266",
+      "H8276",
+      "H8296"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_akari",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_tama-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_akari",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "tama_akari_defconfig"
+      ],
+      "kernel_source_path": "kernel/sony/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "akari",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/akari/20260529/lineage-22.2-20260529-nightly-akari-signed.zip",
+    "boot_source_sha256": "d27f4b21a0c42c813df9b2b8028b4fbd29e8b6a3d7bb1df4a43fe9ac7389df82",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "tama_akari_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/FP4/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/FP4.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/FP4/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779856409,
+      "filename": "lineage-23.2-20260527-nightly-FP4-signed.zip",
+      "filepath": "/full/FP4/20260527/lineage-23.2-20260527-nightly-FP4-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4130:131457,payload.bin:4130:1233377606,payload_properties.txt:1233381794:156,apex_info.pb:1884:1279,care_map.pb:3210:873,metadata:69:666,metadata.pb:803:1033                        ",
+      "sha1": "4aadd7ff42c6b6ce21362dbd214e0d6de858b686",
+      "sha256": "cf55a503f26351d47097531c0f30f52fb21e47fa01efa4a0b9715078bf8126f7",
+      "size": 1233384941,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/FP4/20260527/lineage-23.2-20260527-nightly-FP4-signed.zip"
+    },
+    "names": [
+      "4"
+    ],
+    "models": [
+      "FP4"
+    ],
+    "vendor": "Fairphone",
+    "vendor_short": "fairphone",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_fairphone_FP4",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_fairphone_sm7225",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_fairphone_FP4",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lito-perf_defconfig",
+        "vendor/fairphone/FP4.config"
+      ],
+      "kernel_source_path": "kernel/fairphone/sm7225",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "FP4",
+    "vendor": "Fairphone",
+    "vendor_short": "fairphone",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/FP4/20260527/lineage-23.2-20260527-nightly-FP4-signed.zip",
+    "boot_source_sha256": "cf55a503f26351d47097531c0f30f52fb21e47fa01efa4a0b9715078bf8126f7",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_fairphone_sm7225.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lito-perf_defconfig",
+      "vendor/fairphone/FP4.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

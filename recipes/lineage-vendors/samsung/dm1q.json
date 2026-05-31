@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/dm1q/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/dm1q.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/dm1q/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779926516,
+      "filename": "lineage-23.2-20260528-nightly-dm1q-signed.zip",
+      "filepath": "/full/dm1q/20260528/lineage-23.2-20260528-nightly-dm1q-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:322,metadata.pb:459:201                 ",
+      "sha1": "cb5c70ea2c27e6c018a2f0efa8364df99db9f342",
+      "sha256": "da7e69c11f9770074992e344248e3cfbc6ea8b81e644a386f0da74c8b38ea16f",
+      "size": 1605037895,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/dm1q/20260528/lineage-23.2-20260528-nightly-dm1q-signed.zip"
+    },
+    "names": [
+      "Galaxy S23"
+    ],
+    "models": [
+      "SM-S911B",
+      "SM-S911B/DS"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_dm1q",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_sm8550-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_dm1q",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "dm1q_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "dm1q",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/dm1q/20260528/lineage-23.2-20260528-nightly-dm1q-signed.zip",
+    "boot_source_sha256": "da7e69c11f9770074992e344248e3cfbc6ea8b81e644a386f0da74c8b38ea16f",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "dm1q_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

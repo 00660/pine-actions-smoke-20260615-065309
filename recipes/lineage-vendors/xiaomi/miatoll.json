@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/miatoll/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/miatoll_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/miatoll_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/miatoll_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/miatoll_variant4.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/miatoll_variant5.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/miatoll_variant6.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/miatoll/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779685677,
+      "filename": "lineage-22.2-20260525-nightly-miatoll-signed.zip",
+      "filepath": "/full/miatoll/20260525/lineage-22.2-20260525-nightly-miatoll-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:368,metadata.pb:505:282                 ",
+      "sha1": "752aaa6d75d44d8ed035f6125588a081fdb4cd98",
+      "sha256": "84e5054b34284c5bd96b10f0501f53a3cfbb6a2a8971adb42eaac9ce334cc5ba",
+      "size": 1347130863,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/miatoll/20260525/lineage-22.2-20260525-nightly-miatoll-signed.zip"
+    },
+    "names": [
+      "POCO M2 Pro",
+      "Redmi Note 9S",
+      "Redmi Note 9 Pro (Global)",
+      "Redmi Note 9 Pro (India)",
+      "Redmi Note 9 Pro Max",
+      "Redmi Note 10 Lite"
+    ],
+    "models": [
+      "M2003J6CI",
+      "M2003J6A1G",
+      "M2003J6A1R",
+      "M2003J6B2G",
+      "M2003J6A1I",
+      "M2003J6B1I",
+      "2109106A1I"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_miatoll",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6250",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm6250-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_miatoll",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/xiaomi/miatoll_defconfig"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm6250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "miatoll",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/miatoll/20260525/lineage-22.2-20260525-nightly-miatoll-signed.zip",
+    "boot_source_sha256": "84e5054b34284c5bd96b10f0501f53a3cfbb6a2a8971adb42eaac9ce334cc5ba",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6250.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/xiaomi/miatoll_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

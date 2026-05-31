@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pdx237/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pdx237.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pdx237/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779855670,
+      "filename": "lineage-23.2-20260527-nightly-pdx237-signed.zip",
+      "filepath": "/full/pdx237/20260527/lineage-23.2-20260527-nightly-pdx237-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4860:150546,payload.bin:4860:1637180547,payload_properties.txt:1637185465:156,apex_info.pb:2275:1279,care_map.pb:3601:1212,metadata:69:693,metadata.pb:830:1397                        ",
+      "sha1": "936abded3461ce89d803069fd48420d9d556a32b",
+      "sha256": "1e10d586f9adbd3a8dea9c225a13c82829672ee6432b932fce38fdc0f11954fb",
+      "size": 1637188612,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pdx237/20260527/lineage-23.2-20260527-nightly-pdx237-signed.zip"
+    },
+    "names": [
+      "Xperia 5 V"
+    ],
+    "models": [
+      "XQ-DE44",
+      "XQ-DE54",
+      "XQ-DE72"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_pdx237",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_sm8550-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_pdx237",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/kalama_GKI.config",
+        "vendor/sony/kalama_GKI.config",
+        "vendor/debugfs.config",
+        "vendor/sony/pdx237.config"
+      ],
+      "kernel_source_path": "kernel/sony/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "pdx237",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pdx237/20260527/lineage-23.2-20260527-nightly-pdx237-signed.zip",
+    "boot_source_sha256": "1e10d586f9adbd3a8dea9c225a13c82829672ee6432b932fce38fdc0f11954fb",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/kalama_GKI.config",
+      "vendor/sony/kalama_GKI.config",
+      "vendor/debugfs.config",
+      "vendor/sony/pdx237.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

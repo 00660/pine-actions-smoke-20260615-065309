@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/discovery/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/discovery.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/discovery/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779950606,
+      "filename": "lineage-23.2-20260528-nightly-discovery-signed.zip",
+      "filepath": "/full/discovery/20260528/lineage-23.2-20260528-nightly-discovery-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:2917:107857,payload.bin:2917:913734630,payload_properties.txt:913737605:155,apex_info.pb:1591:1279,metadata:69:609,metadata.pb:746:797                  ",
+      "sha1": "29a6100c2ed2d0b465d6c5b6b88604ade709c79d",
+      "sha256": "57c1f156b34017c88d97df7a1a7ef26eede96324a9f0bb001411d65d883b67ed",
+      "size": 913740688,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/discovery/20260528/lineage-23.2-20260528-nightly-discovery-signed.zip"
+    },
+    "names": [
+      "Xperia XA2 Ultra"
+    ],
+    "models": [
+      "H3213",
+      "H4213",
+      "H4233",
+      "H3223"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0",
+      "15.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_discovery",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sdm660",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_nile-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_discovery",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/sdm660-perf_defconfig",
+        "vendor/sony/common.config",
+        "vendor/sony/discovery.config"
+      ],
+      "kernel_source_path": "kernel/sony/sdm660",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "discovery",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/discovery/20260528/lineage-23.2-20260528-nightly-discovery-signed.zip",
+    "boot_source_sha256": "57c1f156b34017c88d97df7a1a7ef26eede96324a9f0bb001411d65d883b67ed",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sdm660.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/sdm660-perf_defconfig",
+      "vendor/sony/common.config",
+      "vendor/sony/discovery.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

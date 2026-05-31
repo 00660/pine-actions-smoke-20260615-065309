@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/luigi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/luigi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/luigi/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780124165,
+      "filename": "lineage-23.2-20260530-nightly-luigi-signed.zip",
+      "filepath": "/full/luigi/20260530/lineage-23.2-20260530-nightly-luigi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4705:167555,payload.bin:4705:1761395691,payload_properties.txt:1761400454:156,apex_info.pb:2201:1279,care_map.pb:3527:1131,metadata:69:694,metadata.pb:831:1322                        ",
+      "sha1": "c64c79b0d4b5e96184eee527742f02a604a46fd3",
+      "sha256": "0451cba951aaf6c61685f850b577fe3c7aac455ed81d4d0ad1009d1840ca8ca0",
+      "size": 1761403601,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/luigi/20260530/lineage-23.2-20260530-nightly-luigi-signed.zip"
+    },
+    "names": [
+      "10 Pro 5G"
+    ],
+    "models": [
+      "RMX3660",
+      "RMX3661"
+    ],
+    "vendor": "Realme",
+    "vendor_short": "realme",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_realme_luigi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_realme_sm6375",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_realme_sm6375-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_realme_luigi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/holi-qgki_defconfig",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/realme/sm6375",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "luigi",
+    "vendor": "Realme",
+    "vendor_short": "realme",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/luigi/20260530/lineage-23.2-20260530-nightly-luigi-signed.zip",
+    "boot_source_sha256": "0451cba951aaf6c61685f850b577fe3c7aac455ed81d4d0ad1009d1840ca8ca0",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_realme_sm6375.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/holi-qgki_defconfig",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

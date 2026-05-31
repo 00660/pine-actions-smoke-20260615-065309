@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/lake/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/lake.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/lake/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779956319,
+      "filename": "lineage-22.2-20260528-nightly-lake-signed.zip",
+      "filepath": "/full/lake/20260528/lineage-22.2-20260528-nightly-lake-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2836:107178,payload.bin:2836:909489930,payload_properties.txt:909492824:155,apex_info.pb:1632:1157,metadata:69:621,metadata.pb:758:826                  ",
+      "sha1": "845a33aae169bb89f1ce9659206b53458dce56df",
+      "sha256": "15fe4f659e2976a57f42fb7370bcec3f774577dd840bca216a2aa069178c20bc",
+      "size": 909495911,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/lake/20260528/lineage-22.2-20260528-nightly-lake-signed.zip"
+    },
+    "names": [
+      "moto g7 plus"
+    ],
+    "models": [
+      "XT1965-2",
+      "XT1965-3",
+      "XT1965-6",
+      "XT1965-T"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_lake",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_lake",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_lake_defconfig"
+      ],
+      "kernel_source_path": "kernel/motorola/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "lake",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/lake/20260528/lineage-22.2-20260528-nightly-lake-signed.zip",
+    "boot_source_sha256": "15fe4f659e2976a57f42fb7370bcec3f774577dd840bca216a2aa069178c20bc",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_lake_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

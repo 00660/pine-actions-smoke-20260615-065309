@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/larry/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/larry_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/larry_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/larry/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780114514,
+      "filename": "lineage-23.2-20260530-nightly-larry-signed.zip",
+      "filepath": "/full/larry/20260530/lineage-23.2-20260530-nightly-larry-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4719:163329,payload.bin:4719:1652041770,payload_properties.txt:1652046547:156,apex_info.pb:2209:1279,care_map.pb:3535:1137,metadata:69:695,metadata.pb:832:1329                        ",
+      "sha1": "36ec27fc6410437bdacfe28afcc2a516125ff073",
+      "sha256": "c6b7a94943229afb56d15dd97b21e35b4209fc68ebe9def1383b203c849b3941",
+      "size": 1652049694,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/larry/20260530/lineage-23.2-20260530-nightly-larry-signed.zip"
+    },
+    "names": [
+      "Nord CE 3 Lite 5G",
+      "Nord N30 5G"
+    ],
+    "models": [
+      "CPH2467",
+      "CPH2465",
+      "CPH2513"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_larry",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm6375",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm6375-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_larry",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/holi-qgki_defconfig",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm6375",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "larry",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/larry/20260530/lineage-23.2-20260530-nightly-larry-signed.zip",
+    "boot_source_sha256": "c6b7a94943229afb56d15dd97b21e35b4209fc68ebe9def1383b203c849b3941",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm6375.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/holi-qgki_defconfig",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

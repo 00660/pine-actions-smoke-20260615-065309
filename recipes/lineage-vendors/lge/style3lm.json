@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/style3lm/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/style3lm.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/style3lm/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780143447,
+      "filename": "lineage-22.2-20260530-nightly-style3lm-signed.zip",
+      "filepath": "/full/style3lm/20260530/lineage-22.2-20260530-nightly-style3lm-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3673:140666,payload.bin:3673:1061709863,payload_properties.txt:1061713594:156,apex_info.pb:1773:1157,care_map.pb:2977:649,metadata:69:681,metadata.pb:818:907                         ",
+      "sha1": "b656e103d0e373ad63515185479cb495e1f0e60a",
+      "sha256": "6208351d277737a6518cbf571d7b13d6a5caa9485475f08d4b785cc0d6b9fe64",
+      "size": 1061716745,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/style3lm/20260530/lineage-22.2-20260530-nightly-style3lm-signed.zip"
+    },
+    "names": [
+      "Style3"
+    ],
+    "models": [
+      "L-41A"
+    ],
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lge_style3lm",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lge_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigDynamic.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_style3lm",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_style3lm_defconfig"
+      ],
+      "kernel_source_path": "kernel/lge/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "style3lm",
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/style3lm/20260530/lineage-22.2-20260530-nightly-style3lm-signed.zip",
+    "boot_source_sha256": "6208351d277737a6518cbf571d7b13d6a5caa9485475f08d4b785cc0d6b9fe64",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lge_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_style3lm_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

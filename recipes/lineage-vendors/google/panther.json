@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/panther/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/panther.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/panther/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780031693,
+      "filename": "lineage-23.2-20260529-nightly-panther-signed.zip",
+      "filepath": "/full/panther/20260529/lineage-23.2-20260529-nightly-panther-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4807:142460,payload.bin:4807:1431819840,payload_properties.txt:1431824705:156,apex_info.pb:2048:1602,care_map.pb:3697:1063,metadata:69:674,metadata.pb:811:1189                        ",
+      "sha1": "f3e69784acca3f4b983efa528d0176d34046b6b2",
+      "sha256": "7f91415218ba7e7e77e9eb4ced2d2d0dc5b25362a2ebe4bb9631b8982af56184",
+      "size": 1431827852,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/panther/20260529/lineage-23.2-20260529-nightly-panther-signed.zip"
+    },
+    "names": [
+      "Pixel 7"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_panther",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "panther",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/panther/20260529/lineage-23.2-20260529-nightly-panther-signed.zip",
+    "boot_source_sha256": "7f91415218ba7e7e77e9eb4ced2d2d0dc5b25362a2ebe4bb9631b8982af56184",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

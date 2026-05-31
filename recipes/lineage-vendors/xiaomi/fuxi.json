@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/fuxi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/fuxi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/fuxi/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779688873,
+      "filename": "lineage-23.2-20260525-nightly-fuxi-signed.zip",
+      "filepath": "/full/fuxi/20260525/lineage-23.2-20260525-nightly-fuxi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4715:184300,payload.bin:4715:2172984684,payload_properties.txt:2172989457:156,apex_info.pb:2170:1279,care_map.pb:3496:1172,metadata:69:677,metadata.pb:814:1308                        ",
+      "sha1": "bde1c6142e0843feaea5b23957efce4d7ebe7023",
+      "sha256": "abee415e471adf22eb62d9b7680d1a9d684f5c369ee2c7f96a3b678abc161d76",
+      "size": 2172992604,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/fuxi/20260525/lineage-23.2-20260525-nightly-fuxi-signed.zip"
+    },
+    "names": [
+      "13"
+    ],
+    "models": [
+      "2211133G",
+      "2211133C"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_fuxi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8550-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_fuxi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/kalama_GKI.config",
+        "vendor/$(PRODUCT_DEVICE)_GKI.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "fuxi",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/fuxi/20260525/lineage-23.2-20260525-nightly-fuxi-signed.zip",
+    "boot_source_sha256": "abee415e471adf22eb62d9b7680d1a9d684f5c369ee2c7f96a3b678abc161d76",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/kalama_GKI.config",
+      "vendor/$(PRODUCT_DEVICE)_GKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

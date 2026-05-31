@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gta4lwifi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gta4lwifi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gta4lwifi/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779763276,
+      "filename": "lineage-23.2-20260526-nightly-gta4lwifi-signed.zip",
+      "filepath": "/full/gta4lwifi/20260526/lineage-23.2-20260526-nightly-gta4lwifi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:336,metadata.pb:473:220                 ",
+      "sha1": "32886f2c915fa335e29eadb8358ed5636ce17cf9",
+      "sha256": "40c29ebc38f0b9997d4b3ff2f78cbcf2da7460c120b9859d23d21dd1e71656e1",
+      "size": 1158432998,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gta4lwifi/20260526/lineage-23.2-20260526-nightly-gta4lwifi-signed.zip"
+    },
+    "names": [
+      "Galaxy Tab A7 10.4 2020 (Wi-Fi)"
+    ],
+    "models": [
+      "SM-T500"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_gta4lwifi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sm6115",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4l-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4lwifi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/bengal-perf_defconfig",
+        "vendor/gta4l-common.config"
+      ],
+      "kernel_source_path": "kernel/samsung/sm6115",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "gta4lwifi",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gta4lwifi/20260526/lineage-23.2-20260526-nightly-gta4lwifi-signed.zip",
+    "boot_source_sha256": "40c29ebc38f0b9997d4b3ff2f78cbcf2da7460c120b9859d23d21dd1e71656e1",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sm6115.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/bengal-perf_defconfig",
+      "vendor/gta4l-common.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

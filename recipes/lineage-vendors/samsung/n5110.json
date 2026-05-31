@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No shared LineageOS branch found for device tree and kernel repo.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/n5110/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/n5110.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/n5110/builds",
+    "latest_official_build": null,
+    "names": [
+      "Galaxy Note 8.0 (Wi-Fi)"
+    ],
+    "models": [],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm",
+    "current_branch": "14.1",
+    "versions": [
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_n5110",
+      "ref": "",
+      "validation": "missing"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_smdk4412",
+      "ref": "",
+      "validation": "not_checked",
+      "version": "3.0"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "n5110",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_smdk4412.git",
+    "kernel_ref": "",
+    "arch": "arm",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

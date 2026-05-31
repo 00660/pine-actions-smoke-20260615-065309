@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/sagit/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/sagit.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/sagit/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780058777,
+      "filename": "lineage-22.2-20260529-nightly-sagit-signed.zip",
+      "filepath": "/full/sagit/20260529/lineage-22.2-20260529-nightly-sagit-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:327,metadata.pb:464:207                 ",
+      "sha1": "3389a490ca4d357d1f26f5062af36ede4f029db7",
+      "sha256": "931a6c2b3c0d5a1131f5afee1bb64e1b12b29fe14fd8c4bf0d0f3378c1be6bac",
+      "size": 1037718400,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/sagit/20260529/lineage-22.2-20260529-nightly-sagit-signed.zip"
+    },
+    "names": [
+      "Mi 6"
+    ],
+    "models": [],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0",
+      "15.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_sagit",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sagit",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "sagit_defconfig"
+      ],
+      "kernel_source_path": "kernel/xiaomi/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "sagit",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/sagit/20260529/lineage-22.2-20260529-nightly-sagit-signed.zip",
+    "boot_source_sha256": "931a6c2b3c0d5a1131f5afee1bb64e1b12b29fe14fd8c4bf0d0f3378c1be6bac",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "sagit_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

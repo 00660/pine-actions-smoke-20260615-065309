@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/Amber/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Amber.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/Amber/builds",
+    "latest_official_build": null,
+    "names": [
+      "Phone"
+    ],
+    "models": [],
+    "vendor": "Yandex",
+    "vendor_short": "yandex",
+    "architecture": "arm64",
+    "current_branch": "17.1",
+    "versions": [
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_yandex_Amber",
+      "ref": "lineage-17.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_yandex_sdm660",
+      "ref": "lineage-17.1",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_yandex_Amber",
+          "ref": "lineage-17.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_Amber_defconfig"
+      ],
+      "kernel_source_path": "kernel/yandex/sdm660",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "Amber",
+    "vendor": "Yandex",
+    "vendor_short": "yandex",
+    "lineage_branch": "lineage-17.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_yandex_sdm660.git",
+    "kernel_ref": "lineage-17.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_Amber_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

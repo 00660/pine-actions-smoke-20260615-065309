@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/cmi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/cmi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/cmi/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780053635,
+      "filename": "lineage-23.2-20260529-nightly-cmi-signed.zip",
+      "filepath": "/full/cmi/20260529/lineage-23.2-20260529-nightly-cmi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:327,metadata.pb:464:205                 ",
+      "sha1": "a19a4f10fd2616728e928b7cc18a9470895dcf8f",
+      "sha256": "867bceed44d74b7dc9338667b4c9ebc3574b5d35bed51ee9b241b817f2b229a2",
+      "size": 1575746468,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/cmi/20260529/lineage-23.2-20260529-nightly-cmi-signed.zip"
+    },
+    "names": [
+      "Mi 10 Pro"
+    ],
+    "models": [
+      "M2001J1G"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_cmi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_cmi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi/sm8250-common.config",
+        "vendor/xiaomi/cmi.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "cmi",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/cmi/20260529/lineage-23.2-20260529-nightly-cmi-signed.zip",
+    "boot_source_sha256": "867bceed44d74b7dc9338667b4c9ebc3574b5d35bed51ee9b241b817f2b229a2",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi/sm8250-common.config",
+      "vendor/xiaomi/cmi.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

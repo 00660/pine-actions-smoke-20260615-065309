@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/channel/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/channel.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/channel/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779861790,
+      "filename": "lineage-22.2-20260527-nightly-channel-signed.zip",
+      "filepath": "/full/channel/20260527/lineage-22.2-20260527-nightly-channel-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2891:74019,payload.bin:2891:924123195,payload_properties.txt:924126144:154,apex_info.pb:1687:1157,metadata:69:628,metadata.pb:765:874                  ",
+      "sha1": "4ea930ce4a488cc9c54bc55b8248925c2346c431",
+      "sha256": "29baf508afe89f1e06ffffc0f34d67625b1557fd59f984e9a649fc5cc234bcb9",
+      "size": 924129230,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/channel/20260527/lineage-22.2-20260527-nightly-channel-signed.zip"
+    },
+    "names": [
+      "moto g7 play"
+    ],
+    "models": [
+      "XT1952-1",
+      "XT1952-2",
+      "XT1952-3"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_channel",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sdm632",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sdm632-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_channel",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "channel_defconfig"
+      ],
+      "kernel_source_path": "kernel/motorola/sdm632",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "channel",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/channel/20260527/lineage-22.2-20260527-nightly-channel-signed.zip",
+    "boot_source_sha256": "29baf508afe89f1e06ffffc0f34d67625b1557fd59f984e9a649fc5cc234bcb9",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sdm632.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "channel_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

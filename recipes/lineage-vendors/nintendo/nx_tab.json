@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx_tab/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx_tab_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx_tab_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx_tab_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx_tab_variant4.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nx_tab/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779604609,
+      "filename": "lineage-22.2-20260524-nightly-nx_tab-signed.zip",
+      "filepath": "/full/nx_tab/20260524/lineage-22.2-20260524-nightly-nx_tab-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:323,metadata.pb:460:207                 ",
+      "sha1": "86ebbdd6dcf2376d115478af1976ddb1c3624cbd",
+      "sha256": "b3c3a34cfea3128bebf587301d6b84f4f9da475ccdcb89598b03f7b642428e42",
+      "size": 948487371,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nx_tab/20260524/lineage-22.2-20260524-nightly-nx_tab-signed.zip"
+    },
+    "names": [
+      "Switch v1 [Tablet]",
+      "Switch v2 [Tablet]",
+      "Switch Lite [Tablet]",
+      "Switch OLED [Tablet]"
+    ],
+    "models": [
+      "v1 (odin)",
+      "v2 (modin)",
+      "Lite (vali)",
+      "OLED (fric)"
+    ],
+    "vendor": "Nintendo",
+    "vendor_short": "nintendo",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nintendo_nx_tab",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel-nx",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nintendo_nx",
+          "ref": "lineage-22.2",
+          "file": "modules.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_sepolicy",
+          "ref": "lineage-22.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_tegra-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigTegra.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_t210-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nintendo_nx",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nintendo_nx_tab",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "tegra_android_defconfig"
+      ],
+      "kernel_source_path": "kernel/nvidia/kernel-$(TARGET_KERNEL_VERSION)-nx",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "nx_tab",
+    "vendor": "Nintendo",
+    "vendor_short": "nintendo",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nx_tab/20260524/lineage-22.2-20260524-nightly-nx_tab-signed.zip",
+    "boot_source_sha256": "b3c3a34cfea3128bebf587301d6b84f4f9da475ccdcb89598b03f7b642428e42",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel-nx.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "tegra_android_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

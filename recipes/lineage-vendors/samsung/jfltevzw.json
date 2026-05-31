@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/jfltevzw/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/jfltevzw.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/jfltevzw/builds",
+    "latest_official_build": null,
+    "names": [
+      "Galaxy S4 (SCH-I545)"
+    ],
+    "models": [
+      "SCH-I545"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm",
+    "current_branch": "18.1",
+    "versions": [
+      "18.1",
+      "17.1",
+      "16.0",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_jfltevzw",
+      "ref": "lineage-18.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_jf",
+      "ref": "lineage-18.1",
+      "validation": "full_source",
+      "version": "3.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_qcom-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_jf-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_jfltevzw",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_jf_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/jf",
+      "kernel_image_name": "zImage"
+    }
+  },
+  "build": {
+    "device": "jfltevzw",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-18.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_jf.git",
+    "kernel_ref": "lineage-18.1",
+    "arch": "arm",
+    "kernel_configs": [
+      "lineageos_jf_defconfig"
+    ],
+    "image_target": "zImage",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

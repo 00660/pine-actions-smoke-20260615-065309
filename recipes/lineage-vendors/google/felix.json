@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/felix/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/felix.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/felix/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779956080,
+      "filename": "lineage-23.2-20260528-nightly-felix-signed.zip",
+      "filepath": "/full/felix/20260528/lineage-23.2-20260528-nightly-felix-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4734:142449,payload.bin:4734:1422067070,payload_properties.txt:1422071862:156,apex_info.pb:2000:1602,care_map.pb:3649:1038,metadata:69:668,metadata.pb:805:1147                        ",
+      "sha1": "a8bc76450a6937c5d21d4544da6e3116f1e83369",
+      "sha256": "58d743fb3ee741622df2102872aa62936bb37a6602b304818f728bfb6f16d0c2",
+      "size": 1422075009,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/felix/20260528/lineage-23.2-20260528-nightly-felix-signed.zip"
+    },
+    "names": [
+      "Pixel Fold"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_felix",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "felix",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/felix/20260528/lineage-23.2-20260528-nightly-felix-signed.zip",
+    "boot_source_sha256": "58d743fb3ee741622df2102872aa62936bb37a6602b304818f728bfb6f16d0c2",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

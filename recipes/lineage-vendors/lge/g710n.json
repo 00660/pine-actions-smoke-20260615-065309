@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/g710n/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/g710n.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/g710n/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779783681,
+      "filename": "lineage-22.2-20260526-nightly-g710n-signed.zip",
+      "filepath": "/full/g710n/20260526/lineage-22.2-20260526-nightly-g710n-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3583:158301,payload.bin:3583:994655014,payload_properties.txt:994658655:155,apex_info.pb:1741:1157,care_map.pb:2945:591,metadata:69:671,metadata.pb:808:885                       ",
+      "sha1": "80fb50dded0f067e6ce12103c5c4019e6e907d11",
+      "sha256": "cb8de13156f5639b5ff9e926abcba7ad856c292f68a77376e86d52eea5114a7e",
+      "size": 994661805,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/g710n/20260526/lineage-22.2-20260526-nightly-g710n-signed.zip"
+    },
+    "names": [
+      "G7 ThinQ (G710N)"
+    ],
+    "models": [
+      "LM-G710N"
+    ],
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lge_g710n",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lge_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigJudy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_judyln-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_g710n",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_judyln_defconfig"
+      ],
+      "kernel_source_path": "kernel/lge/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "g710n",
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/g710n/20260526/lineage-22.2-20260526-nightly-g710n-signed.zip",
+    "boot_source_sha256": "cb8de13156f5639b5ff9e926abcba7ad856c292f68a77376e86d52eea5114a7e",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lge_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_judyln_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

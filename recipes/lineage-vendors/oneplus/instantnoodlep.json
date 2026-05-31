@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/instantnoodlep/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/instantnoodlep.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/instantnoodlep/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780042198,
+      "filename": "lineage-23.2-20260529-nightly-instantnoodlep-signed.zip",
+      "filepath": "/full/instantnoodlep/20260529/lineage-23.2-20260529-nightly-instantnoodlep-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4450:148521,payload.bin:4450:1429047316,payload_properties.txt:1429051824:156,apex_info.pb:2095:1279,care_map.pb:3421:982,metadata:69:695,metadata.pb:832:1215                        ",
+      "sha1": "0cd3b66c3a945c080eae31b8caba5729e46e57c4",
+      "sha256": "720db2ed1822ea2c2e7ea78906ee95c920378d3c068bef89c73b8dc65c129d94",
+      "size": 1429054971,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/instantnoodlep/20260529/lineage-23.2-20260529-nightly-instantnoodlep-signed.zip"
+    },
+    "names": [
+      "8 Pro"
+    ],
+    "models": [
+      "IN2020",
+      "IN2021",
+      "IN2023",
+      "IN2025"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_instantnoodlep",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_instantnoodlep",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/oplus.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "instantnoodlep",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/instantnoodlep/20260529/lineage-23.2-20260529-nightly-instantnoodlep-signed.zip",
+    "boot_source_sha256": "720db2ed1822ea2c2e7ea78906ee95c920378d3c068bef89c73b8dc65c129d94",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/oplus.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

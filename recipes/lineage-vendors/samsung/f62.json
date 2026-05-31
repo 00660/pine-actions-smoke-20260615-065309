@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/f62/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/f62_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/f62_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/f62/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780061247,
+      "filename": "lineage-23.2-20260529-nightly-f62-signed.zip",
+      "filepath": "/full/f62/20260529/lineage-23.2-20260529-nightly-f62-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:326,metadata.pb:463:204                 ",
+      "sha1": "f63705d80428a531134b8cb46f9f7cf85e663580",
+      "sha256": "d48e34cde88ce99e98801b3644f56ce6e6046e89808acd4a857ba9dabeb35959",
+      "size": 1178195179,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/f62/20260529/lineage-23.2-20260529-nightly-f62-signed.zip"
+    },
+    "names": [
+      "Galaxy F62",
+      "Galaxy M62"
+    ],
+    "models": [
+      "SM-E625F",
+      "SM-E625F/DS",
+      "SM-M625F",
+      "SM-M625F/DS"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_f62",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_exynos9820",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_exynos9820-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig9825-r.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_f62",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9820-f62_defconfig"
+      ],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "f62",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/f62/20260529/lineage-23.2-20260529-nightly-f62-signed.zip",
+    "boot_source_sha256": "d48e34cde88ce99e98801b3644f56ce6e6046e89808acd4a857ba9dabeb35959",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_exynos9820.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9820-f62_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

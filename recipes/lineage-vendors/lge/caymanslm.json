@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/caymanslm/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/caymanslm.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/caymanslm/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779872057,
+      "filename": "lineage-22.2-20260527-nightly-caymanslm-signed.zip",
+      "filepath": "/full/caymanslm/20260527/lineage-22.2-20260527-nightly-caymanslm-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3647:129668,payload.bin:3647:995997519,payload_properties.txt:996001224:155,apex_info.pb:1753:1157,care_map.pb:2957:643,metadata:69:672,metadata.pb:809:896                       ",
+      "sha1": "02901479fe565da5a11df5c25da6d52fd3ca2089",
+      "sha256": "f1e4d16a193a38d26693276b478ec611027969512118f8fb5d1352e8da606ef0",
+      "size": 996004374,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/caymanslm/20260527/lineage-22.2-20260527-nightly-caymanslm-signed.zip"
+    },
+    "names": [
+      "Velvet"
+    ],
+    "models": [
+      "LM-G910EMW",
+      "LM-G910HM",
+      "LM-G910HMW"
+    ],
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lge_caymanslm",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lge_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigDynamic.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_caymanslm",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_caymanslm_defconfig"
+      ],
+      "kernel_source_path": "kernel/lge/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "caymanslm",
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/caymanslm/20260527/lineage-22.2-20260527-nightly-caymanslm-signed.zip",
+    "boot_source_sha256": "f1e4d16a193a38d26693276b478ec611027969512118f8fb5d1352e8da606ef0",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lge_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_caymanslm_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

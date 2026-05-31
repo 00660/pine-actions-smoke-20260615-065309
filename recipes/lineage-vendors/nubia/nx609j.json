@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx609j/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx609j.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nx609j/builds",
+    "latest_official_build": null,
+    "names": [
+      "Red Magic"
+    ],
+    "models": [
+      "NX609J"
+    ],
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "architecture": "arm64",
+    "current_branch": "21",
+    "versions": [
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nubia_nx609j",
+      "ref": "lineage-21",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nubia_msm8998",
+      "ref": "lineage-21",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_msm8998-common",
+          "ref": "lineage-21",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_nx609j",
+          "ref": "lineage-21",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_nx609j_defconfig"
+      ],
+      "kernel_source_path": "kernel/nubia/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "nx609j",
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "lineage_branch": "lineage-21",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nubia_msm8998.git",
+    "kernel_ref": "lineage-21",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_nx609j_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

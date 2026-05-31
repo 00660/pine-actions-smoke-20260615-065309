@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/earth/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/earth_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/earth_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/earth_variant3.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/earth/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779591144,
+      "filename": "lineage-23.2-20260524-nightly-earth-signed.zip",
+      "filepath": "/full/earth/20260524/lineage-23.2-20260524-nightly-earth-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4233:105628,payload.bin:4233:1049872441,payload_properties.txt:1049876732:156,apex_info.pb:2006:1310,care_map.pb:3363:823,metadata:69:683,metadata.pb:820:1138                        ",
+      "sha1": "82f037feab5af0ab17ee41149add38fdafbbbb72",
+      "sha256": "a3812524264f527a1fbdca8fbf04495716fa5f9f6f2d66f45854b9254c342b09",
+      "size": 1049879879,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/earth/20260524/lineage-23.2-20260524-nightly-earth-signed.zip"
+    },
+    "names": [
+      "Redmi 12C",
+      "Redmi 12C NFC",
+      "POCO C55"
+    ],
+    "models": [],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_earth",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_earth",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr",
+          "ref": "lineage-23.2",
+          "file": "SEPolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_earth",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "earth_defconfig"
+      ],
+      "kernel_source_path": "kernel/xiaomi/earth",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "earth",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/earth/20260524/lineage-23.2-20260524-nightly-earth-signed.zip",
+    "boot_source_sha256": "a3812524264f527a1fbdca8fbf04495716fa5f9f6f2d66f45854b9254c342b09",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_earth.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "earth_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

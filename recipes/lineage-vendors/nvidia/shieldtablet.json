@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/shieldtablet/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/shieldtablet.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/shieldtablet/builds",
+    "latest_official_build": null,
+    "names": [
+      "Shield Tablet"
+    ],
+    "models": [],
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "architecture": "arm",
+    "current_branch": "15.1",
+    "versions": [
+      "15.1",
+      "14.1",
+      "13.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nvidia_shieldtablet",
+      "ref": "lineage-15.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_shield",
+      "ref": "lineage-15.1",
+      "validation": "full_source",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_shield-common",
+          "ref": "lineage-15.1",
+          "file": "twrp.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_shield-common",
+          "ref": "lineage-15.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_shieldtablet",
+          "ref": "lineage-15.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_shieldtablet_defconfig"
+      ],
+      "kernel_source_path": "kernel/nvidia/shield",
+      "kernel_image_name": "zImage"
+    }
+  },
+  "build": {
+    "device": "shieldtablet",
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "lineage_branch": "lineage-15.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_shield.git",
+    "kernel_ref": "lineage-15.1",
+    "arch": "arm",
+    "kernel_configs": [
+      "lineageos_shieldtablet_defconfig"
+    ],
+    "image_target": "zImage",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

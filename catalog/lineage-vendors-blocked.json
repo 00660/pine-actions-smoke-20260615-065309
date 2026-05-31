@@ -1,0 +1,4047 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-31T00:54:12.067Z",
+    "source_policy": "Only official LineageOS device metadata, official LineageOS GitHub repos, and official LineageOS download API are used.",
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_github_url": "https://github.com/LineageOS",
+    "supported_architectures": [
+      "arm64"
+    ],
+    "vendor_filters": [
+      "*"
+    ],
+    "recipe_layout": "vendor",
+    "vendor_count": 43
+  },
+  "blocked": [
+    {
+      "device": "G",
+      "vendor_short": "10or",
+      "names": [
+        "G"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "peach",
+      "vendor_short": "ark",
+      "names": [
+        "Benefit A3"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "deadpool",
+      "vendor_short": "askey",
+      "names": [
+        "ADT-3"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "deadpool",
+      "vendor_short": "askey",
+      "names": [
+        "ADT-3"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "dopinder",
+      "vendor_short": "askey",
+      "names": [
+        "onn. TV Box 4K (2021)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "wade",
+      "vendor_short": "askey",
+      "names": [
+        "TV Box 4K (2021)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "deb",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 2013 (LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "deb",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 2013 (LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "debx",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 2013 (LTE, Repartitioned)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "debx",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 2013 (LTE, Repartitioned)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flo",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 (Wi-Fi, 2013 version)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flo",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 (Wi-Fi, 2013 version)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flox",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 2013 (Wi-Fi, Repartitioned)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flox",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus 7 2013 (Wi-Fi, Repartitioned)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "fugu",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus Player"
+      ],
+      "reasons": [
+        "Device architecture is x86_64-x86; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "fugu",
+      "vendor_short": "asus",
+      "names": [
+        "Nexus Player"
+      ],
+      "reasons": [
+        "Device architecture is x86_64-x86; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "I001D",
+      "vendor_short": "asus",
+      "names": [
+        "ROG Phone 2 (ZS660KL)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "I01WD",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone 6 (ZS630KL)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "obiwan",
+      "vendor_short": "asus",
+      "names": [
+        "ROG Phone 3"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "P024",
+      "vendor_short": "asus",
+      "names": [
+        "ZenPad 8.0 (Z380KL)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "X00P",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone Max M1"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "X00TD",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone Max Pro M1"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "X01AD",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone Max M2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "X01BD",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone Max Pro M2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Z008",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone 2 (720p)"
+      ],
+      "reasons": [
+        "Device architecture is x86_64-x86; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Z00A",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone 2 (1080p)"
+      ],
+      "reasons": [
+        "Device architecture is x86_64-x86; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Z00D",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone 2 (ZE500CL)"
+      ],
+      "reasons": [
+        "Device architecture is x86; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Z00L",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone 2 Laser (720p)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Z00T",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone 2 Laser (1080p)",
+        "Zenfone 2 Selfie (1080p)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "zenfone3",
+      "vendor_short": "asus",
+      "names": [
+        "Zenfone 3"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "m5",
+      "vendor_short": "bananapi",
+      "names": [
+        "M5 (Android TV)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "m5_tab",
+      "vendor_short": "bananapi",
+      "names": [
+        "M5 (Tablet)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "bardock",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "bardockpro",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris X Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "chaozu",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris U"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "gohan",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris X5 Plus"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "paella",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris X5"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "piccolo",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris M5"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "tenshi",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris U Plus"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "vegetalte",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris E5 4G",
+        "Aquaris E5s"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "zangya",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris X2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "zangyapro",
+      "vendor_short": "bq",
+      "names": [
+        "Aquaris X2 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "FP2",
+      "vendor_short": "fairphone",
+      "names": [
+        "2"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "akita",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 8a"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "baracus",
+      "vendor_short": "google",
+      "names": [
+        "Jamboard [Android TV]"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo."
+      ]
+    },
+    {
+      "device": "baracus_tab",
+      "vendor_short": "google",
+      "names": [
+        "Jamboard [Tablet]"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo."
+      ]
+    },
+    {
+      "device": "barbet",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 5a"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "bluejay",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 6a"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "blueline",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 3"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "bonito",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 3a XL"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "bramble",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 4a 5G"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "caiman",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 9 Pro"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "cheetah",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 7 Pro"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "comet",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 9 Pro Fold"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "coral",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 4 XL"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "crosshatch",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 3 XL"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "dragon",
+      "vendor_short": "google",
+      "names": [
+        "Pixel C"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "felix",
+      "vendor_short": "google",
+      "names": [
+        "Pixel Fold"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "flame",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 4"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "husky",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 8 Pro"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "komodo",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 9 Pro XL"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "lynx",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 7a"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "marlin",
+      "vendor_short": "google",
+      "names": [
+        "Pixel XL"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "oriole",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 6"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "panther",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 7"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "raven",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 6 Pro"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "redfin",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 5"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "sabrina",
+      "vendor_short": "google",
+      "names": [
+        "Chromecast with Google TV (4K)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "sailfish",
+      "vendor_short": "google",
+      "names": [
+        "Pixel"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "sargo",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 3a"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "seed",
+      "vendor_short": "google",
+      "names": [
+        "Android One 2nd Gen"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "shiba",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 8"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "sunfish",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 4a"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "tangorpro",
+      "vendor_short": "google",
+      "names": [
+        "Pixel Tablet"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "tegu",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 9a"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "tokay",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 9"
+      ],
+      "reasons": [
+        "Kernel repo validation is unknown_tree.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "walleye",
+      "vendor_short": "google",
+      "names": [
+        "Pixel 2"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "odroidc4",
+      "vendor_short": "hardkernel",
+      "names": [
+        "ODROID-C4 (Android TV)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "odroidc4_tab",
+      "vendor_short": "hardkernel",
+      "names": [
+        "ODROID-C4 (Tablet)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "flounder",
+      "vendor_short": "htc",
+      "names": [
+        "Nexus 9 (Wi-Fi)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flounder",
+      "vendor_short": "htc",
+      "names": [
+        "Nexus 9 (Wi-Fi)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flounder_lte",
+      "vendor_short": "htc",
+      "names": [
+        "Nexus 9 (LTE)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flounder_lte",
+      "vendor_short": "htc",
+      "names": [
+        "Nexus 9 (LTE)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hiae",
+      "vendor_short": "htc",
+      "names": [
+        "One A9"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "himaul",
+      "vendor_short": "htc",
+      "names": [
+        "One M9 (GSM)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "himawl",
+      "vendor_short": "htc",
+      "names": [
+        "One M9 (Verizon)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "m7",
+      "vendor_short": "htc",
+      "names": [
+        "One (GSM)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "m7vzw",
+      "vendor_short": "htc",
+      "names": [
+        "One (Verizon)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "m8",
+      "vendor_short": "htc",
+      "names": [
+        "One (M8)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "m8d",
+      "vendor_short": "htc",
+      "names": [
+        "One (M8) Dual SIM"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "pme",
+      "vendor_short": "htc",
+      "names": [
+        "10"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "t6",
+      "vendor_short": "htc",
+      "names": [
+        "One Max (GSM)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "t6vzw",
+      "vendor_short": "htc",
+      "names": [
+        "One Max (Verizon)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "angler",
+      "vendor_short": "huawei",
+      "names": [
+        "Nexus 6P"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "angler",
+      "vendor_short": "huawei",
+      "names": [
+        "Nexus 6P"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "anne",
+      "vendor_short": "huawei",
+      "names": [
+        "P20 Lite"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "berkeley",
+      "vendor_short": "huawei",
+      "names": [
+        "Honor View 10"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "charlotte",
+      "vendor_short": "huawei",
+      "names": [
+        "P20 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "che10",
+      "vendor_short": "huawei",
+      "names": [
+        "Honor 4x (China Telecom)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "cherry",
+      "vendor_short": "huawei",
+      "names": [
+        "Honor 4",
+        "Honor 4X"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "figo",
+      "vendor_short": "huawei",
+      "names": [
+        "P Smart"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kiwi",
+      "vendor_short": "huawei",
+      "names": [
+        "Honor 5X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mt2",
+      "vendor_short": "huawei",
+      "names": [
+        "Ascend Mate 2 4G"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "s2",
+      "vendor_short": "leeco",
+      "names": [
+        "Le 2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "x2",
+      "vendor_short": "leeco",
+      "names": [
+        "Le Max2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "zl1",
+      "vendor_short": "leeco",
+      "names": [
+        "Le Pro3",
+        "Le Pro3 Elite"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "A6020",
+      "vendor_short": "lenovo",
+      "names": [
+        "Vibe K5",
+        "Vibe K5 Plus"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kingdom",
+      "vendor_short": "lenovo",
+      "names": [
+        "Vibe Z2 Pro"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kuntao",
+      "vendor_short": "lenovo",
+      "names": [
+        "P2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "YTX703F",
+      "vendor_short": "lenovo",
+      "names": [
+        "Yoga Tab 3 Plus Wi-Fi"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "YTX703L",
+      "vendor_short": "lenovo",
+      "names": [
+        "Yoga Tab 3 Plus LTE"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "alphaplus",
+      "vendor_short": "lge",
+      "names": [
+        "G8 ThinQ",
+        "G8 ThinQ (Korea)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "betalm",
+      "vendor_short": "lge",
+      "names": [
+        "G8s ThinQ"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "bullhead",
+      "vendor_short": "lge",
+      "names": [
+        "Nexus 5X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "bullhead",
+      "vendor_short": "lge",
+      "names": [
+        "Nexus 5X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d800",
+      "vendor_short": "lge",
+      "names": [
+        "G2 (AT&T)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d801",
+      "vendor_short": "lge",
+      "names": [
+        "G2 (T-Mobile)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d802",
+      "vendor_short": "lge",
+      "names": [
+        "G2 (International)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d803",
+      "vendor_short": "lge",
+      "names": [
+        "G2 (Canadian)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d850",
+      "vendor_short": "lge",
+      "names": [
+        "G3 (AT&T)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d851",
+      "vendor_short": "lge",
+      "names": [
+        "G3 (T-Mobile)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d852",
+      "vendor_short": "lge",
+      "names": [
+        "G3 (Canada)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d855",
+      "vendor_short": "lge",
+      "names": [
+        "G3 (International)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "f400",
+      "vendor_short": "lge",
+      "names": [
+        "G3 (Korea)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "flashlmdd",
+      "vendor_short": "lge",
+      "names": [
+        "V50 ThinQ"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "g2m",
+      "vendor_short": "lge",
+      "names": [
+        "G2 Mini"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h811",
+      "vendor_short": "lge",
+      "names": [
+        "G4 (T-Mobile)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h815",
+      "vendor_short": "lge",
+      "names": [
+        "G4 (International)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h830",
+      "vendor_short": "lge",
+      "names": [
+        "G5 (T-Mobile)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h850",
+      "vendor_short": "lge",
+      "names": [
+        "G5 (International)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h870",
+      "vendor_short": "lge",
+      "names": [
+        "G6 (EU Unlocked)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h872",
+      "vendor_short": "lge",
+      "names": [
+        "G6 (T-Mobile)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h910",
+      "vendor_short": "lge",
+      "names": [
+        "V20 (AT&T)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h918",
+      "vendor_short": "lge",
+      "names": [
+        "V20 (T-Mobile)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h932",
+      "vendor_short": "lge",
+      "names": [
+        "V30 (T-Mobile)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "h990",
+      "vendor_short": "lge",
+      "names": [
+        "V20 (Global)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hammerhead",
+      "vendor_short": "lge",
+      "names": [
+        "Nexus 5"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hammerhead",
+      "vendor_short": "lge",
+      "names": [
+        "Nexus 5"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jag3gds",
+      "vendor_short": "lge",
+      "names": [
+        "G3 S"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jagnm",
+      "vendor_short": "lge",
+      "names": [
+        "G3 Beat"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ls990",
+      "vendor_short": "lge",
+      "names": [
+        "G3 (Sprint)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ls997",
+      "vendor_short": "lge",
+      "names": [
+        "V20 (Sprint)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "m216",
+      "vendor_short": "lge",
+      "names": [
+        "K10"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mako",
+      "vendor_short": "lge",
+      "names": [
+        "Nexus 4"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mako",
+      "vendor_short": "lge",
+      "names": [
+        "Nexus 4"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mh2lm",
+      "vendor_short": "lge",
+      "names": [
+        "G8X ThinQ (G850EM/EMW)",
+        "G8X ThinQ (G850QM/UM)",
+        "V50S ThinQ"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "rs988",
+      "vendor_short": "lge",
+      "names": [
+        "G5 (US Unlocked)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "us996",
+      "vendor_short": "lge",
+      "names": [
+        "V20 (GSM Unlocked)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "us996d",
+      "vendor_short": "lge",
+      "names": [
+        "V20 (GSM Unlocked - DirtySanta)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "us997",
+      "vendor_short": "lge",
+      "names": [
+        "G6 (US Unlocked)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "v400",
+      "vendor_short": "lge",
+      "names": [
+        "G Pad 7.0 WiFi"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "v410",
+      "vendor_short": "lge",
+      "names": [
+        "G Pad 7.0 (LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "v480",
+      "vendor_short": "lge",
+      "names": [
+        "G Pad 8.0 (Wi-Fi)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "v500",
+      "vendor_short": "lge",
+      "names": [
+        "G Pad 8.3"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "v521",
+      "vendor_short": "lge",
+      "names": [
+        "G Pad X (T-Mobile)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "vs985",
+      "vendor_short": "lge",
+      "names": [
+        "G3 (Verizon)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "vs995",
+      "vendor_short": "lge",
+      "names": [
+        "V20 (Verizon)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "w5",
+      "vendor_short": "lge",
+      "names": [
+        "Optimus L70"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "w7",
+      "vendor_short": "lge",
+      "names": [
+        "L90"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "shamu",
+      "vendor_short": "moto",
+      "names": [
+        "Nexus 6"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "shamu",
+      "vendor_short": "moto",
+      "names": [
+        "Nexus 6"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "addison",
+      "vendor_short": "motorola",
+      "names": [
+        "moto z play"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ahannah",
+      "vendor_short": "motorola",
+      "names": [
+        "moto e5 plus (XT1924-3/9)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "albus",
+      "vendor_short": "motorola",
+      "names": [
+        "moto z2 play"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "athene",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g4"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "cedric",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g5"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "chef",
+      "vendor_short": "motorola",
+      "names": [
+        "one power"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "clark",
+      "vendor_short": "motorola",
+      "names": [
+        "moto x pure edition (2015)",
+        "moto x style (2015)"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "condor",
+      "vendor_short": "motorola",
+      "names": [
+        "moto e"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "falcon",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ghost",
+      "vendor_short": "motorola",
+      "names": [
+        "moto x"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "griffin",
+      "vendor_short": "motorola",
+      "names": [
+        "moto z"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hannah",
+      "vendor_short": "motorola",
+      "names": [
+        "moto e5 plus (XT1924-6/7/8)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "harpia",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g4 play"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "liber",
+      "vendor_short": "motorola",
+      "names": [
+        "one fusion+",
+        "one fusion+ (India)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lux",
+      "vendor_short": "motorola",
+      "names": [
+        "moto x play"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "maserati",
+      "vendor_short": "motorola",
+      "names": [
+        "DROID 4"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "merlin",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g3 turbo"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "montana",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g5s"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "osprey",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g (2015)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "otus",
+      "vendor_short": "motorola",
+      "names": [
+        "moto e (2015)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "parker",
+      "vendor_short": "motorola",
+      "names": [
+        "one zoom"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "peregrine",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g 4G"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "rhannah",
+      "vendor_short": "motorola",
+      "names": [
+        "moto e5 plus (XT1924-1/2/4/5)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "spyder",
+      "vendor_short": "motorola",
+      "names": [
+        "DROID RAZR (CDMA)",
+        "DROID RAZR MAXX (CDMA)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "surnia",
+      "vendor_short": "motorola",
+      "names": [
+        "moto e LTE (2015)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "targa",
+      "vendor_short": "motorola",
+      "names": [
+        "DROID BIONIC"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "thea",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g LTE (2014)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "titan",
+      "vendor_short": "motorola",
+      "names": [
+        "moto g (2014)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "umts_spyder",
+      "vendor_short": "motorola",
+      "names": [
+        "DROID RAZR (GSM)",
+        "DROID RAZR MAXX (GSM)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "victara",
+      "vendor_short": "motorola",
+      "names": [
+        "moto x (2014)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "xt897",
+      "vendor_short": "motorola",
+      "names": [
+        "PHOTON Q 4G LTE"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ether",
+      "vendor_short": "nextbit",
+      "names": [
+        "Robin"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "nx512j",
+      "vendor_short": "nubia",
+      "names": [
+        "Z9 Max"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "nx609j",
+      "vendor_short": "nubia",
+      "names": [
+        "Red Magic"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "nx611j",
+      "vendor_short": "nubia",
+      "names": [
+        "Z18 Mini"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "nx651j",
+      "vendor_short": "nubia",
+      "names": [
+        "Play 5G",
+        "Red Magic 5G Lite"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mdarcy",
+      "vendor_short": "nvidia",
+      "names": [
+        "Shield TV 2019 Pro [Android TV]"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mdarcy_tab",
+      "vendor_short": "nvidia",
+      "names": [
+        "Shield TV 2019 Pro [Tablet]"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "quill",
+      "vendor_short": "nvidia",
+      "names": [
+        "Jetson TX2 [Android TV]",
+        "Jetson TX2 NX [Android TV]"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo."
+      ]
+    },
+    {
+      "device": "quill_tab",
+      "vendor_short": "nvidia",
+      "names": [
+        "Jetson TX2 [Tablet]",
+        "Jetson TX2 NX [Tablet]"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo."
+      ]
+    },
+    {
+      "device": "roth",
+      "vendor_short": "nvidia",
+      "names": [
+        "Shield Portable"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "shieldtablet",
+      "vendor_short": "nvidia",
+      "names": [
+        "Shield Tablet"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "sif",
+      "vendor_short": "nvidia",
+      "names": [
+        "Shield TV (2019) [Android TV]"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo."
+      ]
+    },
+    {
+      "device": "avicii",
+      "vendor_short": "oneplus",
+      "names": [
+        "Nord"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "bacon",
+      "vendor_short": "oneplus",
+      "names": [
+        "One"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "billie",
+      "vendor_short": "oneplus",
+      "names": [
+        "Nord N10"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "oneplus2",
+      "vendor_short": "oneplus",
+      "names": [
+        "2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "oneplus3",
+      "vendor_short": "oneplus",
+      "names": [
+        "3",
+        "3T"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "onyx",
+      "vendor_short": "oneplus",
+      "names": [
+        "X"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "f1f",
+      "vendor_short": "oppo",
+      "names": [
+        "F1 (International)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "find7",
+      "vendor_short": "oppo",
+      "names": [
+        "Find 7a",
+        "Find 7s"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "n3",
+      "vendor_short": "oppo",
+      "names": [
+        "N3"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "r5",
+      "vendor_short": "oppo",
+      "names": [
+        "R5 (International)",
+        "R5s (International)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "r7plus",
+      "vendor_short": "oppo",
+      "names": [
+        "R7 Plus (International)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "r7sf",
+      "vendor_short": "oppo",
+      "names": [
+        "R7s (International)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "radxa0",
+      "vendor_short": "radxa",
+      "names": [
+        "Zero (Android TV)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "radxa0_tab",
+      "vendor_short": "radxa",
+      "names": [
+        "Zero (Tablet)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "radxa02",
+      "vendor_short": "radxa",
+      "names": [
+        "Zero 2 (Android TV)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "radxa02_tab",
+      "vendor_short": "radxa",
+      "names": [
+        "Zero 2 (Tablet)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built."
+      ]
+    },
+    {
+      "device": "RMX1801",
+      "vendor_short": "realme",
+      "names": [
+        "2 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "RMX1851",
+      "vendor_short": "realme",
+      "names": [
+        "3 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "a3xelte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy A3 (2016)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "a5xelte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy A5 (2016)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "a5y17lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy A5 (2017)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "a7xelte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy A7 (2016)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "a7y17lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy A7 (2017)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "chagalllte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab S 10.5 LTE"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "chagallwifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab S 10.5 Wi-Fi"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "crownlte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 9"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d2att",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III (AT&T)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d2spr",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III (Sprint)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d2tmo",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III (T-Mobile)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "d2vzw",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III (Verizon)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "espresso3g",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab 2 7.0 (GSM)",
+        "Galaxy Tab 2 10.1 (GSM)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "espressowifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab 2 7.0 (Wi-Fi / Wi-Fi + IR)",
+        "Galaxy Tab 2 10.1 (Wi-Fi / Wi-Fi + IR)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "gtelwifiue",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab E 9.6 (WiFi)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "gtesqltespr",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab E 8.0 LTE (Sprint)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "gts210ltexx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab S2 9.7 (LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "gts210vewifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab S2 9.7 Wi-Fi (2016)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "gts210wifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab S2 9.7 (Wi-Fi)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "gts28vewifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab S2 8.0 Wi-Fi (2016)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ha3g",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 3 (International 3G)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hero2lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S7 Edge"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "herolte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S7"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hlte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 3 LTE (N9005/P)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hltechn",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 3 LTE (N9008V)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hltekor",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 3 LTE (N900K/L/S)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hltetmo",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 3 LTE (N900T/V/W8)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "i9100",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S II"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "i9300",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III (International)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "i9305",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III (LTE / International)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "j7elte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy J7 (2015)"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jactivelte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 Active"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jflteatt",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 (SGH-I337)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jfltespr",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 (SCH-R970, SPH-L720)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jfltevzw",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 (SCH-I545)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jfltexx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 (GT-I9505, SGH-I337M, SGH-M919/V)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jfvelte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 Value Edition (GT-I9515/L)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "k3gxx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 (International 3G)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kccat6",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 Plus"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "klimtwifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab S 8.4 Wi-Fi"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "klte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE (G900F/M/R4/R7/T/T3/V/W8)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "klteactivexx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 Active (G870F)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "klteaio",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE (G900AZ/S902L)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kltechn",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE (G9006V/8V)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kltechnduo",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE Duos (G9006W/8W)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "klteduos",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE Duos (G900FD/MD)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kltedv",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE (G900I/P)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kltekdi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE (SC-04F/SCL23)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kltekor",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE (G900K/L/S)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kltesprsports",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 Sport"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ks01lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 LTE-A (GT-I9506)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lentislte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 LTE-A"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lt02ltespr",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab 3 7.0 LTE"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lt03lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 10.1 2014 (LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "m20lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy M20"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "maguro",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Nexus GSM"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "maguro",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Nexus GSM"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "manta",
+      "vendor_short": "samsung",
+      "names": [
+        "Nexus 10"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "manta",
+      "vendor_short": "samsung",
+      "names": [
+        "Nexus 10"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mondrianwifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab Pro 8.4"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ms013g",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Grand 2 Duos"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "n1awifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 10.1 Wi-Fi (2014)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "n2awifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Tab PRO 10.1"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "n5100",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 8.0 (GSM)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "n5110",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 8.0 (Wi-Fi)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "n5120",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 8.0 (LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "s3ve3gds",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III Neo (Dual SIM)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "s3ve3gjv",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III Neo (Samsung Camera)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "s3ve3gxx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S III Neo (Sony Camera)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "s5neolte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S5 Neo"
+      ],
+      "reasons": [
+        "Device architecture is arm64-arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "serrano3gxx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 Mini (International 3G)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "serranodsdd",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 Mini (International Dual SIM)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "serranoltexx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S4 Mini (International LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "star2lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S9+"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "starlte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S9"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "t0lte",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note 2 (LTE)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "toro",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Nexus LTE (Verizon)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "toro",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Nexus LTE (Verizon)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "toroplus",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Nexus LTE (Sprint)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "toroplus",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Nexus LTE (Sprint)"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "v1awifi",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy Note Pro 12.2 Wi-Fi"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "zerofltexx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S6"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "zeroltexx",
+      "vendor_short": "samsung",
+      "names": [
+        "Galaxy S6 Edge"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "castor",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Tablet Z2 LTE"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "castor_windy",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Tablet Z2 Wi-Fi"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "dogo",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia ZR"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hayabusa",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia TX"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "huashan",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia SP"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ivy",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z3+"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "karin",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z4 Tablet LTE"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "karin_windy",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z4 Tablet WiFi"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kugo",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia X Compact"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mint",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia T"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "nicki",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia M"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "odin",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia ZL"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "pollux",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Tablet Z LTE"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "pollux_windy",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Tablet Z Wi-Fi"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "sirius",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z2"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "sumire",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z5"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "suzu",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "suzuran",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z5 Compact"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "taoshan",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia L"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "tsubasa",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia V"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "yuga",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "z3",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z3"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "z3c",
+      "vendor_short": "sony",
+      "names": [
+        "Xperia Z3 Compact"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "crackling",
+      "vendor_short": "wileyfox",
+      "names": [
+        "Swift"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kipper",
+      "vendor_short": "wileyfox",
+      "names": [
+        "Storm"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "wt88047",
+      "vendor_short": "wingtech",
+      "names": [
+        "Redmi 2"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "armani",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi 1S"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "cancro",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 3",
+        "Mi 4"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "capricorn",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 5s"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "hydrogen",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi Max"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ido",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi 3",
+        "Redmi 3 Prime"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jasmine_sprout",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi A2"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jason",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi Note 3"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "kenzo",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi Note 3"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lancelot",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi 9"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "land",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi 3S / 3X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "laurel_sprout",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi A3"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lavender",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi Note 7"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "libra",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 4c"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lithium",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi MIX"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "mars",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 11 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "merlinx",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi Note 9"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Mi8917",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi 4A",
+        "Redmi 5A",
+        "Redmi Note 5A Lite",
+        "Redmi Y1 Lite"
+      ],
+      "reasons": [
+        "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+      ]
+    },
+    {
+      "device": "mido",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi Note 4"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "monet",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 10 Lite 5G"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "onclite",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi 7",
+        "Redmi Y3"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "platina",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 8 Lite"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "santoni",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi 4(X)"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "tissot",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi A1"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "twolip",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi Note 6 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "wayne",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 6X"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "whyred",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Redmi Note 5 Pro"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "xmsirius",
+      "vendor_short": "xiaomi",
+      "names": [
+        "Mi 8 SE"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "Amber",
+      "vendor_short": "yandex",
+      "names": [
+        "Phone"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jalebi",
+      "vendor_short": "yu",
+      "names": [
+        "Yunique"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "lettuce",
+      "vendor_short": "yu",
+      "names": [
+        "Yuphoria"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "tomato",
+      "vendor_short": "yu",
+      "names": [
+        "Yureka",
+        "Yureka Plus"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "axon7",
+      "vendor_short": "zte",
+      "names": [
+        "Axon 7"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "jasmine",
+      "vendor_short": "zte",
+      "names": [
+        "AT&T Trek 2 HD"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "tulip",
+      "vendor_short": "zte",
+      "names": [
+        "Axon 7 Mini"
+      ],
+      "reasons": [
+        "No shared LineageOS branch found for device tree and kernel repo.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "ham",
+      "vendor_short": "zuk",
+      "names": [
+        "Z1"
+      ],
+      "reasons": [
+        "Device architecture is arm; only arm64 devices are built.",
+        "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "z2_plus",
+      "vendor_short": "zuk",
+      "names": [
+        "Z2 Plus"
+      ],
+      "reasons": [
+        "No official LineageOS build found in download API."
+      ]
+    }
+  ]
+}

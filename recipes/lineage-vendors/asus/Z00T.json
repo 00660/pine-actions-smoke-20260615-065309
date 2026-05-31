@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/Z00T/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Z00T_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Z00T_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/Z00T/builds",
+    "latest_official_build": null,
+    "names": [
+      "Zenfone 2 Laser (1080p)",
+      "Zenfone 2 Selfie (1080p)"
+    ],
+    "models": [],
+    "vendor": "ASUS",
+    "vendor_short": "asus",
+    "architecture": "arm64",
+    "current_branch": "15.1",
+    "versions": [
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_asus_Z00T",
+      "ref": "lineage-15.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_asus_msm8916",
+      "ref": "lineage-15.1",
+      "validation": "full_source",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_qcom_sepolicy",
+          "ref": "lineage-15.1",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_qcom_sepolicy",
+          "ref": "lineage-15.1",
+          "file": "legacy-sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_msm8916-common",
+          "ref": "lineage-15.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_Z00T",
+          "ref": "lineage-15.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "Z00T_defconfig"
+      ],
+      "kernel_source_path": "kernel/asus/msm8916",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "Z00T",
+    "vendor": "ASUS",
+    "vendor_short": "asus",
+    "lineage_branch": "lineage-15.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_asus_msm8916.git",
+    "kernel_ref": "lineage-15.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "Z00T_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

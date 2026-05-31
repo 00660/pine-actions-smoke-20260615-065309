@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/onclite/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/onclite_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/onclite_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/onclite/builds",
+    "latest_official_build": null,
+    "names": [
+      "Redmi 7",
+      "Redmi Y3"
+    ],
+    "models": [],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "21",
+    "versions": [
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_onclite",
+      "ref": "lineage-21",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_onclite",
+      "ref": "lineage-21",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_onclite",
+          "ref": "lineage-21",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "onclite-perf_defconfig"
+      ],
+      "kernel_source_path": "kernel/xiaomi/onclite",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "onclite",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-21",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_onclite.git",
+    "kernel_ref": "lineage-21",
+    "arch": "arm64",
+    "kernel_configs": [
+      "onclite-perf_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

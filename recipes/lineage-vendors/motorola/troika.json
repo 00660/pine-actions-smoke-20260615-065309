@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/troika/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/troika.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/troika/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780087686,
+      "filename": "lineage-23.2-20260529-nightly-troika-signed.zip",
+      "filepath": "/full/troika/20260529/lineage-23.2-20260529-nightly-troika-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:3721:114123,payload.bin:3721:936653718,payload_properties.txt:936657497:155,apex_info.pb:1805:1279,care_map.pb:3131:543,metadata:69:688,metadata.pb:825:932                       ",
+      "sha1": "ecdf988a767950c77b78fa3467e531597cf13166",
+      "sha256": "0395e0aee34c61fb0605953fa79a24fd62074bd7179f90b45bebbf73b876a0a3",
+      "size": 936660643,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/troika/20260529/lineage-23.2-20260529-nightly-troika-signed.zip"
+    },
+    "names": [
+      "one action"
+    ],
+    "models": [
+      "XT2013-1",
+      "XT2013-2",
+      "XT2013-3",
+      "XT2013-4"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_troika",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_exynos9610",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_slsi_sepolicy",
+          "ref": "lineage-23.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_exynos9610-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_troika",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9610_defconfig",
+        "ext_config/troika.config"
+      ],
+      "kernel_source_path": "kernel/motorola/exynos9610",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "troika",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/troika/20260529/lineage-23.2-20260529-nightly-troika-signed.zip",
+    "boot_source_sha256": "0395e0aee34c61fb0605953fa79a24fd62074bd7179f90b45bebbf73b876a0a3",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_exynos9610.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9610_defconfig",
+      "ext_config/troika.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

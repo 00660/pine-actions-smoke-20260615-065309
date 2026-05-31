@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/porg_tab/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/porg_tab_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/porg_tab_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/porg_tab/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779809340,
+      "filename": "lineage-22.2-20260526-nightly-porg_tab-signed.zip",
+      "filepath": "/full/porg_tab/20260526/lineage-22.2-20260526-nightly-porg_tab-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:329,metadata.pb:466:208                 ",
+      "sha1": "a2559a6d7d2e7185dbf946debe7963534ca73a8a",
+      "sha256": "dab3773b85d3550e3bf86525631096702aa356213ed4e7f95ad516f7006c0919",
+      "size": 1001689603,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/porg_tab/20260526/lineage-22.2-20260526-nightly-porg_tab-signed.zip"
+    },
+    "names": [
+      "Jetson Nano [Tablet]",
+      "Jetson Nano 2GB [Tablet]"
+    ],
+    "models": [
+      "porg",
+      "batuu"
+    ],
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nvidia_porg_tab",
+      "ref": "lineage-18.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel",
+      "ref": "lineage-18.1",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_tegra-common",
+          "ref": "lineage-18.1",
+          "file": "twrp.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_sepolicy",
+          "ref": "lineage-18.1",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_tegra-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigTegra.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_t210-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_foster",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_porg",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_porg_tab",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "tegra_android_defconfig"
+      ],
+      "kernel_source_path": "kernel/nvidia/kernel-$(TARGET_TEGRA_KERNEL)",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "porg_tab",
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "lineage_branch": "lineage-18.1",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/porg_tab/20260526/lineage-22.2-20260526-nightly-porg_tab-signed.zip",
+    "boot_source_sha256": "dab3773b85d3550e3bf86525631096702aa356213ed4e7f95ad516f7006c0919",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel.git",
+    "kernel_ref": "lineage-18.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "tegra_android_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/umi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/umi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/umi/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779581025,
+      "filename": "lineage-23.2-20260524-nightly-umi-signed.zip",
+      "filepath": "/full/umi/20260524/lineage-23.2-20260524-nightly-umi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:326,metadata.pb:463:204                 ",
+      "sha1": "68c4ad87f23a948bad51b90a6c640272b1b2eff6",
+      "sha256": "dbc6937d6560bd13220d19496a3281f153eb6c16204751033e0fd095caa97310",
+      "size": 1592761281,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/umi/20260524/lineage-23.2-20260524-nightly-umi-signed.zip"
+    },
+    "names": [
+      "Mi 10"
+    ],
+    "models": [
+      "M2001J2G",
+      "M2001J2I"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_umi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_umi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi/sm8250-common.config",
+        "vendor/xiaomi/umi.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "umi",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/umi/20260524/lineage-23.2-20260524-nightly-umi-signed.zip",
+    "boot_source_sha256": "dbc6937d6560bd13220d19496a3281f153eb6c16204751033e0fd095caa97310",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi/sm8250-common.config",
+      "vendor/xiaomi/umi.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

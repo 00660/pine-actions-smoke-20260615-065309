@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/ingot/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/ingot.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/ingot/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780139476,
+      "filename": "lineage-23.2-20260530-nightly-ingot-signed.zip",
+      "filepath": "/full/ingot/20260530/lineage-23.2-20260530-nightly-ingot-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4250:150421,payload.bin:4250:1381663588,payload_properties.txt:1381667896:156,apex_info.pb:1930:1279,care_map.pb:3256:947,metadata:69:659,metadata.pb:796:1086                        ",
+      "sha1": "64ce3d308f14591831a9121bd639759d41be7eb6",
+      "sha256": "07396627526f0e8342936377e7cc39c0726fb6c2fc07c4e9f3be148416fbb083",
+      "size": 1381671043,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/ingot/20260530/lineage-23.2-20260530-nightly-ingot-signed.zip"
+    },
+    "names": [
+      "Saga"
+    ],
+    "models": [],
+    "vendor": "Solana",
+    "vendor_short": "osom",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_osom_ingot",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_osom_sm8475",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_osom_ingot",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/waipio_GKI.config",
+        "vendor/ingot_GKI.config",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/osom/sm8475",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "ingot",
+    "vendor": "Solana",
+    "vendor_short": "osom",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/ingot/20260530/lineage-23.2-20260530-nightly-ingot-signed.zip",
+    "boot_source_sha256": "07396627526f0e8342936377e7cc39c0726fb6c2fc07c4e9f3be148416fbb083",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_osom_sm8475.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/waipio_GKI.config",
+      "vendor/ingot_GKI.config",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/akatsuki/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/akatsuki.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/akatsuki/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779800603,
+      "filename": "lineage-22.2-20260526-nightly-akatsuki-signed.zip",
+      "filepath": "/full/akatsuki/20260526/lineage-22.2-20260526-nightly-akatsuki-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3573:144681,payload.bin:3573:1004898491,payload_properties.txt:1004902122:156,apex_info.pb:1765:1157,care_map.pb:2969:557,metadata:69:680,metadata.pb:817:900                         ",
+      "sha1": "0307acc10cff18fa8d6f8c2b5b6ca20644efbbb8",
+      "sha256": "5480e9045f7173ec903caf682e01063e17ba272368eb45a5a363374ea4540db0",
+      "size": 1004905273,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/akatsuki/20260526/lineage-22.2-20260526-nightly-akatsuki-signed.zip"
+    },
+    "names": [
+      "Xperia XZ3"
+    ],
+    "models": [
+      "H8416",
+      "H9436",
+      "H9493"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_akatsuki",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_tama-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_akatsuki",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "tama_akatsuki_defconfig"
+      ],
+      "kernel_source_path": "kernel/sony/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "akatsuki",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/akatsuki/20260526/lineage-22.2-20260526-nightly-akatsuki-signed.zip",
+    "boot_source_sha256": "5480e9045f7173ec903caf682e01063e17ba272368eb45a5a363374ea4540db0",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "tama_akatsuki_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/zippo/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/zippo.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/zippo/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780059011,
+      "filename": "lineage-23.2-20260529-nightly-zippo-signed.zip",
+      "filepath": "/full/zippo/20260529/lineage-23.2-20260529-nightly-zippo-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:326,metadata.pb:463:206                 ",
+      "sha1": "55a4492dc9831a334f8dcd0502b64a16d52e630f",
+      "sha256": "bc9ef08225ea61c3e1ce2e449999a6cc0f05adc8f43ffe44ba0979fe4ad1cb10",
+      "size": 1157137287,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/zippo/20260529/lineage-23.2-20260529-nightly-zippo-signed.zip"
+    },
+    "names": [
+      "Z6 Pro"
+    ],
+    "models": [
+      "L78051"
+    ],
+    "vendor": "Lenovo",
+    "vendor_short": "lenovo",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lenovo_zippo",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lenovo_sm8150",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lenovo_sm8150-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lenovo_zippo",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/sm8150-perf_defconfig",
+        "vendor/lenovo/sm8150-common.config",
+        "vendor/lenovo/zippo.config"
+      ],
+      "kernel_source_path": "kernel/lenovo/sm8150",
+      "kernel_image_name": "Image-dtb"
+    }
+  },
+  "build": {
+    "device": "zippo",
+    "vendor": "Lenovo",
+    "vendor_short": "lenovo",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/zippo/20260529/lineage-23.2-20260529-nightly-zippo-signed.zip",
+    "boot_source_sha256": "bc9ef08225ea61c3e1ce2e449999a6cc0f05adc8f43ffe44ba0979fe4ad1cb10",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lenovo_sm8150.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/sm8150-perf_defconfig",
+      "vendor/lenovo/sm8150-common.config",
+      "vendor/lenovo/zippo.config"
+    ],
+    "image_target": "Image-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

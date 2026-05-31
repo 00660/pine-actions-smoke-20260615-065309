@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pstar/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pstar.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pstar/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779697255,
+      "filename": "lineage-23.2-20260525-nightly-pstar-signed.zip",
+      "filepath": "/full/pstar/20260525/lineage-23.2-20260525-nightly-pstar-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4437:137914,payload.bin:4437:1041011691,payload_properties.txt:1041016186:156,apex_info.pb:2115:1279,care_map.pb:3441:949,metadata:69:683,metadata.pb:820:1247                        ",
+      "sha1": "b2028f670b880f9aac35c7a07747ea3c1afa6306",
+      "sha256": "15906fd7924794d160facbb38b3bca73651bd74e6e7e5dc527168695ccc2a301",
+      "size": 1041019333,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pstar/20260525/lineage-23.2-20260525-nightly-pstar-signed.zip"
+    },
+    "names": [
+      "edge 20 pro"
+    ],
+    "models": [
+      "XT2153-1"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_pstar",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_pstar",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/ext_config/moto-kona.config",
+        "vendor/ext_config/pstar-default.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "pstar",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pstar/20260525/lineage-23.2-20260525-nightly-pstar-signed.zip",
+    "boot_source_sha256": "15906fd7924794d160facbb38b3bca73651bd74e6e7e5dc527168695ccc2a301",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/ext_config/moto-kona.config",
+      "vendor/ext_config/pstar-default.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

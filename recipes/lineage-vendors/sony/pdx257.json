@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pdx257/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pdx257.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pdx257/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779596284,
+      "filename": "lineage-23.2-20260524-nightly-pdx257-signed.zip",
+      "filepath": "/full/pdx257/20260524/lineage-23.2-20260524-nightly-pdx257-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4957:140887,payload.bin:4957:1302715015,payload_properties.txt:1302720030:156,apex_info.pb:2252:1369,care_map.pb:3668:1242,metadata:69:686,metadata.pb:823:1381                        ",
+      "sha1": "525bb278b8b28b3403f9f271105642907580fd37",
+      "sha256": "77a9ab59095c758d24f1da2d9647da608aa928bd1f0508b58c6baff72f2dfe1c",
+      "size": 1302723177,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pdx257/20260524/lineage-23.2-20260524-nightly-pdx257-signed.zip"
+    },
+    "names": [
+      "Xperia 10 VII"
+    ],
+    "models": [
+      "XQ-FE54",
+      "XQ-FE72"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_pdx257",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sm6475",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "6.6"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_pdx257",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/parrot_perf.config",
+        "vendor/sony/elbe.config"
+      ],
+      "kernel_source_path": "kernel/sony/sm6475",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "pdx257",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pdx257/20260524/lineage-23.2-20260524-nightly-pdx257-signed.zip",
+    "boot_source_sha256": "77a9ab59095c758d24f1da2d9647da608aa928bd1f0508b58c6baff72f2dfe1c",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sm6475.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/parrot_perf.config",
+      "vendor/sony/elbe.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

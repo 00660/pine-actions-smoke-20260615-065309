@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/peridot/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/peridot_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/peridot_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/peridot/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780023603,
+      "filename": "lineage-23.2-20260529-nightly-peridot-signed.zip",
+      "filepath": "/full/peridot/20260529/lineage-23.2-20260529-nightly-peridot-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:5031:198810,payload.bin:5031:2464607719,payload_properties.txt:2464612808:156,apex_info.pb:2299:1370,care_map.pb:3716:1268,metadata:69:691,metadata.pb:828:1423                        ",
+      "sha1": "7103f1785dd621e796c34e310c8e7a5a5a0f60e4",
+      "sha256": "ee9027a758d00e4c076003b152cc29d57a14cbb9cf43f2651bdc335f504f7c6b",
+      "size": 2464615955,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/peridot/20260529/lineage-23.2-20260529-nightly-peridot-signed.zip"
+    },
+    "names": [
+      "POCO F6",
+      "Redmi Turbo 3"
+    ],
+    "models": [
+      "24069PC21G",
+      "24069PC21I",
+      "24069RA21C"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_peridot",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8635",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_peridot",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/pineapple_GKI.config",
+        "vendor/peridot_GKI.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8635",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "peridot",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/peridot/20260529/lineage-23.2-20260529-nightly-peridot-signed.zip",
+    "boot_source_sha256": "ee9027a758d00e4c076003b152cc29d57a14cbb9cf43f2651bdc335f504f7c6b",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8635.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/pineapple_GKI.config",
+      "vendor/peridot_GKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

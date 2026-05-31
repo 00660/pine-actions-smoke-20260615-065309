@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/a52q/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/a52q.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/a52q/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779683203,
+      "filename": "lineage-23.2-20260525-nightly-a52q-signed.zip",
+      "filepath": "/full/a52q/20260525/lineage-23.2-20260525-nightly-a52q-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:323,metadata.pb:460:202                 ",
+      "sha1": "8ca7d4be29a7a0beb1503bddfa23ffaace8ca81c",
+      "sha256": "8257b1b39424efcc4000ece1399416e6fc79798d8c45f9a755bc60ca25ecbb9d",
+      "size": 1221856548,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/a52q/20260525/lineage-23.2-20260525-nightly-a52q-signed.zip"
+    },
+    "names": [
+      "Galaxy A52 4G"
+    ],
+    "models": [
+      "SM-A525F",
+      "SM-A525M",
+      "SM-A525F/DS",
+      "SM-A525M/DS"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_a52q",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sm7125",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_sm7125-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_a52q",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lineage-a52q_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/sm7125",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "a52q",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/a52q/20260525/lineage-23.2-20260525-nightly-a52q-signed.zip",
+    "boot_source_sha256": "8257b1b39424efcc4000ece1399416e6fc79798d8c45f9a755bc60ca25ecbb9d",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sm7125.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lineage-a52q_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

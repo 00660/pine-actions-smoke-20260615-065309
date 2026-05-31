@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/DRG/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/DRG.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/DRG/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779942632,
+      "filename": "lineage-22.2-20260528-nightly-DRG-signed.zip",
+      "filepath": "/full/DRG/20260528/lineage-22.2-20260528-nightly-DRG-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2876:96087,payload.bin:2876:928874564,payload_properties.txt:928877498:154,apex_info.pb:1672:1157,metadata:69:633,metadata.pb:770:854                  ",
+      "sha1": "0980057862d64c6b0afac086d5fb3ef0e7cfbedb",
+      "sha256": "a612ac3345d8a447d8f49555b17fc21ccacdc39e70cb721f948db51bfd4fcc98",
+      "size": 928880584,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/DRG/20260528/lineage-22.2-20260528-nightly-DRG-signed.zip"
+    },
+    "names": [
+      "6.1 Plus"
+    ],
+    "models": [
+      "TA-1083"
+    ],
+    "vendor": "Nokia",
+    "vendor_short": "nokia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nokia_DRG",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nokia_sdm660",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nokia_sdm660-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nokia_DRG",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/sdm660-perf_defconfig",
+        "vendor/nokia/nokia.config",
+        "vendor/nokia/DRG.config"
+      ],
+      "kernel_source_path": "kernel/nokia/sdm660",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "DRG",
+    "vendor": "Nokia",
+    "vendor_short": "nokia",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/DRG/20260528/lineage-22.2-20260528-nightly-DRG-signed.zip",
+    "boot_source_sha256": "a612ac3345d8a447d8f49555b17fc21ccacdc39e70cb721f948db51bfd4fcc98",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nokia_sdm660.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/sdm660-perf_defconfig",
+      "vendor/nokia/nokia.config",
+      "vendor/nokia/DRG.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

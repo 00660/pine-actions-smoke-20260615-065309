@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/I01WD/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/I01WD.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/I01WD/builds",
+    "latest_official_build": null,
+    "names": [
+      "Zenfone 6 (ZS630KL)"
+    ],
+    "models": [],
+    "vendor": "ASUS",
+    "vendor_short": "asus",
+    "architecture": "arm64",
+    "current_branch": "17.1",
+    "versions": [
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_asus_I01WD",
+      "ref": "lineage-17.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_asus_sm8150",
+      "ref": "lineage-17.1",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_I01WD",
+          "ref": "lineage-17.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/I01WD_defconfig"
+      ],
+      "kernel_source_path": "kernel/asus/sm8150",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "I01WD",
+    "vendor": "ASUS",
+    "vendor_short": "asus",
+    "lineage_branch": "lineage-17.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_asus_sm8150.git",
+    "kernel_ref": "lineage-17.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/I01WD_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

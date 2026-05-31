@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/comet/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/comet.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/comet/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780053110,
+      "filename": "lineage-23.2-20260529-nightly-comet-signed.zip",
+      "filepath": "/full/comet/20260529/lineage-23.2-20260529-nightly-comet-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4748:151337,payload.bin:4748:1580907739,payload_properties.txt:1580912545:156,apex_info.pb:2000:1632,care_map.pb:3679:1022,metadata:69:668,metadata.pb:805:1147                        ",
+      "sha1": "197425c1272aa4645a2a860ec7459eea55af84a5",
+      "sha256": "50be728e424466c32574d73ba40c6aef18ffba62d9c6b32cc015c08a198ccfa6",
+      "size": 1580915692,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/comet/20260529/lineage-23.2-20260529-nightly-comet-signed.zip"
+    },
+    "names": [
+      "Pixel 9 Pro Fold"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_comet",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "comet",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/comet/20260529/lineage-23.2-20260529-nightly-comet-signed.zip",
+    "boot_source_sha256": "50be728e424466c32574d73ba40c6aef18ffba62d9c6b32cc015c08a198ccfa6",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

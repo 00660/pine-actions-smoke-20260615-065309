@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/a21s/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/a21s.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/a21s/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779753746,
+      "filename": "lineage-23.2-20260526-nightly-a21s-signed.zip",
+      "filepath": "/full/a21s/20260526/lineage-23.2-20260526-nightly-a21s-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:329,metadata.pb:466:208                 ",
+      "sha1": "532b7dc0612dcd787f7d0f2c05239372d7a96397",
+      "sha256": "1e2bf1cfd1dd524443ebac78d051b9af199a4b481934330f5f7bbdd296f1703e",
+      "size": 1098830507,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/a21s/20260526/lineage-23.2-20260526-nightly-a21s-signed.zip"
+    },
+    "names": [
+      "Galaxy A21s"
+    ],
+    "models": [
+      "SM-A217F",
+      "SM-A217M",
+      "SM-A217F/DS",
+      "SM-A217F/DSN",
+      "SM-A217M/DS"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_a21s",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_exynos850",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_slsi_sepolicy",
+          "ref": "lineage-23.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_a21s-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_a21s",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos850-a21snsxx_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/exynos850",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "a21s",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/a21s/20260526/lineage-23.2-20260526-nightly-a21s-signed.zip",
+    "boot_source_sha256": "1e2bf1cfd1dd524443ebac78d051b9af199a4b481934330f5f7bbdd296f1703e",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_exynos850.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos850-a21snsxx_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

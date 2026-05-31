@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/racer/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/racer.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/racer/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1780007946,
+      "filename": "lineage-23.2-20260528-nightly-racer-signed.zip",
+      "filepath": "/full/racer/20260528/lineage-23.2-20260528-nightly-racer-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4563:131398,payload.bin:4563:1177779143,payload_properties.txt:1177783764:156,apex_info.pb:2102:1279,care_map.pb:3428:1088,metadata:69:682,metadata.pb:819:1235                        ",
+      "sha1": "84c2b7ff7196d8f20c068e23953fcd2de940c2ff",
+      "sha256": "c835b0bb78400c1935b820990f3bef1254572ffb218bb6e6908c63560d71c22a",
+      "size": 1177786911,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/racer/20260528/lineage-23.2-20260528-nightly-racer-signed.zip"
+    },
+    "names": [
+      "edge"
+    ],
+    "models": [
+      "XT2063-2",
+      "XT2063-3"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_racer",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm7250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_racer",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lito-perf_defconfig",
+        "vendor/ext_config/moto-lito.config",
+        "vendor/ext_config/$(PRODUCT_DEVICE)-default.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "racer",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/racer/20260528/lineage-23.2-20260528-nightly-racer-signed.zip",
+    "boot_source_sha256": "c835b0bb78400c1935b820990f3bef1254572ffb218bb6e6908c63560d71c22a",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lito-perf_defconfig",
+      "vendor/ext_config/moto-lito.config",
+      "vendor/ext_config/$(PRODUCT_DEVICE)-default.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

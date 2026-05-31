@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/bluejay/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/bluejay.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/bluejay/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780148321,
+      "filename": "lineage-23.2-20260530-nightly-bluejay-signed.zip",
+      "filepath": "/full/bluejay/20260530/lineage-23.2-20260530-nightly-bluejay-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4519:134784,payload.bin:4519:1329068068,payload_properties.txt:1329072645:156,apex_info.pb:1938:1553,care_map.pb:3538:934,metadata:69:672,metadata.pb:809:1081                        ",
+      "sha1": "c2bcdcef0063848ced6998f7e0c9e2c679f04220",
+      "sha256": "6e0cc5386d6affcf5eb4730159f1f35d0a1b7d1e5a35591ed7d723db9826d133",
+      "size": 1329075792,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/bluejay/20260530/lineage-23.2-20260530-nightly-bluejay-signed.zip"
+    },
+    "names": [
+      "Pixel 6a"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_bluejay",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "bluejay",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/bluejay/20260530/lineage-23.2-20260530-nightly-bluejay-signed.zip",
+    "boot_source_sha256": "6e0cc5386d6affcf5eb4730159f1f35d0a1b7d1e5a35591ed7d723db9826d133",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

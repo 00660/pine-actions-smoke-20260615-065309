@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gts4lv/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gts4lv.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gts4lv/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780066898,
+      "filename": "lineage-22.2-20260529-nightly-gts4lv-signed.zip",
+      "filepath": "/full/gts4lv/20260529/lineage-22.2-20260529-nightly-gts4lv-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:326,metadata.pb:463:207                 ",
+      "sha1": "e415fae29a46e91215eb1ef8ff05053ca315a5df",
+      "sha256": "2bc3021e30492323aecfc22d342b9b473705653a743e1ff60bcaa73fe704a582",
+      "size": 1091532674,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gts4lv/20260529/lineage-22.2-20260529-nightly-gts4lv-signed.zip"
+    },
+    "names": [
+      "Galaxy Tab S5e (LTE)"
+    ],
+    "models": [
+      "SM-T725",
+      "SM-T725C",
+      "SM-T725N",
+      "SM-T727"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_gts4lv",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sdm670",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gts4lv-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gts4lv",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gts4lv_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/sdm670",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "gts4lv",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gts4lv/20260529/lineage-22.2-20260529-nightly-gts4lv-signed.zip",
+    "boot_source_sha256": "2bc3021e30492323aecfc22d342b9b473705653a743e1ff60bcaa73fe704a582",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sdm670.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gts4lv_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

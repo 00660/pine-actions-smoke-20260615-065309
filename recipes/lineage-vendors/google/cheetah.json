@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/cheetah/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/cheetah.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/cheetah/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779754021,
+      "filename": "lineage-23.2-20260526-nightly-cheetah-signed.zip",
+      "filepath": "/full/cheetah/20260526/lineage-23.2-20260526-nightly-cheetah-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4807:142633,payload.bin:4807:1433336017,payload_properties.txt:1433340882:156,apex_info.pb:2048:1602,care_map.pb:3697:1063,metadata:69:674,metadata.pb:811:1189                        ",
+      "sha1": "98e96f1893b2fe18d3d8a1b4df57b0164bab2bfe",
+      "sha256": "85901709dfeb76e9bb52f2897ac5259ba290932e7ca967197a5a761cd2dbafa9",
+      "size": 1433344029,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/cheetah/20260526/lineage-23.2-20260526-nightly-cheetah-signed.zip"
+    },
+    "names": [
+      "Pixel 7 Pro"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_cheetah",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "cheetah",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/cheetah/20260526/lineage-23.2-20260526-nightly-cheetah-signed.zip",
+    "boot_source_sha256": "85901709dfeb76e9bb52f2897ac5259ba290932e7ca967197a5a761cd2dbafa9",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx659j/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx659j_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx659j_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx659j_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx659j_variant4.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nx659j/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779946403,
+      "filename": "lineage-22.2-20260528-nightly-nx659j-signed.zip",
+      "filepath": "/full/nx659j/20260528/lineage-22.2-20260528-nightly-nx659j-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:348,metadata.pb:485:241                 ",
+      "sha1": "a1a08a224a36beb03b3b2edd74200ba3a00df764",
+      "sha256": "0d4fd0f8e56f24497fce164019363b44314c679a0ae71c52fe7be250da7b1318",
+      "size": 1184025320,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nx659j/20260528/lineage-22.2-20260528-nightly-nx659j-signed.zip"
+    },
+    "names": [
+      "Red Magic 5G (Global)",
+      "Red Magic 5G (China)",
+      "Red Magic 5S (Global)",
+      "Red Magic 5S (China)"
+    ],
+    "models": [
+      "NX659J",
+      "NX659J-EEA",
+      "NX659J-UN"
+    ],
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nubia_nx659j",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nubia_sm8250",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_nx659j",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/nx659j.config",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/nubia/sm8250",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "nx659j",
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nx659j/20260528/lineage-22.2-20260528-nightly-nx659j-signed.zip",
+    "boot_source_sha256": "0d4fd0f8e56f24497fce164019363b44314c679a0ae71c52fe7be250da7b1318",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nubia_sm8250.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/nx659j.config",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

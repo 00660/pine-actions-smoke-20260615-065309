@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/debx/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/debx.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/debx/builds",
+    "latest_official_build": null,
+    "names": [
+      "Nexus 7 2013 (LTE, Repartitioned)"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "asus",
+    "architecture": "arm",
+    "current_branch": "18.1",
+    "versions": [
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_asus_debx",
+      "ref": "lineage-18.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_msm",
+      "ref": "lineage-18.1",
+      "validation": "full_source",
+      "version": "3.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_flox",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_debx",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_flo_defconfig"
+      ],
+      "kernel_source_path": "kernel/google/msm",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "debx",
+    "vendor": "Google",
+    "vendor_short": "asus",
+    "lineage_branch": "lineage-18.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_msm.git",
+    "kernel_ref": "lineage-18.1",
+    "arch": "arm",
+    "kernel_configs": [
+      "lineageos_flo_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

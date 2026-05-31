@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pro1/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pro1.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pro1/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780124602,
+      "filename": "lineage-22.2-20260530-nightly-pro1-signed.zip",
+      "filepath": "/full/pro1/20260530/lineage-22.2-20260530-nightly-pro1-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3511:123752,payload.bin:3511:978168680,payload_properties.txt:978172249:155,apex_info.pb:1722:1157,care_map.pb:2926:538,metadata:69:667,metadata.pb:804:870                       ",
+      "sha1": "bdb285d3d1fcc349b2efb24036d36920fdd0fd6a",
+      "sha256": "5a2ff8ee81a853bb68069f18e265d9ad255a7c117adbc33b1b08fc92bc6ccf59",
+      "size": 978175399,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pro1/20260530/lineage-22.2-20260530-nightly-pro1-signed.zip"
+    },
+    "names": [
+      "Pro¹"
+    ],
+    "models": [],
+    "vendor": "F(x)tec",
+    "vendor_short": "fxtec",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_fxtec_pro1",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_fxtec_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_fxtec_pro1",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineage-pro1_defconfig"
+      ],
+      "kernel_source_path": "kernel/fxtec/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "pro1",
+    "vendor": "F(x)tec",
+    "vendor_short": "fxtec",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pro1/20260530/lineage-22.2-20260530-nightly-pro1-signed.zip",
+    "boot_source_sha256": "5a2ff8ee81a853bb68069f18e265d9ad255a7c117adbc33b1b08fc92bc6ccf59",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_fxtec_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineage-pro1_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

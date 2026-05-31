@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/blueline/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/blueline.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/blueline/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779694196,
+      "filename": "lineage-22.2-20260525-nightly-blueline-signed.zip",
+      "filepath": "/full/blueline/20260525/lineage-22.2-20260525-nightly-blueline-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:4004:113669,payload.bin:4004:1092941433,payload_properties.txt:1092945495:156,apex_info.pb:1966:1157,care_map.pb:3170:787,metadata:69:677,metadata.pb:814:1104                        ",
+      "sha1": "48266cae26c3f8bc7249c64758abd0d3abba6af5",
+      "sha256": "22de6413ac0efd7859dce4210e72c236be8ba02340f2ebeab6ec881aef91d52f",
+      "size": 1092948646,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/blueline/20260525/lineage-22.2-20260525-nightly-blueline-signed.zip"
+    },
+    "names": [
+      "Pixel 3"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_blueline",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_msm-4.9",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "blueline",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/blueline/20260525/lineage-22.2-20260525-nightly-blueline-signed.zip",
+    "boot_source_sha256": "22de6413ac0efd7859dce4210e72c236be8ba02340f2ebeab6ec881aef91d52f",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_msm-4.9.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

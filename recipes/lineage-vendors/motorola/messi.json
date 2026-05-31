@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/messi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/messi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/messi/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780110050,
+      "filename": "lineage-22.2-20260530-nightly-messi-signed.zip",
+      "filepath": "/full/messi/20260530/lineage-22.2-20260530-nightly-messi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2816:117666,payload.bin:2816:893385168,payload_properties.txt:893388042:155,apex_info.pb:1612:1157,metadata:69:614,metadata.pb:751:813                  ",
+      "sha1": "7a70883a1d1c70d9139a7248016bfa300451cd61",
+      "sha256": "7aa9bfdf6ac55d759351526fdd20fbf01d490ec43522018cd9435475f1810139",
+      "size": 893391129,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/messi/20260530/lineage-22.2-20260530-nightly-messi-signed.zip"
+    },
+    "names": [
+      "moto z3"
+    ],
+    "models": [
+      "XT1929-15",
+      "XT1929-17"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_messi",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_messi",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_messi_defconfig"
+      ],
+      "kernel_source_path": "kernel/motorola/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "messi",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/messi/20260530/lineage-22.2-20260530-nightly-messi-signed.zip",
+    "boot_source_sha256": "7aa9bfdf6ac55d759351526fdd20fbf01d490ec43522018cd9435475f1810139",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_messi_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

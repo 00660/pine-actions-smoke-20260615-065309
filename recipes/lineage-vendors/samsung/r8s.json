@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/r8s/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/r8s.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/r8s/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779698492,
+      "filename": "lineage-23.2-20260525-nightly-r8s-signed.zip",
+      "filepath": "/full/r8s/20260525/lineage-23.2-20260525-nightly-r8s-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:318,metadata.pb:455:196                 ",
+      "sha1": "cf02c03c5a247d3ba4ff0b97f163c9bd2ff9d3a3",
+      "sha256": "ded4ca1bdc13fbc4649367021bd2984fe57b4c57b1f5ac80229996f2acd38c45",
+      "size": 1152977741,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/r8s/20260525/lineage-23.2-20260525-nightly-r8s-signed.zip"
+    },
+    "names": [
+      "Galaxy S20 FE (Exynos)"
+    ],
+    "models": [
+      "SM-G780F",
+      "SM-G780F/DS"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_r8s",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_universal9830",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_slsi_sepolicy",
+          "ref": "lineage-23.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_universal9830-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_r8s",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9830_defconfig",
+        "r8s.config"
+      ],
+      "kernel_source_path": "kernel/samsung/universal9830",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "r8s",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/r8s/20260525/lineage-23.2-20260525-nightly-r8s-signed.zip",
+    "boot_source_sha256": "ded4ca1bdc13fbc4649367021bd2984fe57b4c57b1f5ac80229996f2acd38c45",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_universal9830.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9830_defconfig",
+      "r8s.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

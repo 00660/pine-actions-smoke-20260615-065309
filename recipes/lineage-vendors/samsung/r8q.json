@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/r8q/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/r8q_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/r8q_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/r8q/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780143833,
+      "filename": "lineage-23.2-20260530-nightly-r8q-signed.zip",
+      "filepath": "/full/r8q/20260530/lineage-23.2-20260530-nightly-r8q-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:318,metadata.pb:455:196                 ",
+      "sha1": "2c554793bf2096ed6bf95d5f0943df2173aed48d",
+      "sha256": "73ea36fa2effdbe79cab2e17ce8543965133e9ff01b18c594326f713678b57d7",
+      "size": 1312344377,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/r8q/20260530/lineage-23.2-20260530-nightly-r8q-signed.zip"
+    },
+    "names": [
+      "Galaxy S20 FE (Snapdragon)",
+      "Galaxy S20 FE 5G"
+    ],
+    "models": [
+      "SM-G780G",
+      "SM-G780G/DS",
+      "SM-G781B",
+      "SM-G781B/DS",
+      "SM-G781N",
+      "SM-G7810"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_r8q",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_r8q",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/samsung/kona-sec-common.config",
+        "vendor/samsung/r8q.config"
+      ],
+      "kernel_source_path": "kernel/samsung/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "r8q",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/r8q/20260530/lineage-23.2-20260530-nightly-r8q-signed.zip",
+    "boot_source_sha256": "73ea36fa2effdbe79cab2e17ce8543965133e9ff01b18c594326f713678b57d7",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/samsung/kona-sec-common.config",
+      "vendor/samsung/r8q.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

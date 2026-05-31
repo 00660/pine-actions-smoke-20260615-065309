@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gemini/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gemini.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gemini/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779876863,
+      "filename": "lineage-22.2-20260527-nightly-gemini-signed.zip",
+      "filepath": "/full/gemini/20260527/lineage-22.2-20260527-nightly-gemini-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:330,metadata.pb:467:211                 ",
+      "sha1": "5c0de9afed41216363c67808b4f4888e79d754fc",
+      "sha256": "ccd1688d2388c81c28cace9347d248bf18bd821f4086b08bc07ee93720140f0a",
+      "size": 992240368,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gemini/20260527/lineage-22.2-20260527-nightly-gemini-signed.zip"
+    },
+    "names": [
+      "Mi 5"
+    ],
+    "models": [],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0",
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_gemini",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8996",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_msm8996-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_gemini",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/xiaomi/mi8996_defconfig",
+        "vendor/xiaomi/gemini.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/msm8996",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "gemini",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gemini/20260527/lineage-22.2-20260527-nightly-gemini-signed.zip",
+    "boot_source_sha256": "ccd1688d2388c81c28cace9347d248bf18bd821f4086b08bc07ee93720140f0a",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8996.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/xiaomi/mi8996_defconfig",
+      "vendor/xiaomi/gemini.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

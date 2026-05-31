@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No shared LineageOS branch found for device tree and kernel repo.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/athene/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/athene.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/athene/builds",
+    "latest_official_build": null,
+    "names": [
+      "moto g4"
+    ],
+    "models": [
+      "XT1622",
+      "XT1624",
+      "XT1625",
+      "XT1626",
+      "XT1640",
+      "XT1641",
+      "XT1642",
+      "XT1643",
+      "XT1644"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm",
+    "current_branch": "14.1",
+    "versions": [
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_athene",
+      "ref": "",
+      "validation": "missing"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_msm8952",
+      "ref": "",
+      "validation": "not_checked",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "athene",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_msm8952.git",
+    "kernel_ref": "",
+    "arch": "arm",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

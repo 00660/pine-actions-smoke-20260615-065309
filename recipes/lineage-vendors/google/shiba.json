@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/shiba/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/shiba.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/shiba/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779605087,
+      "filename": "lineage-23.2-20260524-nightly-shiba-signed.zip",
+      "filepath": "/full/shiba/20260524/lineage-23.2-20260524-nightly-shiba-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4804:138170,payload.bin:4804:1376607377,payload_properties.txt:1376612239:156,apex_info.pb:2000:1688,care_map.pb:3735:1022,metadata:69:668,metadata.pb:805:1147                        ",
+      "sha1": "272c293f7410db370c351953296efaf84b5a5457",
+      "sha256": "e3df50bb73b5337251146014ff8e968af5ab58e18ed51c5962bc56fae2a58166",
+      "size": 1376615386,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/shiba/20260524/lineage-23.2-20260524-nightly-shiba-signed.zip"
+    },
+    "names": [
+      "Pixel 8"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_shiba",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "shiba",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/shiba/20260524/lineage-23.2-20260524-nightly-shiba-signed.zip",
+    "boot_source_sha256": "e3df50bb73b5337251146014ff8e968af5ab58e18ed51c5962bc56fae2a58166",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

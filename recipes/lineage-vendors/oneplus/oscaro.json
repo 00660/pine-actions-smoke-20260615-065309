@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/oscaro/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/oscaro.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/oscaro/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779667509,
+      "filename": "lineage-23.2-20260525-nightly-oscaro-signed.zip",
+      "filepath": "/full/oscaro/20260525/lineage-23.2-20260525-nightly-oscaro-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4663:165615,payload.bin:4663:1694141105,payload_properties.txt:1694145826:156,apex_info.pb:2177:1279,care_map.pb:3503:1113,metadata:69:691,metadata.pb:828:1301                        ",
+      "sha1": "fa553aace0eb1886f2c22878eab69fa141cb8ab8",
+      "sha256": "8fb43d1035354793d7f7cf53d395e824924c977eee49eb81371ee77698bc2956",
+      "size": 1694148973,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/oscaro/20260525/lineage-23.2-20260525-nightly-oscaro-signed.zip"
+    },
+    "names": [
+      "Nord CE 2 Lite 5G"
+    ],
+    "models": [
+      "CPH2381",
+      "CPH2409"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_oscaro",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm6375",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm6375-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_oscaro",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/holi-qgki_defconfig",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm6375",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "oscaro",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/oscaro/20260525/lineage-23.2-20260525-nightly-oscaro-signed.zip",
+    "boot_source_sha256": "8fb43d1035354793d7f7cf53d395e824924c977eee49eb81371ee77698bc2956",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm6375.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/holi-qgki_defconfig",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

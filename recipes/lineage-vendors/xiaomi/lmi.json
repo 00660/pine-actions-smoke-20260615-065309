@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/lmi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/lmi_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/lmi_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/lmi_variant3.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/lmi/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779840316,
+      "filename": "lineage-23.2-20260527-nightly-lmi-signed.zip",
+      "filepath": "/full/lmi/20260527/lineage-23.2-20260527-nightly-lmi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:318,metadata.pb:455:196                 ",
+      "sha1": "c9bc3c1debb5026e78316a4e78296969a45592c3",
+      "sha256": "31eb3f971bdf5963b8d1cc62b34be6ce6f009585549dcbc82c44cc83eeab701d",
+      "size": 1631764550,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/lmi/20260527/lineage-23.2-20260527-nightly-lmi-signed.zip"
+    },
+    "names": [
+      "POCO F2 Pro",
+      "Redmi K30 Pro",
+      "Redmi K30 Pro Zoom Edition"
+    ],
+    "models": [
+      "M2004J11G",
+      "M2001J11C",
+      "M2001J11E"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_lmi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_lmi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi/sm8250-common.config",
+        "vendor/xiaomi/lmi.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "lmi",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/lmi/20260527/lineage-23.2-20260527-nightly-lmi-signed.zip",
+    "boot_source_sha256": "31eb3f971bdf5963b8d1cc62b34be6ce6f009585549dcbc82c44cc83eeab701d",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi/sm8250-common.config",
+      "vendor/xiaomi/lmi.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

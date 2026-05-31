@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm64-arm; only arm64 devices are built."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/radxa02/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/radxa02.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/radxa02/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779856024,
+      "filename": "lineage-22.2-20260527-nightly-radxa02-signed.zip",
+      "filepath": "/full/radxa02/20260527/lineage-22.2-20260527-nightly-radxa02-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:314,metadata.pb:451:196                 ",
+      "sha1": "b6eb025318f9a40d6054d59608375fe346b60cef",
+      "sha256": "e7c80cdeb8dbea9966e50b7eee35a7d28b30d5e4251d54eb044c3f317343ca35",
+      "size": 561032772,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/radxa02/20260527/lineage-22.2-20260527-nightly-radxa02-signed.zip"
+    },
+    "names": [
+      "Zero 2 (Android TV)"
+    ],
+    "models": [],
+    "vendor": "Radxa",
+    "vendor_short": "radxa",
+    "architecture": {
+      "cpu": "arm64",
+      "userspace": "arm"
+    },
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_radxa_radxa02",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-4.9",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_sepolicy",
+          "ref": "lineage-22.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigAmlogic.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_g12-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_radxa_radxa02",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "g12a_defconfig"
+      ],
+      "kernel_source_path": "kernel/amlogic/linux-4.9",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "radxa02",
+    "vendor": "Radxa",
+    "vendor_short": "radxa",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/radxa02/20260527/lineage-22.2-20260527-nightly-radxa02-signed.zip",
+    "boot_source_sha256": "e7c80cdeb8dbea9966e50b7eee35a7d28b30d5e4251d54eb044c3f317343ca35",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-4.9.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64-arm",
+    "kernel_configs": [
+      "g12a_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

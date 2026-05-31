@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/flashlmdd/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/flashlmdd.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/flashlmdd/builds",
+    "latest_official_build": null,
+    "names": [
+      "V50 ThinQ"
+    ],
+    "models": [
+      "LM-V500EM",
+      "LM-V500N"
+    ],
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "architecture": "arm64",
+    "current_branch": "21",
+    "versions": [
+      "21"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lge_flashlmdd",
+      "ref": "lineage-21",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lge_sm8150",
+      "ref": "lineage-21",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_sm8150-common",
+          "ref": "lineage-21",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_flashlmdd",
+          "ref": "lineage-21",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lineageos_flash_defconfig"
+      ],
+      "kernel_source_path": "kernel/lge/sm8150",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "flashlmdd",
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "lineage_branch": "lineage-21",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lge_sm8150.git",
+    "kernel_ref": "lineage-21",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lineageos_flash_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

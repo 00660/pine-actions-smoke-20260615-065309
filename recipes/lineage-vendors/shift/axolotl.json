@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/axolotl/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/axolotl.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/axolotl/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780160210,
+      "filename": "lineage-22.2-20260530-nightly-axolotl-signed.zip",
+      "filepath": "/full/axolotl/20260530/lineage-22.2-20260530-nightly-axolotl-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:4221:116004,payload.bin:4221:1038355355,payload_properties.txt:1038359634:156,apex_info.pb:2028:1157,care_map.pb:3232:942,metadata:69:686,metadata.pb:823:1157                        ",
+      "sha1": "fe2965ab387471042fb6be64bb0551bcd8090c93",
+      "sha256": "9cf10f7ddc2a46e869899a770dd639956d0ce25397c2cf9f23e7d50f8b89ca36",
+      "size": 1038362785,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/axolotl/20260530/lineage-22.2-20260530-nightly-axolotl-signed.zip"
+    },
+    "names": [
+      "SHIFT6mq"
+    ],
+    "models": [],
+    "vendor": "SHIFT",
+    "vendor_short": "shift",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_shift_axolotl",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_shift_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_shift_axolotl",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineage_axolotl_eng_defconfig",
+        "lineage_axolotl_defconfig"
+      ],
+      "kernel_source_path": "kernel/shift/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "axolotl",
+    "vendor": "SHIFT",
+    "vendor_short": "shift",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/axolotl/20260530/lineage-22.2-20260530-nightly-axolotl-signed.zip",
+    "boot_source_sha256": "9cf10f7ddc2a46e869899a770dd639956d0ce25397c2cf9f23e7d50f8b89ca36",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_shift_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineage_axolotl_eng_defconfig",
+      "lineage_axolotl_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

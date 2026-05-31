@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/beckham/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/beckham.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/beckham/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779858517,
+      "filename": "lineage-22.2-20260527-nightly-beckham-signed.zip",
+      "filepath": "/full/beckham/20260527/lineage-22.2-20260527-nightly-beckham-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2813:112980,payload.bin:2813:971107014,payload_properties.txt:971109885:155,apex_info.pb:1609:1157,metadata:69:613,metadata.pb:750:811                  ",
+      "sha1": "ed5058c5ba74902bc682724e0c0b65b33f361f4f",
+      "sha256": "d967a01349a5af0e18c3aaa5a4affd38921b8fef4db5ff76dac0f9232b266bbf",
+      "size": 971112972,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/beckham/20260527/lineage-22.2-20260527-nightly-beckham-signed.zip"
+    },
+    "names": [
+      "moto z3 play"
+    ],
+    "models": [
+      "XT1929-2",
+      "XT1929-3",
+      "XT1929-4",
+      "XT1929-5",
+      "XT1929-6"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_beckham",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_beckham",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_beckham_defconfig"
+      ],
+      "kernel_source_path": "kernel/motorola/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "beckham",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/beckham/20260527/lineage-22.2-20260527-nightly-beckham-signed.zip",
+    "boot_source_sha256": "d967a01349a5af0e18c3aaa5a4affd38921b8fef4db5ff76dac0f9232b266bbf",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_beckham_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/raven/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/raven.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/raven/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779681511,
+      "filename": "lineage-23.2-20260525-nightly-raven-signed.zip",
+      "filepath": "/full/raven/20260525/lineage-23.2-20260525-nightly-raven-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4456:135071,payload.bin:4456:1330933832,payload_properties.txt:1330938346:156,apex_info.pb:1896:1553,care_map.pb:3496:913,metadata:69:666,metadata.pb:803:1045                        ",
+      "sha1": "6690c1307061b403534a13eb18bcbc9b39410566",
+      "sha256": "7ce8bc751ad48971e90e728185eafcf5296aef95492fa21211f20c00f2a9a3a4",
+      "size": 1330941493,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/raven/20260525/lineage-23.2-20260525-nightly-raven-signed.zip"
+    },
+    "names": [
+      "Pixel 6 Pro"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_raven",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "raven",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/raven/20260525/lineage-23.2-20260525-nightly-raven-signed.zip",
+    "boot_source_sha256": "7ce8bc751ad48971e90e728185eafcf5296aef95492fa21211f20c00f2a9a3a4",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

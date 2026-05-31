@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/rosemary/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rosemary_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rosemary_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rosemary_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rosemary_variant4.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/rosemary/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779896121,
+      "filename": "lineage-23.2-20260527-nightly-rosemary-signed.zip",
+      "filepath": "/full/rosemary/20260527/lineage-23.2-20260527-nightly-rosemary-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4403:121210,payload.bin:4403:1131702714,payload_properties.txt:1131707175:156,apex_info.pb:2167:1310,care_map.pb:3524:832,metadata:69:725,metadata.pb:862:1257                        ",
+      "sha1": "02a32918bb98b80db77d95860063a6c0339db805",
+      "sha256": "e0dd74b05be8d2e6a4efb7486ce33b59fb36a035d20294eabe14d9109e03ed45",
+      "size": 1131710322,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/rosemary/20260527/lineage-23.2-20260527-nightly-rosemary-signed.zip"
+    },
+    "names": [
+      "Redmi Note 10S",
+      "Redmi Note 10S NFC",
+      "Redmi Note 10S Latin America",
+      "POCO M5s"
+    ],
+    "models": [],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_rosemary",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_mt6785",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr",
+          "ref": "lineage-23.2",
+          "file": "SEPolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_rosemary",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "rosemary_defconfig"
+      ],
+      "kernel_source_path": "kernel/xiaomi/mt6785",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "rosemary",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/rosemary/20260527/lineage-23.2-20260527-nightly-rosemary-signed.zip",
+    "boot_source_sha256": "e0dd74b05be8d2e6a4efb7486ce33b59fb36a035d20294eabe14d9109e03ed45",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_mt6785.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "rosemary_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/borneo/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/borneo.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/borneo/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780099318,
+      "filename": "lineage-23.2-20260530-nightly-borneo-signed.zip",
+      "filepath": "/full/borneo/20260530/lineage-23.2-20260530-nightly-borneo-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4049:142956,payload.bin:4049:1100039039,payload_properties.txt:1100043146:156,apex_info.pb:1873:1279,care_map.pb:3199:803,metadata:69:679,metadata.pb:816:1009                        ",
+      "sha1": "c3f0f164544e3c0ca1eefe85e5eb0c16d7d3766a",
+      "sha256": "9cae4ddeaa2689638464c2d1c092e74de5ffd50f8a3467dd1af506bc4d6a7647",
+      "size": 1100046293,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/borneo/20260530/lineage-23.2-20260530-nightly-borneo-signed.zip"
+    },
+    "names": [
+      "moto g power 2021"
+    ],
+    "models": [
+      "XT2117-1",
+      "XT2117-2",
+      "XT2117-3",
+      "XT2117-4"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_borneo",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm6225",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm6225-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_borneo",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/bengal-perf_defconfig",
+        "vendor/ext_config/moto-bengal.config",
+        "vendor/ext_config/borneo-default.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm6225",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "borneo",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/borneo/20260530/lineage-23.2-20260530-nightly-borneo-signed.zip",
+    "boot_source_sha256": "9cae4ddeaa2689638464c2d1c092e74de5ffd50f8a3467dd1af506bc4d6a7647",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm6225.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/bengal-perf_defconfig",
+      "vendor/ext_config/moto-bengal.config",
+      "vendor/ext_config/borneo-default.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

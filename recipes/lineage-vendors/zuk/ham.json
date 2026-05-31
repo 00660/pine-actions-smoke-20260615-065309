@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/ham/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/ham.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/ham/builds",
+    "latest_official_build": null,
+    "names": [
+      "Z1"
+    ],
+    "models": [],
+    "vendor": "ZUK",
+    "vendor_short": "zuk",
+    "architecture": "arm",
+    "current_branch": "16.0",
+    "versions": [
+      "16.0",
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_zuk_ham",
+      "ref": "lineage-16.0",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_cyanogen_msm8974",
+      "ref": "lineage-16.0",
+      "validation": "full_source",
+      "version": "3.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_qcom_sepolicy-legacy",
+          "ref": "lineage-16.0",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_zuk_ham",
+          "ref": "lineage-16.0",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_k9_defconfig"
+      ],
+      "kernel_source_path": "kernel/cyanogen/msm8974",
+      "kernel_image_name": "zImage"
+    }
+  },
+  "build": {
+    "device": "ham",
+    "vendor": "ZUK",
+    "vendor_short": "zuk",
+    "lineage_branch": "lineage-16.0",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_cyanogen_msm8974.git",
+    "kernel_ref": "lineage-16.0",
+    "arch": "arm",
+    "kernel_configs": [
+      "lineageos_k9_defconfig"
+    ],
+    "image_target": "zImage",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

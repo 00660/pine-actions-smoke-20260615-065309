@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/z3s/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/z3s.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/z3s/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779611957,
+      "filename": "lineage-23.2-20260524-nightly-z3s-signed.zip",
+      "filepath": "/full/z3s/20260524/lineage-23.2-20260524-nightly-z3s-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:319,metadata.pb:456:197                 ",
+      "sha1": "12ec8612251fbc4b0c3447f4a9ff4a49baa8630f",
+      "sha256": "11a253bdc91fd49fce10bccfce3fa5ce61400ec31b11e0697ff1ef9307a79498",
+      "size": 1154103740,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/z3s/20260524/lineage-23.2-20260524-nightly-z3s-signed.zip"
+    },
+    "names": [
+      "Galaxy S20 Ultra (5G)"
+    ],
+    "models": [
+      "SM-G988B",
+      "SM-G988B/DS"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_z3s",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_universal9830",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_slsi_sepolicy",
+          "ref": "lineage-23.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_universal9830-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_z3s",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9830_defconfig",
+        "z3s.config"
+      ],
+      "kernel_source_path": "kernel/samsung/universal9830",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "z3s",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/z3s/20260524/lineage-23.2-20260524-nightly-z3s-signed.zip",
+    "boot_source_sha256": "11a253bdc91fd49fce10bccfce3fa5ce61400ec31b11e0697ff1ef9307a79498",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_universal9830.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9830_defconfig",
+      "z3s.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

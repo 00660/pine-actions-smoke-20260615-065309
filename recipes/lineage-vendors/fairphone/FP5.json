@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/FP5/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/FP5.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/FP5/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779767224,
+      "filename": "lineage-23.2-20260526-nightly-FP5-signed.zip",
+      "filepath": "/full/FP5/20260526/lineage-23.2-20260526-nightly-FP5-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4046:137093,payload.bin:4046:1317986196,payload_properties.txt:1317990300:156,apex_info.pb:1835:1279,care_map.pb:3161:838,metadata:69:659,metadata.pb:796:991                         ",
+      "sha1": "2e044d5e92c0663190e0ac64bdc475faf1fcebac",
+      "sha256": "a3613a06c22bd919cf999bf466242d165375037c424a2c69d06de00470950263",
+      "size": 1317993447,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/FP5/20260526/lineage-23.2-20260526-nightly-FP5-signed.zip"
+    },
+    "names": [
+      "5"
+    ],
+    "models": [
+      "FP5"
+    ],
+    "vendor": "Fairphone",
+    "vendor_short": "fairphone",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_fairphone_FP5",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_fairphone_qcm6490",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_fairphone_FP5",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/fp5-qgki_defconfig",
+        "vendor/fp5.config"
+      ],
+      "kernel_source_path": "kernel/fairphone/qcm6490",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "FP5",
+    "vendor": "Fairphone",
+    "vendor_short": "fairphone",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/FP5/20260526/lineage-23.2-20260526-nightly-FP5-signed.zip",
+    "boot_source_sha256": "a3613a06c22bd919cf999bf466242d165375037c424a2c69d06de00470950263",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_fairphone_qcm6490.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/fp5-qgki_defconfig",
+      "vendor/fp5.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

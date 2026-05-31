@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gta4xl/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gta4xl.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gta4xl/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779872207,
+      "filename": "lineage-23.2-20260527-nightly-gta4xl-signed.zip",
+      "filepath": "/full/gta4xl/20260527/lineage-23.2-20260527-nightly-gta4xl-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:335,metadata.pb:472:216                 ",
+      "sha1": "22b6c71a80ee622dd800eab16c45f5984e093367",
+      "sha256": "3bcd279529c06bbec5d743c60a11f6eba7bcb853437953451caa37b6a81cca95",
+      "size": 1117549053,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gta4xl/20260527/lineage-23.2-20260527-nightly-gta4xl-signed.zip"
+    },
+    "names": [
+      "Galaxy Tab S6 Lite (LTE)"
+    ],
+    "models": [
+      "SM-P615"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_gta4xl",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_gta4xl",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_slsi_sepolicy",
+          "ref": "lineage-23.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4xl-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4xl",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9611-gta4xl_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/gta4xl",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "gta4xl",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gta4xl/20260527/lineage-23.2-20260527-nightly-gta4xl-signed.zip",
+    "boot_source_sha256": "3bcd279529c06bbec5d743c60a11f6eba7bcb853437953451caa37b6a81cca95",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_gta4xl.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9611-gta4xl_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

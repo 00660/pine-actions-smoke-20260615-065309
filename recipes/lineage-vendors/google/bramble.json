@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/bramble/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/bramble.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/bramble/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780107410,
+      "filename": "lineage-23.2-20260530-nightly-bramble-signed.zip",
+      "filepath": "/full/bramble/20260530/lineage-23.2-20260530-nightly-bramble-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4217:132191,payload.bin:4217:1260939391,payload_properties.txt:1260943666:156,apex_info.pb:1952:1386,care_map.pb:3385:785,metadata:69:675,metadata.pb:812:1092                        ",
+      "sha1": "5a6cd0d47c1415bb10d30a721815520c429baeff",
+      "sha256": "8463e5bbe66a10f807153088e080a5049aa8fa6e14f86fd9f888a65c8c37e34b",
+      "size": 1260946813,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/bramble/20260530/lineage-23.2-20260530-nightly-bramble-signed.zip"
+    },
+    "names": [
+      "Pixel 4a 5G"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_bramble",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_redbull",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "bramble",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/bramble/20260530/lineage-23.2-20260530-nightly-bramble-signed.zip",
+    "boot_source_sha256": "8463e5bbe66a10f807153088e080a5049aa8fa6e14f86fd9f888a65c8c37e34b",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_redbull.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

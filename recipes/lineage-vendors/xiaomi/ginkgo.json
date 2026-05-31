@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/ginkgo/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/ginkgo_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/ginkgo_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/ginkgo/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779840120,
+      "filename": "lineage-23.2-20260527-nightly-ginkgo-signed.zip",
+      "filepath": "/full/ginkgo/20260527/lineage-23.2-20260527-nightly-ginkgo-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:340,metadata.pb:477:229                 ",
+      "sha1": "a17ec427bfbc458d82ab81b46d78c4fc5bf63525",
+      "sha256": "a25d96b132532ca9ab9cc763806e40ea64ddbee95fc0381558100f6f02db51ae",
+      "size": 1246516121,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/ginkgo/20260527/lineage-23.2-20260527-nightly-ginkgo-signed.zip"
+    },
+    "names": [
+      "Redmi Note 8",
+      "Redmi Note 8T"
+    ],
+    "models": [],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_ginkgo",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6125",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm6125-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_ginkgo",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/trinket-perf_defconfig",
+        "vendor/xiaomi-trinket.config",
+        "vendor/ginkgo.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm6125",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "ginkgo",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/ginkgo/20260527/lineage-23.2-20260527-nightly-ginkgo-signed.zip",
+    "boot_source_sha256": "a25d96b132532ca9ab9cc763806e40ea64ddbee95fc0381558100f6f02db51ae",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6125.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/trinket-perf_defconfig",
+      "vendor/xiaomi-trinket.config",
+      "vendor/ginkgo.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

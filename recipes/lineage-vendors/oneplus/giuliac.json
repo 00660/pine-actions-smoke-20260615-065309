@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/giuliac/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/giuliac.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/giuliac/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779764074,
+      "filename": "lineage-23.2-20260526-nightly-giuliac-signed.zip",
+      "filepath": "/full/giuliac/20260526/lineage-23.2-20260526-nightly-giuliac-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:5025:214120,payload.bin:5025:2861158963,payload_properties.txt:2861164046:156,apex_info.pb:2300:1370,care_map.pb:3717:1261,metadata:69:691,metadata.pb:828:1424                        ",
+      "sha1": "d40fbbdb9688b8c0543b9ef9c888380fa463a0d6",
+      "sha256": "106d580d636be8792f3c8e25b3aabe5d2e41fbe5d41bdf47e431306507a1d633",
+      "size": 2861167193,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/giuliac/20260526/lineage-23.2-20260526-nightly-giuliac-signed.zip"
+    },
+    "names": [
+      "Ace 5"
+    ],
+    "models": [
+      "PKG110"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_giuliac",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8650",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm8650-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_giuliac",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/pineapple_GKI.config",
+        "vendor/oplus/pineapple_GKI.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8650",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "giuliac",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/giuliac/20260526/lineage-23.2-20260526-nightly-giuliac-signed.zip",
+    "boot_source_sha256": "106d580d636be8792f3c8e25b3aabe5d2e41fbe5d41bdf47e431306507a1d633",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8650.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/pineapple_GKI.config",
+      "vendor/oplus/pineapple_GKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

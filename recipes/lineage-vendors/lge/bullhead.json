@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/bullhead/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/bullhead.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/bullhead/builds",
+    "latest_official_build": null,
+    "names": [
+      "Nexus 5X"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "lge",
+    "architecture": "arm64",
+    "current_branch": "15.1",
+    "versions": [
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lge_bullhead",
+      "ref": "lineage-15.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lge_bullhead",
+      "ref": "lineage-15.1",
+      "validation": "full_source",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_bullhead",
+          "ref": "lineage-15.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_bullhead_defconfig"
+      ],
+      "kernel_source_path": "kernel/lge/bullhead",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "bullhead",
+    "vendor": "Google",
+    "vendor_short": "lge",
+    "lineage_branch": "lineage-15.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lge_bullhead.git",
+    "kernel_ref": "lineage-15.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_bullhead_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

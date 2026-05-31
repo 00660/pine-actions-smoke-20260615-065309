@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/zangyapro/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/zangyapro.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/zangyapro/builds",
+    "latest_official_build": null,
+    "names": [
+      "Aquaris X2 Pro"
+    ],
+    "models": [],
+    "vendor": "BQ",
+    "vendor_short": "bq",
+    "architecture": "arm64",
+    "current_branch": "20",
+    "versions": [
+      "20",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_bq_zangyapro",
+      "ref": "lineage-20",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_bq_sdm660",
+      "ref": "lineage-20",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_bq_sdm660-common",
+          "ref": "lineage-20",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_bq_zangyapro",
+          "ref": "lineage-20",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_zangya_defconfig"
+      ],
+      "kernel_source_path": "kernel/bq/sdm660",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "zangyapro",
+    "vendor": "BQ",
+    "vendor_short": "bq",
+    "lineage_branch": "lineage-20",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_bq_sdm660.git",
+    "kernel_ref": "lineage-20",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_zangya_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

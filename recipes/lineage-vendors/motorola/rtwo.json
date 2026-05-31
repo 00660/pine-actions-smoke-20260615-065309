@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/rtwo/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rtwo_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rtwo_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rtwo_variant3.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/rtwo/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780130310,
+      "filename": "lineage-23.2-20260530-nightly-rtwo-signed.zip",
+      "filepath": "/full/rtwo/20260530/lineage-23.2-20260530-nightly-rtwo-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4583:271891,payload.bin:4583:1954515185,payload_properties.txt:1954519826:156,apex_info.pb:2045:1279,care_map.pb:3371:1165,metadata:69:674,metadata.pb:811:1186                        ",
+      "sha1": "115877788f391a3173db7c1f460b87479e027181",
+      "sha256": "e835a6196bb828a432d9dddb621a903d64a3b1a896277eb8f1889d8b44def08e",
+      "size": 1954522973,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/rtwo/20260530/lineage-23.2-20260530-nightly-rtwo-signed.zip"
+    },
+    "names": [
+      "edge 40 pro",
+      "moto X40",
+      "edge+ (2023)"
+    ],
+    "models": [
+      "XT2301-4",
+      "XT2301-5",
+      "XT2301-1"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_rtwo",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm8550-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_rtwo",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/kalama_GKI.config",
+        "vendor/ext_config/moto-kalama.config",
+        "vendor/ext_config/moto-kalama-gki.config",
+        "vendor/ext_config/moto-kalama-rtwo.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "rtwo",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/rtwo/20260530/lineage-23.2-20260530-nightly-rtwo-signed.zip",
+    "boot_source_sha256": "e835a6196bb828a432d9dddb621a903d64a3b1a896277eb8f1889d8b44def08e",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/kalama_GKI.config",
+      "vendor/ext_config/moto-kalama.config",
+      "vendor/ext_config/moto-kalama-gki.config",
+      "vendor/ext_config/moto-kalama-rtwo.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

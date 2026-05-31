@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No shared LineageOS branch found for device tree and kernel repo.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/espressowifi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/espressowifi_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/espressowifi_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/espressowifi/builds",
+    "latest_official_build": null,
+    "names": [
+      "Galaxy Tab 2 7.0 (Wi-Fi / Wi-Fi + IR)",
+      "Galaxy Tab 2 10.1 (Wi-Fi / Wi-Fi + IR)"
+    ],
+    "models": [
+      "P3110",
+      "P3113",
+      "P5110",
+      "P5113"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm",
+    "current_branch": "13.0",
+    "versions": [
+      "13.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_espressowifi",
+      "ref": "",
+      "validation": "missing"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_espresso10",
+      "ref": "",
+      "validation": "not_checked",
+      "version": "3.0"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "espressowifi",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_espresso10.git",
+    "kernel_ref": "",
+    "arch": "arm",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

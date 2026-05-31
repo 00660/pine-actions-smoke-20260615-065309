@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/thyme/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/thyme.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/thyme/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779941359,
+      "filename": "lineage-23.2-20260528-nightly-thyme-signed.zip",
+      "filepath": "/full/thyme/20260528/lineage-23.2-20260528-nightly-thyme-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4242:122583,payload.bin:4242:1399184892,payload_properties.txt:1399189192:156,apex_info.pb:1956:1279,care_map.pb:3282:913,metadata:69:676,metadata.pb:813:1095                        ",
+      "sha1": "8767e70a23ff1fde0269902895ab74251c955e25",
+      "sha256": "cfc6641a4b885a71fd05a61d941265aa324f021ca247545b4e08f70fb0e54bba",
+      "size": 1399192339,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/thyme/20260528/lineage-23.2-20260528-nightly-thyme-signed.zip"
+    },
+    "names": [
+      "Mi 10S"
+    ],
+    "models": [
+      "M2102J2SC"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_thyme",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_thyme",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi/sm8250-common.config",
+        "vendor/xiaomi/thyme.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "thyme",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/thyme/20260528/lineage-23.2-20260528-nightly-thyme-signed.zip",
+    "boot_source_sha256": "cfc6641a4b885a71fd05a61d941265aa324f021ca247545b4e08f70fb0e54bba",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi/sm8250-common.config",
+      "vendor/xiaomi/thyme.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

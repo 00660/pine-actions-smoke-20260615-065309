@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nuwa/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nuwa.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nuwa/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779580983,
+      "filename": "lineage-23.2-20260524-nightly-nuwa-signed.zip",
+      "filepath": "/full/nuwa/20260524/lineage-23.2-20260524-nightly-nuwa-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4747:187840,payload.bin:4747:2236132759,payload_properties.txt:2236137564:156,apex_info.pb:2188:1279,care_map.pb:3514:1186,metadata:69:679,metadata.pb:816:1324                        ",
+      "sha1": "aafca732896ff3ccc45fccde550cc49ad1899c25",
+      "sha256": "a37eaa8df6990c03a4f55734dbcb65f5a866de01b290f2e9c6db596c38a5304f",
+      "size": 2236140711,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nuwa/20260524/lineage-23.2-20260524-nightly-nuwa-signed.zip"
+    },
+    "names": [
+      "13 Pro"
+    ],
+    "models": [
+      "2210132G",
+      "2210132C"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_nuwa",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8550-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_nuwa",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/kalama_GKI.config",
+        "vendor/$(PRODUCT_DEVICE)_GKI.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "nuwa",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nuwa/20260524/lineage-23.2-20260524-nightly-nuwa-signed.zip",
+    "boot_source_sha256": "a37eaa8df6990c03a4f55734dbcb65f5a866de01b290f2e9c6db596c38a5304f",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/kalama_GKI.config",
+      "vendor/$(PRODUCT_DEVICE)_GKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

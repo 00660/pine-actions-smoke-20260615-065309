@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/bronco/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/bronco.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/bronco/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779589821,
+      "filename": "lineage-22.2-20260524-nightly-bronco-signed.zip",
+      "filepath": "/full/bronco/20260524/lineage-22.2-20260524-nightly-bronco-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:4103:159544,payload.bin:4103:1530904568,payload_properties.txt:1530908729:156,apex_info.pb:2148:1157,care_map.pb:3352:704,metadata:69:686,metadata.pb:823:1277                        ",
+      "sha1": "56d92d7a88405d0365dac80d83f81b71838f080c",
+      "sha256": "4be7d7e8fc1c773fd134744aa54ff3663b7da26d794f340e66e68526e1e1c698",
+      "size": 1530911880,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/bronco/20260524/lineage-22.2-20260524-nightly-bronco-signed.zip"
+    },
+    "names": [
+      "ThinkPhone by motorola"
+    ],
+    "models": [
+      "XT2309-2"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_bronco",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm8475",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "5.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm8475-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_bronco",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/waipio_GKI.config",
+        "vendor/ext_config/moto-waipio.config",
+        "vendor/ext_config/moto-waipio-bronco.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm8475",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "bronco",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/bronco/20260524/lineage-22.2-20260524-nightly-bronco-signed.zip",
+    "boot_source_sha256": "4be7d7e8fc1c773fd134744aa54ff3663b7da26d794f340e66e68526e1e1c698",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm8475.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/waipio_GKI.config",
+      "vendor/ext_config/moto-waipio.config",
+      "vendor/ext_config/moto-waipio-bronco.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

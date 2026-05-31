@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/fogos/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/fogos_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/fogos_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/fogos/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780135515,
+      "filename": "lineage-23.2-20260530-nightly-fogos-signed.zip",
+      "filepath": "/full/fogos/20260530/lineage-23.2-20260530-nightly-fogos-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4170:136343,payload.bin:4170:1222353423,payload_properties.txt:1222357651:156,apex_info.pb:1957:1309,care_map.pb:3313:810,metadata:69:676,metadata.pb:813:1096                        ",
+      "sha1": "1afb6435d0ee039e5aba467b427df3c5a4e47765",
+      "sha256": "276a32eded24f8709b893977f388bb90e9fd39e0e708c996b68cf56b4bb8eb64",
+      "size": 1222360798,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/fogos/20260530/lineage-23.2-20260530-nightly-fogos-signed.zip"
+    },
+    "names": [
+      "moto g34 5G",
+      "moto g45 5G"
+    ],
+    "models": [
+      "XT2363-1",
+      "XT2363-2",
+      "XT2363-3",
+      "XT2363-4",
+      "XT2363-5",
+      "XT2363-8",
+      "XT2363-9"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_fogos",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm6375",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm6375-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_fogos",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/holi-qgki_defconfig",
+        "vendor/ext_config/lineage_moto-holi.config",
+        "vendor/ext_config/moto-holi-fogos.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm6375",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "fogos",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/fogos/20260530/lineage-23.2-20260530-nightly-fogos-signed.zip",
+    "boot_source_sha256": "276a32eded24f8709b893977f388bb90e9fd39e0e708c996b68cf56b4bb8eb64",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm6375.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/holi-qgki_defconfig",
+      "vendor/ext_config/lineage_moto-holi.config",
+      "vendor/ext_config/moto-holi-fogos.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

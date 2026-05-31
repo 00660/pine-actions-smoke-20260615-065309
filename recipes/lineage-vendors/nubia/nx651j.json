@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx651j/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx651j_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx651j_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nx651j/builds",
+    "latest_official_build": null,
+    "names": [
+      "Play 5G",
+      "Red Magic 5G Lite"
+    ],
+    "models": [
+      "NX651J",
+      "NX651J-EEA"
+    ],
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "architecture": "arm64",
+    "current_branch": "21",
+    "versions": [
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nubia_nx651j",
+      "ref": "lineage-21",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nubia_sm7250",
+      "ref": "lineage-21",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_sm7250-common",
+          "ref": "lineage-21",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_nx651j",
+          "ref": "lineage-21",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/nubia/sm7250_defconfig",
+        "vendor/nubia/nx651j.config"
+      ],
+      "kernel_source_path": "kernel/nubia/sm7250",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "nx651j",
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "lineage_branch": "lineage-21",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nubia_sm7250.git",
+    "kernel_ref": "lineage-21",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/nubia/sm7250_defconfig",
+      "vendor/nubia/nx651j.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

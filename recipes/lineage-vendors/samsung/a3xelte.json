@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm64-arm; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/a3xelte/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/a3xelte.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/a3xelte/builds",
+    "latest_official_build": null,
+    "names": [
+      "Galaxy A3 (2016)"
+    ],
+    "models": [
+      "SM-A310F",
+      "SM-A310F/DS",
+      "SM-A310M",
+      "SM-A310N0",
+      "SM-A310Y"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": {
+      "cpu": "arm64",
+      "userspace": "arm"
+    },
+    "current_branch": "17.1",
+    "versions": [
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_a3xelte",
+      "ref": "lineage-17.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_universal7580",
+      "ref": "lineage-17.1",
+      "validation": "full_source",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_universal7580-common",
+          "ref": "lineage-17.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_a3xelte",
+          "ref": "lineage-17.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_a3xelte_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/universal7580",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "a3xelte",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-17.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_universal7580.git",
+    "kernel_ref": "lineage-17.1",
+    "arch": "arm64-arm",
+    "kernel_configs": [
+      "lineageos_a3xelte_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

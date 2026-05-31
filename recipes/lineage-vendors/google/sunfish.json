@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/sunfish/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/sunfish.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/sunfish/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779958424,
+      "filename": "lineage-23.2-20260528-nightly-sunfish-signed.zip",
+      "filepath": "/full/sunfish/20260528/lineage-23.2-20260528-nightly-sunfish-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4249:122800,payload.bin:4249:1194699183,payload_properties.txt:1194703490:156,apex_info.pb:1952:1420,care_map.pb:3419:783,metadata:69:675,metadata.pb:812:1092                        ",
+      "sha1": "c4dfc35381cc25c9e0f87736b94879521a27d705",
+      "sha256": "87545d80a562aa803db83d411c9f8c9493cf4a13b41df7c57efc7c3ab56ae264",
+      "size": 1194706637,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/sunfish/20260528/lineage-23.2-20260528-nightly-sunfish-signed.zip"
+    },
+    "names": [
+      "Pixel 4a"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_sunfish",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_msm-4.14",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "sunfish",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/sunfish/20260528/lineage-23.2-20260528-nightly-sunfish-signed.zip",
+    "boot_source_sha256": "87545d80a562aa803db83d411c9f8c9493cf4a13b41df7c57efc7c3ab56ae264",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_msm-4.14.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

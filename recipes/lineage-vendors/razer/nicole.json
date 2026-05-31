@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nicole/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nicole_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nicole_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nicole/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780109512,
+      "filename": "lineage-23.2-20260530-nightly-nicole-signed.zip",
+      "filepath": "/full/nicole/20260530/lineage-23.2-20260530-nightly-nicole-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4415:136504,payload.bin:4415:1180716603,payload_properties.txt:1180721076:156,apex_info.pb:2084:1279,care_map.pb:3410:958,metadata:69:709,metadata.pb:846:1190                        ",
+      "sha1": "0ea4139a201fce4bd0cf34bb12b4376110523b99",
+      "sha256": "896fcfc0ba177edc2afc0de298c09637eb841e42823032fad467611644baafb2",
+      "size": 1180724223,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nicole/20260530/lineage-23.2-20260530-nightly-nicole-signed.zip"
+    },
+    "names": [
+      "Edge 5G",
+      "Edge WiFi"
+    ],
+    "models": [
+      "RZ80-0460",
+      "RZ80-0461"
+    ],
+    "vendor": "Razer",
+    "vendor_short": "razer",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_razer_nicole",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_razer_sg8175p",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_razer_nicole",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lahaina-qgki_defconfig",
+        "vendor/nicole.config"
+      ],
+      "kernel_source_path": "kernel/razer/sg8175p",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "nicole",
+    "vendor": "Razer",
+    "vendor_short": "razer",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nicole/20260530/lineage-23.2-20260530-nightly-nicole-signed.zip",
+    "boot_source_sha256": "896fcfc0ba177edc2afc0de298c09637eb841e42823032fad467611644baafb2",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_razer_sg8175p.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lahaina-qgki_defconfig",
+      "vendor/nicole.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

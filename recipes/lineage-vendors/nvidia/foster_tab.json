@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/foster_tab/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/foster_tab_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/foster_tab_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/foster_tab/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780062152,
+      "filename": "lineage-22.2-20260529-nightly-foster_tab-signed.zip",
+      "filepath": "/full/foster_tab/20260529/lineage-22.2-20260529-nightly-foster_tab-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:359,metadata.pb:496:269                 ",
+      "sha1": "50d3317ca077390ad4a103855084fe17a5db15b8",
+      "sha256": "dcb2e6baa625495ae112eff036fc9acffc8a036c4bf4e41a1c41d37389bd16df",
+      "size": 1000242125,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/foster_tab/20260529/lineage-22.2-20260529-nightly-foster_tab-signed.zip"
+    },
+    "names": [
+      "Shield TV (2015 / 2015 Pro / 2017 / 2019 Pro) [Tablet]",
+      "Jetson TX1 [Tablet]"
+    ],
+    "models": [
+      "darcy",
+      "foster_e",
+      "foster_e_hdd",
+      "mdarcy",
+      "jetson_cv"
+    ],
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "18.1",
+      "17.1",
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nvidia_foster_tab",
+      "ref": "lineage-18.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel",
+      "ref": "lineage-18.1",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_tegra-common",
+          "ref": "lineage-18.1",
+          "file": "twrp.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_sepolicy",
+          "ref": "lineage-18.1",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_tegra-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigTegra.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_t210-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_foster",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_foster_tab",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "tegra_android_defconfig"
+      ],
+      "kernel_source_path": "kernel/nvidia/kernel-$(TARGET_TEGRA_KERNEL)",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "foster_tab",
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "lineage_branch": "lineage-18.1",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/foster_tab/20260529/lineage-22.2-20260529-nightly-foster_tab-signed.zip",
+    "boot_source_sha256": "dcb2e6baa625495ae112eff036fc9acffc8a036c4bf4e41a1c41d37389bd16df",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel.git",
+    "kernel_ref": "lineage-18.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "tegra_android_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

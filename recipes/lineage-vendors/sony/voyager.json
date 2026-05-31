@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/voyager/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/voyager.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/voyager/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780045737,
+      "filename": "lineage-23.2-20260529-nightly-voyager-signed.zip",
+      "filepath": "/full/voyager/20260529/lineage-23.2-20260529-nightly-voyager-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:2910:107855,payload.bin:2910:913682232,payload_properties.txt:913685200:155,apex_info.pb:1584:1279,metadata:69:608,metadata.pb:745:791                  ",
+      "sha1": "6608e80b6b0c5f9c62d244214b68bee073a6a4b1",
+      "sha256": "8d634d65d666ce8922e8c4b21da5b705f0af964a33982a0a3a0abbe40ba52ecc",
+      "size": 913688283,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/voyager/20260529/lineage-23.2-20260529-nightly-voyager-signed.zip"
+    },
+    "names": [
+      "Xperia XA2 Plus"
+    ],
+    "models": [
+      "H3413",
+      "H4413",
+      "H4493"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_voyager",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sdm660",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_nile-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_voyager",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/sdm660-perf_defconfig",
+        "vendor/sony/common.config",
+        "vendor/sony/voyager.config"
+      ],
+      "kernel_source_path": "kernel/sony/sdm660",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "voyager",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/voyager/20260529/lineage-23.2-20260529-nightly-voyager-signed.zip",
+    "boot_source_sha256": "8d634d65d666ce8922e8c4b21da5b705f0af964a33982a0a3a0abbe40ba52ecc",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sdm660.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/sdm660-perf_defconfig",
+      "vendor/sony/common.config",
+      "vendor/sony/voyager.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

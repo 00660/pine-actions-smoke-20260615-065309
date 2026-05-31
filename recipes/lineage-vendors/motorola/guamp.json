@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/guamp/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/guamp_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/guamp_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/guamp_variant3.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/guamp/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779705008,
+      "filename": "lineage-23.2-20260525-nightly-guamp-signed.zip",
+      "filepath": "/full/guamp/20260525/lineage-23.2-20260525-nightly-guamp-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4012:141825,payload.bin:4012:1072191989,payload_properties.txt:1072196059:156,apex_info.pb:1848:1279,care_map.pb:3174:791,metadata:69:675,metadata.pb:812:988                         ",
+      "sha1": "c80b0cadfeab79d97742c40a81a41f66f4025b58",
+      "sha256": "fe33b9ae0798aa42a3b59f102566cc56483a91f2383c63d0de03b010caf53d7f",
+      "size": 1072199206,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/guamp/20260525/lineage-23.2-20260525-nightly-guamp-signed.zip"
+    },
+    "names": [
+      "moto g9 play",
+      "moto g9",
+      "K12 Note"
+    ],
+    "models": [
+      "XT2083-1",
+      "XT2083-3",
+      "XT2083-5",
+      "XT2083-6",
+      "XT2083-7",
+      "XT2083-4"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_guamp",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm6225",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm6225-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_guamp",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/bengal-perf_defconfig",
+        "vendor/ext_config/moto-bengal.config",
+        "vendor/ext_config/guamp-default.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm6225",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "guamp",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/guamp/20260525/lineage-23.2-20260525-nightly-guamp-signed.zip",
+    "boot_source_sha256": "fe33b9ae0798aa42a3b59f102566cc56483a91f2383c63d0de03b010caf53d7f",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm6225.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/bengal-perf_defconfig",
+      "vendor/ext_config/moto-bengal.config",
+      "vendor/ext_config/guamp-default.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

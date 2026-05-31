@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nash/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nash_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nash_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nash/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779869886,
+      "filename": "lineage-22.2-20260527-nightly-nash-signed.zip",
+      "filepath": "/full/nash/20260527/lineage-22.2-20260527-nightly-nash-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2770:156402,payload.bin:2770:898429916,payload_properties.txt:898432744:155,apex_info.pb:1566:1157,metadata:69:605,metadata.pb:742:776                  ",
+      "sha1": "73d2a8d7af145bdf21e1cb395d1ca18092ae4455",
+      "sha256": "a654670cbb3c01dc4c9fd19cf6a14b80ef2f1940d7310eb23ee2271a1f602856",
+      "size": 898435831,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nash/20260527/lineage-22.2-20260527-nightly-nash-signed.zip"
+    },
+    "names": [
+      "moto z2 force",
+      "moto z (2018)"
+    ],
+    "models": [
+      "XT1789-02",
+      "XT1789-03",
+      "XT1789-04",
+      "XT1789-05",
+      "XT1789-06",
+      "XT1789-07"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0",
+      "15.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_nash",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_nash",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_nash_defconfig"
+      ],
+      "kernel_source_path": "kernel/motorola/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "nash",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nash/20260527/lineage-22.2-20260527-nightly-nash-signed.zip",
+    "boot_source_sha256": "a654670cbb3c01dc4c9fd19cf6a14b80ef2f1940d7310eb23ee2271a1f602856",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_nash_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

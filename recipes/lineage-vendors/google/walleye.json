@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/walleye/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/walleye.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/walleye/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780061940,
+      "filename": "lineage-22.2-20260529-nightly-walleye-signed.zip",
+      "filepath": "/full/walleye/20260529/lineage-22.2-20260529-nightly-walleye-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3367:89214,payload.bin:3367:967543447,payload_properties.txt:967546872:154,apex_info.pb:1716:1191,care_map.pb:2954:366,metadata:69:665,metadata.pb:802:866                       ",
+      "sha1": "b22006154a54a6c765d3462059c6e0b27943b0b6",
+      "sha256": "2220df6e02b7ad4e9751cf6f5655505a66dac55ba9ac371f9098e431807185bc",
+      "size": 967550021,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/walleye/20260529/lineage-22.2-20260529-nightly-walleye-signed.zip"
+    },
+    "names": [
+      "Pixel 2"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_muskie",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_wahoo",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "walleye",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/walleye/20260529/lineage-22.2-20260529-nightly-walleye-signed.zip",
+    "boot_source_sha256": "2220df6e02b7ad4e9751cf6f5655505a66dac55ba9ac371f9098e431807185bc",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_wahoo.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

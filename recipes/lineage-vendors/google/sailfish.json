@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/sailfish/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/sailfish.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/sailfish/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779609376,
+      "filename": "lineage-22.2-20260524-nightly-sailfish-signed.zip",
+      "filepath": "/full/sailfish/20260524/lineage-22.2-20260524-nightly-sailfish-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2834:119762,payload.bin:2834:880767275,payload_properties.txt:880770167:155,apex_info.pb:1630:1157,metadata:69:617,metadata.pb:754:828                  ",
+      "sha1": "22d5789b40526256b583da10831aa3095a97bcf5",
+      "sha256": "7d64272e69e3eef9e16ef9979c031a98fc6a5cde8afe8c7d0fc7396d740af1ef",
+      "size": 880773254,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/sailfish/20260524/lineage-22.2-20260524-nightly-sailfish-signed.zip"
+    },
+    "names": [
+      "Pixel"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "18.1",
+      "17.1",
+      "16.0",
+      "15.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_sailfish",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_marlin",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "sailfish",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/sailfish/20260524/lineage-22.2-20260524-nightly-sailfish-signed.zip",
+    "boot_source_sha256": "7d64272e69e3eef9e16ef9979c031a98fc6a5cde8afe8c7d0fc7396d740af1ef",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_marlin.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx619j/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx619j.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nx619j/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779949666,
+      "filename": "lineage-22.2-20260528-nightly-nx619j-signed.zip",
+      "filepath": "/full/nx619j/20260528/lineage-22.2-20260528-nightly-nx619j-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:341,metadata.pb:478:230                 ",
+      "sha1": "a632f988228a1ce2dcf9a6e298bf841daaadd847",
+      "sha256": "ee323c9735e6954818febf6662d38e2285d347b3e8f6824faa7a46229a8563f2",
+      "size": 1124074383,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nx619j/20260528/lineage-22.2-20260528-nightly-nx619j-signed.zip"
+    },
+    "names": [
+      "Red Magic Mars"
+    ],
+    "models": [
+      "NX619J"
+    ],
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nubia_nx619j",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nubia_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_nx619j",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/nubia/sdm845_defconfig",
+        "vendor/nubia/nx619j.config"
+      ],
+      "kernel_source_path": "kernel/nubia/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "nx619j",
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nx619j/20260528/lineage-22.2-20260528-nightly-nx619j-signed.zip",
+    "boot_source_sha256": "ee323c9735e6954818febf6662d38e2285d347b3e8f6824faa7a46229a8563f2",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nubia_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/nubia/sdm845_defconfig",
+      "vendor/nubia/nx619j.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/bale/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/bale.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/bale/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780076992,
+      "filename": "lineage-23.2-20260529-nightly-bale-signed.zip",
+      "filepath": "/full/bale/20260529/lineage-23.2-20260529-nightly-bale-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:5057:209440,payload.bin:5057:2792148605,payload_properties.txt:2792153720:156,apex_info.pb:2318:1370,care_map.pb:3735:1275,metadata:69:693,metadata.pb:830:1440                        ",
+      "sha1": "8ba183923d69491f7ef6a490867f2dd0d71f7d1a",
+      "sha256": "42f312517f2da84af6ed9b12bd59a797897f002c40e39650056697ae53e33a7d",
+      "size": 2792156867,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/bale/20260529/lineage-23.2-20260529-nightly-bale-signed.zip"
+    },
+    "names": [
+      "GT Neo6"
+    ],
+    "models": [
+      "RMX3852"
+    ],
+    "vendor": "Realme",
+    "vendor_short": "realme",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_realme_bale",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8650",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm8650-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_realme_bale",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/pineapple_GKI.config",
+        "vendor/oplus/pineapple_GKI.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8650",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "bale",
+    "vendor": "Realme",
+    "vendor_short": "realme",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/bale/20260529/lineage-23.2-20260529-nightly-bale-signed.zip",
+    "boot_source_sha256": "42f312517f2da84af6ed9b12bd59a797897f002c40e39650056697ae53e33a7d",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8650.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/pineapple_GKI.config",
+      "vendor/oplus/pineapple_GKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

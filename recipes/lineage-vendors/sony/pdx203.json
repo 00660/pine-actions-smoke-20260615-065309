@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pdx203/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pdx203.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pdx203/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780012971,
+      "filename": "lineage-23.2-20260529-nightly-pdx203-signed.zip",
+      "filepath": "/full/pdx203/20260529/lineage-23.2-20260529-nightly-pdx203-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4059:129855,payload.bin:4059:1166320317,payload_properties.txt:1166324434:156,apex_info.pb:1891:1279,care_map.pb:3217:795,metadata:69:683,metadata.pb:820:1023                        ",
+      "sha1": "5c3c1586fa845b897908bbcd95cd2972b883ee4d",
+      "sha256": "6b306d6428bedff01e860ac65f80b618a49433b56d831ffb8bcb579bdc02bd14",
+      "size": 1166327581,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pdx203/20260529/lineage-23.2-20260529-nightly-pdx203-signed.zip"
+    },
+    "names": [
+      "Xperia 1 II"
+    ],
+    "models": [
+      "XQ-AT72",
+      "XQ-AT52",
+      "XQ-AT51",
+      "XQ-AT42"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_pdx203",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_pdx203",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/edo.config",
+        "vendor/pdx203.config"
+      ],
+      "kernel_source_path": "kernel/sony/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "pdx203",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pdx203/20260529/lineage-23.2-20260529-nightly-pdx203-signed.zip",
+    "boot_source_sha256": "6b306d6428bedff01e860ac65f80b618a49433b56d831ffb8bcb579bdc02bd14",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/edo.config",
+      "vendor/pdx203.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

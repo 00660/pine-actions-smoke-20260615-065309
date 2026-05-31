@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/r7sf/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/r7sf.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/r7sf/builds",
+    "latest_official_build": null,
+    "names": [
+      "R7s (International)"
+    ],
+    "models": [
+      "R7sf"
+    ],
+    "vendor": "OPPO",
+    "vendor_short": "oppo",
+    "architecture": "arm64",
+    "current_branch": "16.0",
+    "versions": [
+      "16.0",
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oppo_r7sf",
+      "ref": "lineage-16.0",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oppo_msm8939",
+      "ref": "lineage-16.0",
+      "validation": "full_source",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oppo_common",
+          "ref": "lineage-16.0",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_qcom_sepolicy-legacy",
+          "ref": "lineage-16.0",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oppo_msm8939-common",
+          "ref": "lineage-16.0",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oppo_r7sf",
+          "ref": "lineage-16.0",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_r7sf_defconfig"
+      ],
+      "kernel_source_path": "kernel/oppo/msm8939",
+      "kernel_image_name": "zImage"
+    }
+  },
+  "build": {
+    "device": "r7sf",
+    "vendor": "OPPO",
+    "vendor_short": "oppo",
+    "lineage_branch": "lineage-16.0",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oppo_msm8939.git",
+    "kernel_ref": "lineage-16.0",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_r7sf_defconfig"
+    ],
+    "image_target": "zImage",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

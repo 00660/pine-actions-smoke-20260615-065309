@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No shared LineageOS branch found for device tree and kernel repo."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/sif/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/sif.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/sif/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780068628,
+      "filename": "lineage-22.2-20260529-nightly-sif-signed.zip",
+      "filepath": "/full/sif/20260529/lineage-22.2-20260529-nightly-sif-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:363,metadata.pb:500:277                 ",
+      "sha1": "982ebacfafe3bae4a58780a5e97591a3b4a10034",
+      "sha256": "9ffc78c33f378f4dea0efad6f237d972c61b2ff26122d0aeb3c735b60cb70ae1",
+      "size": 630125040,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/sif/20260529/lineage-22.2-20260529-nightly-sif-signed.zip"
+    },
+    "names": [
+      "Shield TV (2019) [Android TV]"
+    ],
+    "models": [],
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nvidia_sif",
+      "ref": "",
+      "validation": "missing"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel",
+      "ref": "",
+      "validation": "not_checked",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "sif",
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "lineage_branch": "",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/sif/20260529/lineage-22.2-20260529-nightly-sif-signed.zip",
+    "boot_source_sha256": "9ffc78c33f378f4dea0efad6f237d972c61b2ff26122d0aeb3c735b60cb70ae1",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel.git",
+    "kernel_ref": "",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

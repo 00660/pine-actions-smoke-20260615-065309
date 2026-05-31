@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nio/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nio_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nio_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nio/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779683097,
+      "filename": "lineage-23.2-20260525-nightly-nio-signed.zip",
+      "filepath": "/full/nio/20260525/lineage-23.2-20260525-nightly-nio-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4314:138026,payload.bin:4314:1044344669,payload_properties.txt:1044349041:156,apex_info.pb:2033:1279,care_map.pb:3359:908,metadata:69:673,metadata.pb:810:1175                        ",
+      "sha1": "22b36bfe83537809ba5eea52d20664cf5434b5ec",
+      "sha256": "4c83f91198e71d775bb5d5a4cec5f487ae3dcd05334c5c9ff4213c64ad136c20",
+      "size": 1044352188,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nio/20260525/lineage-23.2-20260525-nightly-nio-signed.zip"
+    },
+    "names": [
+      "edge s",
+      "moto g100"
+    ],
+    "models": [
+      "XT2125-4"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_nio",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_nio",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/ext_config/moto-kona.config",
+        "vendor/ext_config/nio-default.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "nio",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nio/20260525/lineage-23.2-20260525-nightly-nio-signed.zip",
+    "boot_source_sha256": "4c83f91198e71d775bb5d5a4cec5f487ae3dcd05334c5c9ff4213c64ad136c20",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/ext_config/moto-kona.config",
+      "vendor/ext_config/nio-default.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

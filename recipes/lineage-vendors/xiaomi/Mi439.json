@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/Mi439/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi439_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi439_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi439_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi439_variant4.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/Mi439/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779934360,
+      "filename": "lineage-23.2-20260528-nightly-Mi439-signed.zip",
+      "filepath": "/full/Mi439/20260528/lineage-23.2-20260528-nightly-Mi439-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:369,metadata.pb:506:294                 ",
+      "sha1": "4c97ad8974a703094635464a23b925d1eff117f2",
+      "sha256": "5621de9bcb3ba2b85ee2da634e5c9b0fa7c875571ba8cbee8cd9be60365d3c66",
+      "size": 1197227475,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/Mi439/20260528/lineage-23.2-20260528-nightly-Mi439-signed.zip"
+    },
+    "names": [
+      "Redmi 7A",
+      "Redmi 8",
+      "Redmi 8A",
+      "Redmi 8A Dual"
+    ],
+    "models": [
+      "M1903C3EC",
+      "M1903C3EE",
+      "M1903C3EG",
+      "M1903C3EH",
+      "M1903C3EI",
+      "M1903C3ET",
+      "M1908C3IC",
+      "M1908C3IE",
+      "M1908C3IG",
+      "M1908C3IH",
+      "M1908C3II",
+      "M1908C3KE",
+      "M1908C3KG",
+      "M1908C3KH",
+      "M1908C3KI",
+      "M2001C3K3I"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "21",
+      "20",
+      "19.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_Mi439",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8937",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_mithorium-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_Mi439",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/msm8937-perf_defconfig",
+        "vendor/common.config",
+        "vendor/debugfs.config",
+        "vendor/feature/android-12.config",
+        "vendor/feature/erofs.config",
+        "vendor/feature/lmkd.config",
+        "vendor/xiaomi/sdm439/mi439.config",
+        "vendor/msm-clk.config",
+        "vendor/feature/lineageos.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/msm8937",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "Mi439",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/Mi439/20260528/lineage-23.2-20260528-nightly-Mi439-signed.zip",
+    "boot_source_sha256": "5621de9bcb3ba2b85ee2da634e5c9b0fa7c875571ba8cbee8cd9be60365d3c66",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8937.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/msm8937-perf_defconfig",
+      "vendor/common.config",
+      "vendor/debugfs.config",
+      "vendor/feature/android-12.config",
+      "vendor/feature/erofs.config",
+      "vendor/feature/lmkd.config",
+      "vendor/xiaomi/sdm439/mi439.config",
+      "vendor/msm-clk.config",
+      "vendor/feature/lineageos.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/trident/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/trident.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/trident/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779609026,
+      "filename": "lineage-22.2-20260524-nightly-trident-signed.zip",
+      "filepath": "/full/trident/20260524/lineage-22.2-20260524-nightly-trident-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3604:132674,payload.bin:3604:1034447641,payload_properties.txt:1034451303:156,apex_info.pb:1764:1157,care_map.pb:2968:589,metadata:69:680,metadata.pb:817:899                         ",
+      "sha1": "406f7137997151d43aad4be56ac2090120a1218e",
+      "sha256": "13151f6f500871ee99de098dec7febb5db861d4564aed937944920751791bf0e",
+      "size": 1034454454,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/trident/20260524/lineage-22.2-20260524-nightly-trident-signed.zip"
+    },
+    "names": [
+      "R1"
+    ],
+    "models": [
+      "DE106"
+    ],
+    "vendor": "Smartisan",
+    "vendor_short": "smartisan",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_smartisan_trident",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_smartisan_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_smartisan_trident",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/smartisan/trident_defconfig"
+      ],
+      "kernel_source_path": "kernel/smartisan/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "trident",
+    "vendor": "Smartisan",
+    "vendor_short": "smartisan",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/trident/20260524/lineage-22.2-20260524-nightly-trident-signed.zip",
+    "boot_source_sha256": "13151f6f500871ee99de098dec7febb5db861d4564aed937944920751791bf0e",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_smartisan_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/smartisan/trident_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

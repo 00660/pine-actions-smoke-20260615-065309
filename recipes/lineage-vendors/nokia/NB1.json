@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/NB1/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/NB1.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/NB1/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779612019,
+      "filename": "lineage-22.2-20260524-nightly-NB1-signed.zip",
+      "filepath": "/full/NB1/20260524/lineage-22.2-20260524-nightly-NB1-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3117:109201,payload.bin:3117:912879722,payload_properties.txt:912882897:155,apex_info.pb:1913:1157,metadata:69:613,metadata.pb:750:1115                 ",
+      "sha1": "ab695cec42bae7eb2e12e376085b9fccb14dd4c1",
+      "sha256": "5315eb31c095572c79f613de1aed1ea54d001ec48c380439c4a3ab493e16d1c8",
+      "size": 912885984,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/NB1/20260524/lineage-22.2-20260524-nightly-NB1-signed.zip"
+    },
+    "names": [
+      "8"
+    ],
+    "models": [
+      "TA-1004",
+      "TA-1012",
+      "TA-1052"
+    ],
+    "vendor": "Nokia",
+    "vendor_short": "nokia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "21"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nokia_NB1",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nokia_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nokia_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nokia_NB1",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_NB1_defconfig"
+      ],
+      "kernel_source_path": "kernel/nokia/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "NB1",
+    "vendor": "Nokia",
+    "vendor_short": "nokia",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/NB1/20260524/lineage-22.2-20260524-nightly-NB1-signed.zip",
+    "boot_source_sha256": "5315eb31c095572c79f613de1aed1ea54d001ec48c380439c4a3ab493e16d1c8",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nokia_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_NB1_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

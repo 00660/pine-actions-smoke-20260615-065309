@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pdx234/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pdx234.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pdx234/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779589234,
+      "filename": "lineage-23.2-20260524-nightly-pdx234-signed.zip",
+      "filepath": "/full/pdx234/20260524/lineage-23.2-20260524-nightly-pdx234-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4860:150664,payload.bin:4860:1639023480,payload_properties.txt:1639028398:156,apex_info.pb:2275:1279,care_map.pb:3601:1212,metadata:69:693,metadata.pb:830:1397                        ",
+      "sha1": "201c5f5f570eecc897e24b497da63cf6f858c0a2",
+      "sha256": "553192092a71161e4459f108a956335305e6bc7862b4a6436bd3830d45fa2db8",
+      "size": 1639031545,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pdx234/20260524/lineage-23.2-20260524-nightly-pdx234-signed.zip"
+    },
+    "names": [
+      "Xperia 1 V"
+    ],
+    "models": [
+      "XQ-DQ54",
+      "XQ-DQ72"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_pdx234",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sm8550",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.15"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_sm8550-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_pdx234",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/kalama_GKI.config",
+        "vendor/sony/kalama_GKI.config",
+        "vendor/debugfs.config",
+        "vendor/sony/pdx234.config"
+      ],
+      "kernel_source_path": "kernel/sony/sm8550",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "pdx234",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pdx234/20260524/lineage-23.2-20260524-nightly-pdx234-signed.zip",
+    "boot_source_sha256": "553192092a71161e4459f108a956335305e6bc7862b4a6436bd3830d45fa2db8",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sm8550.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/kalama_GKI.config",
+      "vendor/sony/kalama_GKI.config",
+      "vendor/debugfs.config",
+      "vendor/sony/pdx234.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/lemonadep/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/lemonadep_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/lemonadep_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/lemonadep/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779667349,
+      "filename": "lineage-23.2-20260525-nightly-lemonadep-signed.zip",
+      "filepath": "/full/lemonadep/20260525/lineage-23.2-20260525-nightly-lemonadep-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4732:166379,payload.bin:4732:1699380312,payload_properties.txt:1699385102:156,apex_info.pb:2228:1279,care_map.pb:3554:1131,metadata:69:697,metadata.pb:834:1346                        ",
+      "sha1": "c65afd94acd6b606ebf91ae02a79515fc22a4805",
+      "sha256": "976ecb87f2b96e36ac62698d51185a80bf5cb7cea3c6da33117a90b90abae215",
+      "size": 1699388249,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/lemonadep/20260525/lineage-23.2-20260525-nightly-lemonadep-signed.zip"
+    },
+    "names": [
+      "9 Pro",
+      "9 Pro (T-Mobile)"
+    ],
+    "models": [
+      "LE2120",
+      "LE2121",
+      "LE2123",
+      "LE2125",
+      "LE2127"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_lemonadep",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8350",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm8350-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_lemonadep",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lahaina-qgki_defconfig"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8350",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "lemonadep",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/lemonadep/20260525/lineage-23.2-20260525-nightly-lemonadep-signed.zip",
+    "boot_source_sha256": "976ecb87f2b96e36ac62698d51185a80bf5cb7cea3c6da33117a90b90abae215",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8350.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lahaina-qgki_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No shared LineageOS branch found for device tree and kernel repo."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/quill/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/quill_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/quill_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/quill/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779958956,
+      "filename": "lineage-22.2-20260528-nightly-quill-signed.zip",
+      "filepath": "/full/quill/20260528/lineage-22.2-20260528-nightly-quill-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3464:137420,payload.bin:3464:727658791,payload_properties.txt:727662313:155,apex_info.pb:1743:1115,care_map.pb:2905:512,metadata:69:674,metadata.pb:811:884                       ",
+      "sha1": "9f195ced24133e8d1dd4ee54ea26fdc3c69b2aec",
+      "sha256": "dba38c2706b4f193ebbe7a9f22c5a930ffc4e0123075168c88d453680f365021",
+      "size": 727665463,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/quill/20260528/lineage-22.2-20260528-nightly-quill-signed.zip"
+    },
+    "names": [
+      "Jetson TX2 [Android TV]",
+      "Jetson TX2 NX [Android TV]"
+    ],
+    "models": [
+      "quill",
+      "lanai"
+    ],
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nvidia_quill",
+      "ref": "",
+      "validation": "missing"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel",
+      "ref": "",
+      "validation": "not_checked",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "quill",
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "lineage_branch": "",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/quill/20260528/lineage-22.2-20260528-nightly-quill-signed.zip",
+    "boot_source_sha256": "dba38c2706b4f193ebbe7a9f22c5a930ffc4e0123075168c88d453680f365021",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel.git",
+    "kernel_ref": "",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

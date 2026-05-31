@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/husky/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/husky.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/husky/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780069862,
+      "filename": "lineage-23.2-20260529-nightly-husky-signed.zip",
+      "filepath": "/full/husky/20260529/lineage-23.2-20260529-nightly-husky-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4804:138741,payload.bin:4804:1384370190,payload_properties.txt:1384375052:156,apex_info.pb:2000:1688,care_map.pb:3735:1022,metadata:69:668,metadata.pb:805:1147                        ",
+      "sha1": "e717757e7a16e9149754b1b0808bc974d5faff00",
+      "sha256": "47eee2d24138c538ff2e88b71dae99bfb23e2addc4c4e0d9d93531c78c2fd5bc",
+      "size": 1384378199,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/husky/20260529/lineage-23.2-20260529-nightly-husky-signed.zip"
+    },
+    "names": [
+      "Pixel 8 Pro"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_husky",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "husky",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/husky/20260529/lineage-23.2-20260529-nightly-husky-signed.zip",
+    "boot_source_sha256": "47eee2d24138c538ff2e88b71dae99bfb23e2addc4c4e0d9d93531c78c2fd5bc",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

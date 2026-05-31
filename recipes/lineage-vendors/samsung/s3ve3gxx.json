@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/s3ve3gxx/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/s3ve3gxx.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/s3ve3gxx/builds",
+    "latest_official_build": null,
+    "names": [
+      "Galaxy S III Neo (Sony Camera)"
+    ],
+    "models": [
+      "GT-I9301I",
+      "GT-I9301Q"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": {
+      "cpu": "arm",
+      "userspace": "arm"
+    },
+    "current_branch": "18.1",
+    "versions": [
+      "18.1",
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_s3ve3gxx",
+      "ref": "lineage-18.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_msm8226",
+      "ref": "lineage-18.1",
+      "validation": "full_source",
+      "version": "3.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_qcom-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_msm8226-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_s3ve3g-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_s3ve3gxx",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineage_s3ve3gxx_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/msm8226",
+      "kernel_image_name": "zImage"
+    }
+  },
+  "build": {
+    "device": "s3ve3gxx",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-18.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_msm8226.git",
+    "kernel_ref": "lineage-18.1",
+    "arch": "arm",
+    "kernel_configs": [
+      "lineage_s3ve3gxx_defconfig"
+    ],
+    "image_target": "zImage",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

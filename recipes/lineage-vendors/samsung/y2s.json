@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/y2s/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/y2s.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/y2s/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780152052,
+      "filename": "lineage-23.2-20260530-nightly-y2s-signed.zip",
+      "filepath": "/full/y2s/20260530/lineage-23.2-20260530-nightly-y2s-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:319,metadata.pb:456:197                 ",
+      "sha1": "0f2fca24112b6999b67e119645e561699505faeb",
+      "sha256": "73d2bc0ec4b10baaa8b5b084132650163949603d44d83e9dd26121a495224248",
+      "size": 1154388649,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/y2s/20260530/lineage-23.2-20260530-nightly-y2s-signed.zip"
+    },
+    "names": [
+      "Galaxy S20+ (4G/5G)"
+    ],
+    "models": [
+      "SM-G985F",
+      "SM-G985F/DS",
+      "SM-G986B",
+      "SM-G986B/DS"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_y2s",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_universal9830",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_slsi_sepolicy",
+          "ref": "lineage-23.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_universal9830-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_y2s",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9830_defconfig",
+        "y2s.config"
+      ],
+      "kernel_source_path": "kernel/samsung/universal9830",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "y2s",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/y2s/20260530/lineage-23.2-20260530-nightly-y2s-signed.zip",
+    "boot_source_sha256": "73d2bc0ec4b10baaa8b5b084132650163949603d44d83e9dd26121a495224248",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_universal9830.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9830_defconfig",
+      "y2s.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/avatrn/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/avatrn.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/avatrn/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779941697,
+      "filename": "lineage-23.2-20260528-nightly-avatrn-signed.zip",
+      "filepath": "/full/avatrn/20260528/lineage-23.2-20260528-nightly-avatrn-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4438:159531,payload.bin:4438:1506725188,payload_properties.txt:1506729684:156,apex_info.pb:2092:1309,care_map.pb:3448:943,metadata:69:679,metadata.pb:816:1228                        ",
+      "sha1": "858a9de564c7c803647e14314cf2364e0dff6904",
+      "sha256": "a33c61f76bc3ad43052c4408a7eb9ff0f8bb422dcf91a01f208a8b1a0693252c",
+      "size": 1506732831,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/avatrn/20260528/lineage-23.2-20260528-nightly-avatrn-signed.zip"
+    },
+    "names": [
+      "edge 2024"
+    ],
+    "models": [
+      "XT2405-1",
+      "XT2405V"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_avatrn",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm7435",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm7435-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_avatrn",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/parrot_GKI.config",
+        "vendor/ext_config/moto-parrot.config",
+        "vendor/ext_config/moto-parrot-gki.config",
+        "vendor/ext_config/moto-parrot-avatrn.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm7435",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "avatrn",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/avatrn/20260528/lineage-23.2-20260528-nightly-avatrn-signed.zip",
+    "boot_source_sha256": "a33c61f76bc3ad43052c4408a7eb9ff0f8bb422dcf91a01f208a8b1a0693252c",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm7435.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/parrot_GKI.config",
+      "vendor/ext_config/moto-parrot.config",
+      "vendor/ext_config/moto-parrot-gki.config",
+      "vendor/ext_config/moto-parrot-avatrn.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

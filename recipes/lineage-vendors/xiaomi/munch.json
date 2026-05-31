@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/munch/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/munch_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/munch_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/munch/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779667444,
+      "filename": "lineage-23.2-20260525-nightly-munch-signed.zip",
+      "filepath": "/full/munch/20260525/lineage-23.2-20260525-nightly-munch-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4296:123983,payload.bin:4296:1415682644,payload_properties.txt:1415686998:156,apex_info.pb:2015:1279,care_map.pb:3341:908,metadata:69:697,metadata.pb:834:1133                        ",
+      "sha1": "244a9a5d87f22cf96155ae47404c221effe6fa0c",
+      "sha256": "a69e3b4cd2c2742a4d3289677eca0bdd8f4bdddd8178dad899d466dd40e2781b",
+      "size": 1415690145,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/munch/20260525/lineage-23.2-20260525-nightly-munch-signed.zip"
+    },
+    "names": [
+      "POCO F4",
+      "Redmi K40S"
+    ],
+    "models": [
+      "22021211RG",
+      "22021211RI",
+      "22021211RC"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_munch",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_munch",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/debugfs.config",
+        "vendor/xiaomi/sm8250-common.config",
+        "vendor/xiaomi/munch.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "munch",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/munch/20260525/lineage-23.2-20260525-nightly-munch-signed.zip",
+    "boot_source_sha256": "a69e3b4cd2c2742a4d3289677eca0bdd8f4bdddd8178dad899d466dd40e2781b",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/debugfs.config",
+      "vendor/xiaomi/sm8250-common.config",
+      "vendor/xiaomi/munch.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

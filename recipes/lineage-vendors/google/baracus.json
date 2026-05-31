@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No shared LineageOS branch found for device tree and kernel repo."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/baracus/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/baracus.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/baracus/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779612806,
+      "filename": "lineage-22.2-20260524-nightly-baracus-signed.zip",
+      "filepath": "/full/baracus/20260524/lineage-22.2-20260524-nightly-baracus-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:332,metadata.pb:469:214                 ",
+      "sha1": "dc03851329a0ae1848f119152434c303d5601cba",
+      "sha256": "28bc621505eeacdc9e2b4eed1ca867a15d663072a6bfde26671fa73c150b8741",
+      "size": 763790507,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/baracus/20260524/lineage-22.2-20260524-nightly-baracus-signed.zip"
+    },
+    "names": [
+      "Jamboard [Android TV]"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_baracus",
+      "ref": "",
+      "validation": "missing"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel",
+      "ref": "",
+      "validation": "not_checked",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "baracus",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/baracus/20260524/lineage-22.2-20260524-nightly-baracus-signed.zip",
+    "boot_source_sha256": "28bc621505eeacdc9e2b4eed1ca867a15d663072a6bfde26671fa73c150b8741",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel.git",
+    "kernel_ref": "",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

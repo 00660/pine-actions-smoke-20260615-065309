@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/pdx245/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/pdx245.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/pdx245/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780099563,
+      "filename": "lineage-23.2-20260530-nightly-pdx245-signed.zip",
+      "filepath": "/full/pdx245/20260530/lineage-23.2-20260530-nightly-pdx245-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4977:142649,payload.bin:4977:1374737313,payload_properties.txt:1374742348:156,apex_info.pb:2302:1346,care_map.pb:3695:1235,metadata:69:696,metadata.pb:833:1421                        ",
+      "sha1": "f232b663e477c2bda237c3e465f84b1e3cc1aa00",
+      "sha256": "d966cbf64089ea414407b73589ad36b6e6931706a13890de20d7da0cfb79ea94",
+      "size": 1374745495,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/pdx245/20260530/lineage-23.2-20260530-nightly-pdx245-signed.zip"
+    },
+    "names": [
+      "Xperia 1 VI"
+    ],
+    "models": [
+      "XQ-EC54",
+      "XQ-EC72"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_pdx245",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sm8650",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_sm8650-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_pdx245",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/pineapple_GKI.config",
+        "vendor/sony/pineapple_GKI.config",
+        "vendor/sony/pdx245.config"
+      ],
+      "kernel_source_path": "kernel/sony/sm8650",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "pdx245",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/pdx245/20260530/lineage-23.2-20260530-nightly-pdx245-signed.zip",
+    "boot_source_sha256": "d966cbf64089ea414407b73589ad36b6e6931706a13890de20d7da0cfb79ea94",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sm8650.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/pineapple_GKI.config",
+      "vendor/sony/pineapple_GKI.config",
+      "vendor/sony/pdx245.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

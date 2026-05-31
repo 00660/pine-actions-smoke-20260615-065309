@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/marlin/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/marlin.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/marlin/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780144155,
+      "filename": "lineage-22.2-20260530-nightly-marlin-signed.zip",
+      "filepath": "/full/marlin/20260530/lineage-22.2-20260530-nightly-marlin-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:2802:119763,payload.bin:2802:881754162,payload_properties.txt:881757022:155,apex_info.pb:1598:1157,metadata:69:611,metadata.pb:748:802                  ",
+      "sha1": "ee435a44e1e8595ae94dce8214f5927959461679",
+      "sha256": "ab2cbadfa4bb6b9d9359e478d75e0203c8678127c47ed19c04568ede697cfeaf",
+      "size": 881760109,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/marlin/20260530/lineage-22.2-20260530-nightly-marlin-signed.zip"
+    },
+    "names": [
+      "Pixel XL"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "18.1",
+      "17.1",
+      "16.0",
+      "15.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_marlin",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_marlin",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "marlin",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/marlin/20260530/lineage-22.2-20260530-nightly-marlin-signed.zip",
+    "boot_source_sha256": "ab2cbadfa4bb6b9d9359e478d75e0203c8678127c47ed19c04568ede697cfeaf",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_marlin.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

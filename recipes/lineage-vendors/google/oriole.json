@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Kernel repo validation is unknown_tree.",
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/oriole/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/oriole.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/oriole/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779667569,
+      "filename": "lineage-23.2-20260525-nightly-oriole-signed.zip",
+      "filepath": "/full/oriole/20260525/lineage-23.2-20260525-nightly-oriole-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4487:135010,payload.bin:4487:1329837989,payload_properties.txt:1329842534:156,apex_info.pb:1917:1553,care_map.pb:3517:923,metadata:69:669,metadata.pb:806:1063                        ",
+      "sha1": "6b22a0bb3d0c233f54af3f53ee3bad88b3e96d79",
+      "sha256": "9bf3f95a34cc9c7e018cac30d02b94427b25a894350957408a12907743b1828a",
+      "size": 1329845681,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/oriole/20260525/lineage-23.2-20260525-nightly-oriole-signed.zip"
+    },
+    "names": [
+      "Pixel 6"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_oriole",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest",
+      "ref": "lineage-23.2",
+      "validation": "unknown_tree",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "oriole",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/oriole/20260525/lineage-23.2-20260525-nightly-oriole-signed.zip",
+    "boot_source_sha256": "9bf3f95a34cc9c7e018cac30d02b94427b25a894350957408a12907743b1828a",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

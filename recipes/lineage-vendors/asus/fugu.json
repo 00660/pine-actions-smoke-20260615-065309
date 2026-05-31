@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is x86_64-x86; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/fugu/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/fugu.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/fugu/builds",
+    "latest_official_build": null,
+    "names": [
+      "Nexus Player"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "asus",
+    "architecture": {
+      "cpu": "x86_64",
+      "userspace": "x86"
+    },
+    "current_branch": "15.1",
+    "versions": [
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_asus_fugu",
+      "ref": "lineage-15.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_asus_fugu",
+      "ref": "lineage-15.1",
+      "validation": "full_source",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_fugu",
+          "ref": "lineage-15.1",
+          "file": "twrp.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_fugu",
+          "ref": "lineage-15.1",
+          "file": "BoardConfigLineage.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_asus_fugu",
+          "ref": "lineage-15.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineage_fugu_defconfig"
+      ],
+      "kernel_source_path": "kernel/asus/fugu",
+      "kernel_image_name": "bzImage"
+    }
+  },
+  "build": {
+    "device": "fugu",
+    "vendor": "Google",
+    "vendor_short": "asus",
+    "lineage_branch": "lineage-15.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_asus_fugu.git",
+    "kernel_ref": "lineage-15.1",
+    "arch": "x86_64-x86",
+    "kernel_configs": [
+      "lineage_fugu_defconfig"
+    ],
+    "image_target": "bzImage",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

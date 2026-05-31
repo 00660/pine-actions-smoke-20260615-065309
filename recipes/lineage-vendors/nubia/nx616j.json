@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx616j/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx616j.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nx616j/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779792351,
+      "filename": "lineage-22.2-20260526-nightly-nx616j-signed.zip",
+      "filepath": "/full/nx616j/20260526/lineage-22.2-20260526-nightly-nx616j-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:341,metadata.pb:478:230                 ",
+      "sha1": "542a013ca57b1135320d2d81f87db219a6407db3",
+      "sha256": "6f7f487a29db49b565124a001183f15e1468427b41c4d87b36f5a11f7f57624e",
+      "size": 1105718626,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nx616j/20260526/lineage-22.2-20260526-nightly-nx616j-signed.zip"
+    },
+    "names": [
+      "X"
+    ],
+    "models": [
+      "NX616J"
+    ],
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nubia_nx616j",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nubia_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_sdm845-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_nx616j",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/nubia/sdm845_defconfig",
+        "vendor/nubia/nx616j.config"
+      ],
+      "kernel_source_path": "kernel/nubia/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "nx616j",
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nx616j/20260526/lineage-22.2-20260526-nightly-nx616j-signed.zip",
+    "boot_source_sha256": "6f7f487a29db49b565124a001183f15e1468427b41c4d87b36f5a11f7f57624e",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nubia_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/nubia/sdm845_defconfig",
+      "vendor/nubia/nx616j.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

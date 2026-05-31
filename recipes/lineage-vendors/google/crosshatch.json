@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/crosshatch/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/crosshatch.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/crosshatch/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779770278,
+      "filename": "lineage-22.2-20260526-nightly-crosshatch-signed.zip",
+      "filepath": "/full/crosshatch/20260526/lineage-22.2-20260526-nightly-crosshatch-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:4062:113667,payload.bin:4062:1093906005,payload_properties.txt:1093910125:156,apex_info.pb:2008:1157,care_map.pb:3212:803,metadata:69:683,metadata.pb:820:1140                        ",
+      "sha1": "c39f2a3bc1a740cf0269a735c90e40733ec92f98",
+      "sha256": "c5e7a17d990c3c1526f3fa93c37bc07e93aa418e4ab6e1168c11c76558d92266",
+      "size": 1093913276,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/crosshatch/20260526/lineage-22.2-20260526-nightly-crosshatch-signed.zip"
+    },
+    "names": [
+      "Pixel 3 XL"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_crosshatch",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_msm-4.9",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "crosshatch",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/crosshatch/20260526/lineage-22.2-20260526-nightly-crosshatch-signed.zip",
+    "boot_source_sha256": "c5e7a17d990c3c1526f3fa93c37bc07e93aa418e4ab6e1168c11c76558d92266",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_msm-4.9.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

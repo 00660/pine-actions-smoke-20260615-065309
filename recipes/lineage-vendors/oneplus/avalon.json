@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/avalon/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/avalon.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/avalon/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780152459,
+      "filename": "lineage-23.2-20260530-nightly-avalon-signed.zip",
+      "filepath": "/full/avalon/20260530/lineage-23.2-20260530-nightly-avalon-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:5156:203286,payload.bin:5156:2621811772,payload_properties.txt:2621816986:156,apex_info.pb:2375:1370,care_map.pb:3792:1317,metadata:69:699,metadata.pb:836:1491                        ",
+      "sha1": "fed06b9bd3c23c678d389aa36e428452ab2f8352",
+      "sha256": "205059c139f49111311d3606b5e55b4d4ada9b4827e37c6f2539be98571ffe43",
+      "size": 2621820133,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/avalon/20260530/lineage-23.2-20260530-nightly-avalon-signed.zip"
+    },
+    "names": [
+      "Nord 4"
+    ],
+    "models": [
+      "CPH2661",
+      "CPH2663"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_avalon",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8650",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "6.1"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm8650-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_avalon",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/pineapple_GKI.config",
+        "vendor/oplus/pineapple_GKI.config"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8650",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "avalon",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/avalon/20260530/lineage-23.2-20260530-nightly-avalon-signed.zip",
+    "boot_source_sha256": "205059c139f49111311d3606b5e55b4d4ada9b4827e37c6f2539be98571ffe43",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8650.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/pineapple_GKI.config",
+      "vendor/oplus/pineapple_GKI.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

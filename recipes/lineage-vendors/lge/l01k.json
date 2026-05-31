@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/l01k/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/l01k.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/l01k/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779695051,
+      "filename": "lineage-22.2-20260525-nightly-l01k-signed.zip",
+      "filepath": "/full/l01k/20260525/lineage-22.2-20260525-nightly-l01k-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:340,metadata.pb:477:231                 ",
+      "sha1": "5ccc03a5ba6016e3d00b8683671d3807f7e300c2",
+      "sha256": "e78e18ec4c570b53b514cfec1c3f28415bad8962c2d8a431ffc631623975229b",
+      "size": 1042476169,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/l01k/20260525/lineage-22.2-20260525-nightly-l01k-signed.zip"
+    },
+    "names": [
+      "V30 (Japan)"
+    ],
+    "models": [
+      "L-01K",
+      "LGV35"
+    ],
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lge_l01k",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lge_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_joan-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_l01k",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_l01k_defconfig"
+      ],
+      "kernel_source_path": "kernel/lge/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "l01k",
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/l01k/20260525/lineage-22.2-20260525-nightly-l01k-signed.zip",
+    "boot_source_sha256": "e78e18ec4c570b53b514cfec1c3f28415bad8962c2d8a431ffc631623975229b",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lge_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_l01k_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

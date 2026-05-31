@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/xz2c/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/xz2c.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/xz2c/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780050495,
+      "filename": "lineage-22.2-20260529-nightly-xz2c-signed.zip",
+      "filepath": "/full/xz2c/20260529/lineage-22.2-20260529-nightly-xz2c-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "payload_metadata.bin:3534:144738,payload.bin:3534:1006917560,payload_properties.txt:1006921152:156,apex_info.pb:1741:1157,care_map.pb:2945:542,metadata:69:676,metadata.pb:813:880                         ",
+      "sha1": "fb023a131b7de5664d0196c1946fca9fe73f7772",
+      "sha256": "122524424e94b532ee0502994cdd451720a475d4edd264a0d2c7d0c6536e29cf",
+      "size": 1006924303,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/xz2c/20260529/lineage-22.2-20260529-nightly-xz2c-signed.zip"
+    },
+    "names": [
+      "Xperia XZ2 Compact"
+    ],
+    "models": [
+      "H8314",
+      "H8324"
+    ],
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_sony_xz2c",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_sony_sdm845",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_tama-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_sony_xz2c",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "tama_apollo_defconfig"
+      ],
+      "kernel_source_path": "kernel/sony/sdm845",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "xz2c",
+    "vendor": "Sony",
+    "vendor_short": "sony",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/xz2c/20260529/lineage-22.2-20260529-nightly-xz2c-signed.zip",
+    "boot_source_sha256": "122524424e94b532ee0502994cdd451720a475d4edd264a0d2c7d0c6536e29cf",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_sony_sdm845.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "tama_apollo_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

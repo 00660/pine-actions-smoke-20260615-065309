@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm; only arm64 devices are built.",
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/f400/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/f400.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/f400/builds",
+    "latest_official_build": null,
+    "names": [
+      "G3 (Korea)"
+    ],
+    "models": [],
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "architecture": "arm",
+    "current_branch": "18.1",
+    "versions": [
+      "18.1",
+      "17.1",
+      "16.0",
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_lge_f400",
+      "ref": "lineage-18.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_lge_g3",
+      "ref": "lineage-18.1",
+      "validation": "full_source",
+      "version": "3.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_g3-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_lge_f400",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_f400_defconfig"
+      ],
+      "kernel_source_path": "kernel/lge/g3",
+      "kernel_image_name": "zImage"
+    }
+  },
+  "build": {
+    "device": "f400",
+    "vendor": "LG",
+    "vendor_short": "lge",
+    "lineage_branch": "lineage-18.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_lge_g3.git",
+    "kernel_ref": "lineage-18.1",
+    "arch": "arm",
+    "kernel_configs": [
+      "lineageos_f400_defconfig"
+    ],
+    "image_target": "zImage",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

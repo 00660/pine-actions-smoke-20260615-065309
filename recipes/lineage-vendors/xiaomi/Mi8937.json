@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/Mi8937/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi8937_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi8937_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi8937_variant3.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi8937_variant4.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi8937_variant5.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Mi8937_variant6.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/Mi8937/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779777679,
+      "filename": "lineage-23.2-20260526-nightly-Mi8937-signed.zip",
+      "filepath": "/full/Mi8937/20260526/lineage-23.2-20260526-nightly-Mi8937-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:335,metadata.pb:472:233                 ",
+      "sha1": "816883350181d120fc861793e48a2ad53180de23",
+      "sha256": "854b6e5606855b293a1a1ce0c73d67a12cfd2ec17adfc904d16db77cfad8b36e",
+      "size": 1104246619,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/Mi8937/20260526/lineage-23.2-20260526-nightly-Mi8937-signed.zip"
+    },
+    "names": [
+      "Redmi 3S",
+      "Redmi 3X",
+      "Redmi 4 (India)",
+      "Redmi 4X",
+      "Redmi Note 5A Prime",
+      "Redmi Y1 Prime"
+    ],
+    "models": [
+      "2016031",
+      "2016037",
+      "2016032",
+      "2016030",
+      "2016036",
+      "2016035",
+      "2016033",
+      "MAI132",
+      "MAG138",
+      "MAE136",
+      "MAT136",
+      "MDE6S",
+      "MDG6S",
+      "MDT6S",
+      "MDI6S"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "21",
+      "20",
+      "19.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_Mi8937",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8937",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_mithorium-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_Mi8937",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/msm8937-perf_defconfig",
+        "vendor/common.config",
+        "vendor/debugfs.config",
+        "vendor/feature/android-12.config",
+        "vendor/feature/erofs.config",
+        "vendor/feature/lmkd.config",
+        "vendor/msm8937-legacy.config",
+        "vendor/xiaomi/msm8937/common.config",
+        "vendor/xiaomi/msm8937/mi8917.config",
+        "vendor/feature/lineageos.config",
+        "vendor/xiaomi/msm8937/mi8937_exclude_mi8917.config",
+        "vendor/xiaomi/msm8937/optional/latest-camera-stack.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/msm8937",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "Mi8937",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/Mi8937/20260526/lineage-23.2-20260526-nightly-Mi8937-signed.zip",
+    "boot_source_sha256": "854b6e5606855b293a1a1ce0c73d67a12cfd2ec17adfc904d16db77cfad8b36e",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_msm8937.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/msm8937-perf_defconfig",
+      "vendor/common.config",
+      "vendor/debugfs.config",
+      "vendor/feature/android-12.config",
+      "vendor/feature/erofs.config",
+      "vendor/feature/lmkd.config",
+      "vendor/msm8937-legacy.config",
+      "vendor/xiaomi/msm8937/common.config",
+      "vendor/xiaomi/msm8937/mi8917.config",
+      "vendor/feature/lineageos.config",
+      "vendor/xiaomi/msm8937/mi8937_exclude_mi8917.config",
+      "vendor/xiaomi/msm8937/optional/latest-camera-stack.config"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

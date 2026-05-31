@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm64-arm; only arm64 devices are built."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/m5/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/m5.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/m5/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779598695,
+      "filename": "lineage-22.2-20260524-nightly-m5-signed.zip",
+      "filepath": "/full/m5/20260524/lineage-22.2-20260524-nightly-m5-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:309,metadata.pb:446:186                 ",
+      "sha1": "370329b76a9d5d6477d529aec8571f401a804905",
+      "sha256": "41e8fa5daceaa98d98996c3476974461f291c4d27075be2e47455c85c935f383",
+      "size": 557102898,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/m5/20260524/lineage-22.2-20260524-nightly-m5-signed.zip"
+    },
+    "names": [
+      "M5 (Android TV)"
+    ],
+    "models": [],
+    "vendor": "Banana Pi",
+    "vendor_short": "bananapi",
+    "architecture": {
+      "cpu": "arm64",
+      "userspace": "arm"
+    },
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_bananapi_m5",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-4.9",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_sepolicy",
+          "ref": "lineage-22.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigAmlogic.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_g12-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_bananapi_m5",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "g12a_defconfig"
+      ],
+      "kernel_source_path": "kernel/amlogic/linux-4.9",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "m5",
+    "vendor": "Banana Pi",
+    "vendor_short": "bananapi",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/m5/20260524/lineage-22.2-20260524-nightly-m5-signed.zip",
+    "boot_source_sha256": "41e8fa5daceaa98d98996c3476974461f291c4d27075be2e47455c85c935f383",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-4.9.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64-arm",
+    "kernel_configs": [
+      "g12a_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/martini/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/martini.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/martini/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779667354,
+      "filename": "lineage-23.2-20260525-nightly-martini-signed.zip",
+      "filepath": "/full/martini/20260525/lineage-23.2-20260525-nightly-martini-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4679:166844,payload.bin:4679:1715283727,payload_properties.txt:1715288464:156,apex_info.pb:2206:1279,care_map.pb:3532:1100,metadata:69:700,metadata.pb:837:1321                        ",
+      "sha1": "3dcc8ede2f3bb2ec44dd3693b8a0c0607843ff8c",
+      "sha256": "8845511066a6e4b96abd7936fca8e1e055390dbf2aaea4c031d32fdc80126e2d",
+      "size": 1715291611,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/martini/20260525/lineage-23.2-20260525-nightly-martini-signed.zip"
+    },
+    "names": [
+      "9RT"
+    ],
+    "models": [
+      "MT2110",
+      "MT2111"
+    ],
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_oneplus_martini",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8350",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_sm8350-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_oneplus_martini",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lahaina-qgki_defconfig"
+      ],
+      "kernel_source_path": "kernel/oneplus/sm8350",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "martini",
+    "vendor": "OnePlus",
+    "vendor_short": "oneplus",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/martini/20260525/lineage-23.2-20260525-nightly-martini-signed.zip",
+    "boot_source_sha256": "8845511066a6e4b96abd7936fca8e1e055390dbf2aaea4c031d32fdc80126e2d",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8350.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lahaina-qgki_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

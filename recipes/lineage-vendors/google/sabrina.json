@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "Device architecture is arm64-arm; only arm64 devices are built."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/sabrina/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/sabrina.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/sabrina/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780137532,
+      "filename": "lineage-22.2-20260530-nightly-sabrina-signed.zip",
+      "filepath": "/full/sabrina/20260530/lineage-22.2-20260530-nightly-sabrina-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:334,metadata.pb:471:216                 ",
+      "sha1": "454d63abdd46b68d351f8a91ef3973d213a912e7",
+      "sha256": "305e56a37b7ddb25654f2cfb7cf0eae46fd0307387f0511b111372ccd04dcf82",
+      "size": 574583576,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/sabrina/20260530/lineage-22.2-20260530-nightly-sabrina-signed.zip"
+    },
+    "names": [
+      "Chromecast with Google TV (4K)"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": {
+      "cpu": "arm64",
+      "userspace": "arm"
+    },
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_sabrina",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-4.9",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_sepolicy",
+          "ref": "lineage-22.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigAmlogic.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_amlogic_g12-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_google_sabrina",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "g12a_defconfig"
+      ],
+      "kernel_source_path": "kernel/amlogic/linux-4.9",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "sabrina",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/sabrina/20260530/lineage-22.2-20260530-nightly-sabrina-signed.zip",
+    "boot_source_sha256": "305e56a37b7ddb25654f2cfb7cf0eae46fd0307387f0511b111372ccd04dcf82",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_amlogic_linux-4.9.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64-arm",
+    "kernel_configs": [
+      "g12a_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

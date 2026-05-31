@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/d1x/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/d1x.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/d1x/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779926541,
+      "filename": "lineage-23.2-20260528-nightly-d1x-signed.zip",
+      "filepath": "/full/d1x/20260528/lineage-23.2-20260528-nightly-d1x-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:326,metadata.pb:463:204                 ",
+      "sha1": "8a36ac7b2dc96a3f39d7d6e3b88259438a5c1195",
+      "sha256": "9df7a647dc1d199be031b4865a08b6baa616456ed419f70e63165ae97ec46b3b",
+      "size": 1158910334,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/d1x/20260528/lineage-23.2-20260528-nightly-d1x-signed.zip"
+    },
+    "names": [
+      "Galaxy Note10 5G"
+    ],
+    "models": [
+      "SM-N971N"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_d1x",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_exynos9820",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_exynos9820-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig9825.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_d1x",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9820-d1x_defconfig"
+      ],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "d1x",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/d1x/20260528/lineage-23.2-20260528-nightly-d1x-signed.zip",
+    "boot_source_sha256": "9df7a647dc1d199be031b4865a08b6baa616456ed419f70e63165ae97ec46b3b",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_exynos9820.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9820-d1x_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

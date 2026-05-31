@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/vela/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/vela.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/vela/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780075043,
+      "filename": "lineage-22.2-20260529-nightly-vela-signed.zip",
+      "filepath": "/full/vela/20260529/lineage-22.2-20260529-nightly-vela-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:321,metadata.pb:458:200                 ",
+      "sha1": "be41a9568d33749d2f062cde54bfaf08ec48bfff",
+      "sha256": "b03957aceadfbf3eb6b4364b8a39759579d59a603883834a385affbbd4dfcf08",
+      "size": 1234847815,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/vela/20260529/lineage-22.2-20260529-nightly-vela-signed.zip"
+    },
+    "names": [
+      "Mi CC9 Meitu Edition"
+    ],
+    "models": [
+      "M1904F3BT"
+    ],
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xiaomi_vela",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_sdm710-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xiaomi_vela",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "sdm670-perf_defconfig",
+        "xiaomi/sdm710-common.config",
+        "xiaomi/vela.config"
+      ],
+      "kernel_source_path": "kernel/xiaomi/sdm710",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "vela",
+    "vendor": "Xiaomi",
+    "vendor_short": "xiaomi",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/vela/20260529/lineage-22.2-20260529-nightly-vela-signed.zip",
+    "boot_source_sha256": "b03957aceadfbf3eb6b4364b8a39759579d59a603883834a385affbbd4dfcf08",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xiaomi_sdm710.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "sdm670-perf_defconfig",
+      "xiaomi/sdm710-common.config",
+      "xiaomi/vela.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gta4l/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gta4l.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gta4l/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779603885,
+      "filename": "lineage-23.2-20260524-nightly-gta4l-signed.zip",
+      "filepath": "/full/gta4l/20260524/lineage-23.2-20260524-nightly-gta4l-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:324,metadata.pb:461:204                 ",
+      "sha1": "4d050e11e648cd544e9bcff444ba3c942c992bb4",
+      "sha256": "cfcddcf34e142d44011a2596ec36b0a3ea2ca82245fb16cc194ac95c380ab7c9",
+      "size": 1193167624,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gta4l/20260524/lineage-23.2-20260524-nightly-gta4l-signed.zip"
+    },
+    "names": [
+      "Galaxy Tab A7 10.4 2020 (LTE)"
+    ],
+    "models": [
+      "SM-T505",
+      "SM-T505C",
+      "SM-T505N",
+      "SM-T507"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_gta4l",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sm6115",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4l-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4l",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/bengal-perf_defconfig",
+        "vendor/gta4l-common.config"
+      ],
+      "kernel_source_path": "kernel/samsung/sm6115",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "gta4l",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gta4l/20260524/lineage-23.2-20260524-nightly-gta4l-signed.zip",
+    "boot_source_sha256": "cfcddcf34e142d44011a2596ec36b0a3ea2ca82245fb16cc194ac95c380ab7c9",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sm6115.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/bengal-perf_defconfig",
+      "vendor/gta4l-common.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

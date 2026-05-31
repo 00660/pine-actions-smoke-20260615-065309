@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx563j/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/nx563j.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/nx563j/builds",
+    "latest_official_build": {
+      "date": "2026-05-29",
+      "datetime": 1780024634,
+      "filename": "lineage-22.2-20260529-nightly-nx563j-signed.zip",
+      "filepath": "/full/nx563j/20260529/lineage-22.2-20260529-nightly-nx563j-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:336,metadata.pb:473:224                 ",
+      "sha1": "4614136b92a931ff91b886c5487a04de7afbf677",
+      "sha256": "0ac0d5b0ab4a848aac1b185f1ec85c9189a76ec7f202fadb5df5ee4fd90a9325",
+      "size": 1035706257,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/nx563j/20260529/lineage-22.2-20260529-nightly-nx563j-signed.zip"
+    },
+    "names": [
+      "Z17"
+    ],
+    "models": [],
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "21",
+      "20",
+      "19.1",
+      "17.1",
+      "16.0"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nubia_nx563j",
+      "ref": "lineage-22.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nubia_msm8998",
+      "ref": "lineage-22.2",
+      "validation": "full_source",
+      "version": "4.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_msm8998-common",
+          "ref": "lineage-22.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nubia_nx563j",
+          "ref": "lineage-22.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "lineageos_nx563j_defconfig"
+      ],
+      "kernel_source_path": "kernel/nubia/msm8998",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "nx563j",
+    "vendor": "Nubia",
+    "vendor_short": "nubia",
+    "lineage_branch": "lineage-22.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/nx563j/20260529/lineage-22.2-20260529-nightly-nx563j-signed.zip",
+    "boot_source_sha256": "0ac0d5b0ab4a848aac1b185f1ec85c9189a76ec7f202fadb5df5ee4fd90a9325",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nubia_msm8998.git",
+    "kernel_ref": "lineage-22.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "lineageos_nx563j_defconfig"
+    ],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

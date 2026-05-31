@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gta4xlwifi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gta4xlwifi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gta4xlwifi/builds",
+    "latest_official_build": {
+      "date": "2026-05-30",
+      "datetime": 1780099422,
+      "filename": "lineage-23.2-20260530-nightly-gta4xlwifi-signed.zip",
+      "filepath": "/full/gta4xlwifi/20260530/lineage-23.2-20260530-nightly-gta4xlwifi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:347,metadata.pb:484:233                 ",
+      "sha1": "eb38d341e083429f556e11cb680cf483674de194",
+      "sha256": "ebdcd6bc0b201a60e168699ac544169c9ee0c785f4d30377cec6fbcd1ca85362",
+      "size": 1070429589,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gta4xlwifi/20260530/lineage-23.2-20260530-nightly-gta4xlwifi-signed.zip"
+    },
+    "names": [
+      "Galaxy Tab S6 Lite (Wi-Fi)"
+    ],
+    "models": [
+      "SM-P610"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_gta4xlwifi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_gta4xl",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_slsi_sepolicy",
+          "ref": "lineage-23.2",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4xl-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gta4xlwifi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "exynos9611-gta4xlwifi_defconfig"
+      ],
+      "kernel_source_path": "kernel/samsung/gta4xl",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "gta4xlwifi",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gta4xlwifi/20260530/lineage-23.2-20260530-nightly-gta4xlwifi-signed.zip",
+    "boot_source_sha256": "ebdcd6bc0b201a60e168699ac544169c9ee0c785f4d30377cec6fbcd1ca85362",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_gta4xl.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "exynos9611-gta4xlwifi_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

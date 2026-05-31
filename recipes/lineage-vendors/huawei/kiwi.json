@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No official LineageOS build found in download API."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/kiwi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/kiwi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/kiwi/builds",
+    "latest_official_build": null,
+    "names": [
+      "Honor 5X"
+    ],
+    "models": [
+      "KIW-L24",
+      "KIW-L23",
+      "KIW-L22",
+      "KIW-L21",
+      "KIW-AL10",
+      "KIW-AL20",
+      "KIW-CL00",
+      "KIW-UL00",
+      "KIW-TL00",
+      "KIW-TL00H",
+      "KII-L05",
+      "KII-L22",
+      "KII-L21"
+    ],
+    "vendor": "Huawei",
+    "vendor_short": "huawei",
+    "architecture": "arm64",
+    "current_branch": "17.1",
+    "versions": [
+      "17.1",
+      "16.0",
+      "15.1",
+      "14.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_huawei_kiwi",
+      "ref": "lineage-17.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_huawei_kiwi",
+      "ref": "lineage-17.1",
+      "validation": "full_source",
+      "version": "3.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_huawei_kiwi",
+          "ref": "lineage-17.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "kiwi-64_defconfig"
+      ],
+      "kernel_source_path": "kernel/huawei/kiwi",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "kiwi",
+    "vendor": "Huawei",
+    "vendor_short": "huawei",
+    "lineage_branch": "lineage-17.1",
+    "boot_source_url": "",
+    "boot_source_sha256": "",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_huawei_kiwi.git",
+    "kernel_ref": "lineage-17.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "kiwi-64_defconfig"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

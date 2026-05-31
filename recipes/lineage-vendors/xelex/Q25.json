@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/Q25/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Q25.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/Q25/builds",
+    "latest_official_build": {
+      "date": "2026-05-26",
+      "datetime": 1779829433,
+      "filename": "lineage-23.2-20260526-nightly-Q25-signed.zip",
+      "filepath": "/full/Q25/20260526/lineage-23.2-20260526-nightly-Q25-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4561:125037,payload.bin:4561:1153603108,payload_properties.txt:1153607727:156,apex_info.pb:2104:1340,care_map.pb:3491:1023,metadata:69:670,metadata.pb:807:1249                        ",
+      "sha1": "885b1f5f956bafe9a82a8422b7f01cf402ace7e7",
+      "sha256": "23a8bbeaa1cab83d50fd57af777621794f1f1b33fe7314072d030630a6972fde",
+      "size": 1153610874,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/Q25/20260526/lineage-23.2-20260526-nightly-Q25-signed.zip"
+    },
+    "names": [
+      "Q25 Pro"
+    ],
+    "models": [],
+    "vendor": "Zinwa",
+    "vendor_short": "xelex",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2"
+    ],
+    "recovery_partition_name": "vendor_boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_xelex_Q25",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_xelex_mt6789",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr",
+          "ref": "lineage-23.2",
+          "file": "SEPolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_xelex_Q25",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "mgk.config",
+        "entry_level.config",
+        "q20_v12_factory.config"
+      ],
+      "kernel_source_path": "kernel/xelex/mt6789",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "Q25",
+    "vendor": "Zinwa",
+    "vendor_short": "xelex",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/Q25/20260526/lineage-23.2-20260526-nightly-Q25-signed.zip",
+    "boot_source_sha256": "23a8bbeaa1cab83d50fd57af777621794f1f1b33fe7314072d030630a6972fde",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_xelex_mt6789.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "mgk.config",
+      "entry_level.config",
+      "q20_v12_factory.config"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

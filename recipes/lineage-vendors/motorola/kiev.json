@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/kiev/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/kiev_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/kiev_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/kiev/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779991478,
+      "filename": "lineage-23.2-20260528-nightly-kiev-signed.zip",
+      "filepath": "/full/kiev/20260528/lineage-23.2-20260528-nightly-kiev-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4497:131212,payload.bin:4497:1169871299,payload_properties.txt:1169875854:156,apex_info.pb:2061:1279,care_map.pb:3387:1063,metadata:69:677,metadata.pb:814:1199                        ",
+      "sha1": "9e8cc125de5760b494ee15fe2d34e933bf81aded",
+      "sha256": "637e71473dbeeae7c72ec4831eef6be53ee3ed7c65d4dac4585dded4ac7f7b02",
+      "size": 1169879001,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/kiev/20260528/lineage-23.2-20260528-nightly-kiev-signed.zip"
+    },
+    "names": [
+      "moto g 5G",
+      "moto one 5G ace"
+    ],
+    "models": [
+      "XT2113-3",
+      "XT2113-2"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_kiev",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm7250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_kiev",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/lito-perf_defconfig",
+        "vendor/ext_config/moto-lito.config",
+        "vendor/ext_config/$(PRODUCT_DEVICE)-default.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "kiev",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/kiev/20260528/lineage-23.2-20260528-nightly-kiev-signed.zip",
+    "boot_source_sha256": "637e71473dbeeae7c72ec4831eef6be53ee3ed7c65d4dac4585dded4ac7f7b02",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/lito-perf_defconfig",
+      "vendor/ext_config/moto-lito.config",
+      "vendor/ext_config/$(PRODUCT_DEVICE)-default.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

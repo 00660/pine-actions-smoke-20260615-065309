@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/porg/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/porg_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/porg_variant2.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/porg/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779974601,
+      "filename": "lineage-22.2-20260528-nightly-porg-signed.zip",
+      "filepath": "/full/porg/20260528/lineage-22.2-20260528-nightly-porg-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 35,
+      "ota_property_files": "metadata:69:329,metadata.pb:466:208                 ",
+      "sha1": "7ec66f92df4805f8f2bba1cf812a98073bf0eddf",
+      "sha256": "a9fb9f5009113534791478c4326cab276b53e1b50d647b5bd91ca12f70f2eb30",
+      "size": 804790296,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/porg/20260528/lineage-22.2-20260528-nightly-porg-signed.zip"
+    },
+    "names": [
+      "Jetson Nano [Android TV]",
+      "Jetson Nano 2GB [Android TV]"
+    ],
+    "models": [
+      "porg",
+      "batuu"
+    ],
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "architecture": "arm64",
+    "current_branch": "22.2",
+    "versions": [
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nvidia_porg",
+      "ref": "lineage-18.1",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel",
+      "ref": "lineage-18.1",
+      "validation": "full_source",
+      "version": "4.9"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_tegra-common",
+          "ref": "lineage-18.1",
+          "file": "twrp.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_sepolicy",
+          "ref": "lineage-18.1",
+          "file": "sepolicy.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_tegra-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigTegra.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_t210-common",
+          "ref": "lineage-18.1",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_foster",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_nvidia_porg",
+          "ref": "lineage-18.1",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "tegra_android_defconfig"
+      ],
+      "kernel_source_path": "kernel/nvidia/kernel-$(TARGET_TEGRA_KERNEL)",
+      "kernel_image_name": "Image.gz"
+    }
+  },
+  "build": {
+    "device": "porg",
+    "vendor": "NVIDIA",
+    "vendor_short": "nvidia",
+    "lineage_branch": "lineage-18.1",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/porg/20260528/lineage-22.2-20260528-nightly-porg-signed.zip",
+    "boot_source_sha256": "a9fb9f5009113534791478c4326cab276b53e1b50d647b5bd91ca12f70f2eb30",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel.git",
+    "kernel_ref": "lineage-18.1",
+    "arch": "arm64",
+    "kernel_configs": [
+      "tegra_android_defconfig"
+    ],
+    "image_target": "Image.gz",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

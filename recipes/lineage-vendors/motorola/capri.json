@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/capri/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/capri_variant1.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/capri_variant2.yml",
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/capri_variant3.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/capri/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779956471,
+      "filename": "lineage-23.2-20260528-nightly-capri-signed.zip",
+      "filepath": "/full/capri/20260528/lineage-23.2-20260528-nightly-capri-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4092:144316,payload.bin:4092:1104231528,payload_properties.txt:1104235678:156,apex_info.pb:1936:1279,care_map.pb:3262:783,metadata:69:673,metadata.pb:810:1078                        ",
+      "sha1": "dbf2bbdf176a88e2d5745c288d005b01d20daa23",
+      "sha256": "f50fa8872f4c637bc7bc4f8dbec1eae331c52f2ea2b783a1f97391f86135e11d",
+      "size": 1104238825,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/capri/20260528/lineage-23.2-20260528-nightly-capri-signed.zip"
+    },
+    "names": [
+      "moto g10",
+      "moto g10 power",
+      "K13 Note"
+    ],
+    "models": [
+      "XT2127-1",
+      "XT2127-2",
+      "XT2127-4",
+      "XT2127-3"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_capri",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm6225",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm6225-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_capri",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/bengal-perf_defconfig",
+        "vendor/ext_config/moto-bengal.config",
+        "vendor/ext_config/capri-default.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm6225",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "capri",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/capri/20260528/lineage-23.2-20260528-nightly-capri-signed.zip",
+    "boot_source_sha256": "f50fa8872f4c637bc7bc4f8dbec1eae331c52f2ea2b783a1f97391f86135e11d",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm6225.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/bengal-perf_defconfig",
+      "vendor/ext_config/moto-bengal.config",
+      "vendor/ext_config/capri-default.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/rhodep/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/rhodep.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/rhodep/builds",
+    "latest_official_build": {
+      "date": "2026-05-24",
+      "datetime": 1779581113,
+      "filename": "lineage-23.2-20260524-nightly-rhodep-signed.zip",
+      "filepath": "/full/rhodep/20260524/lineage-23.2-20260524-nightly-rhodep-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4168:132685,payload.bin:4168:1165381250,payload_properties.txt:1165385476:156,apex_info.pb:1986:1279,care_map.pb:3312:809,metadata:69:680,metadata.pb:817:1121                        ",
+      "sha1": "df717cb4b6ffcb6dd964242ba51b22b32da4e376",
+      "sha256": "3fc1e00d85ccca23f829afa139b153de1306a2782900068aea3de75f3b1d5f04",
+      "size": 1165388623,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/rhodep/20260524/lineage-23.2-20260524-nightly-rhodep-signed.zip"
+    },
+    "names": [
+      "moto g82 5G"
+    ],
+    "models": [
+      "XT2225-1"
+    ],
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_motorola_rhodep",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_motorola_sm6375",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.4"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_sm6375-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_motorola_rhodep",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/holi-qgki_defconfig",
+        "vendor/ext_config/lineage_moto-holi.config",
+        "vendor/ext_config/moto-holi-rhodep.config"
+      ],
+      "kernel_source_path": "kernel/motorola/sm6375",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "rhodep",
+    "vendor": "Motorola",
+    "vendor_short": "motorola",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/rhodep/20260524/lineage-23.2-20260524-nightly-rhodep-signed.zip",
+    "boot_source_sha256": "3fc1e00d85ccca23f829afa139b153de1306a2782900068aea3de75f3b1d5f04",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_motorola_sm6375.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/holi-qgki_defconfig",
+      "vendor/ext_config/lineage_moto-holi.config",
+      "vendor/ext_config/moto-holi-rhodep.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

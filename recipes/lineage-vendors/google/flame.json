@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "blocked_until_source_complete",
+  "blocked_reasons": [
+    "No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig."
+  ],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/flame/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/flame.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/flame/builds",
+    "latest_official_build": {
+      "date": "2026-05-28",
+      "datetime": 1779942436,
+      "filename": "lineage-23.2-20260528-nightly-flame-signed.zip",
+      "filepath": "/full/flame/20260528/lineage-23.2-20260528-nightly-flame-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4148:130737,payload.bin:4148:1323102272,payload_properties.txt:1323106478:156,apex_info.pb:1903:1386,care_map.pb:3336:765,metadata:69:668,metadata.pb:805:1050                        ",
+      "sha1": "237e1a38f30cf3ba54b5084e6b6c22bff18f9d86",
+      "sha256": "b1189579cf9382eefd247efed84ba7174610562c5c63904db94f82ee0aea57a4",
+      "size": 1323109625,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/flame/20260528/lineage-23.2-20260528-nightly-flame-signed.zip"
+    },
+    "names": [
+      "Pixel 4"
+    ],
+    "models": [],
+    "vendor": "Google",
+    "vendor_short": "google",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2",
+      "22.1",
+      "21",
+      "20",
+      "19.1",
+      "18.1",
+      "17.1"
+    ],
+    "recovery_partition_name": "boot",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_google_flame",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_google_msm-4.14",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.14"
+    },
+    "board_config": {
+      "files": [],
+      "kernel_configs": [],
+      "kernel_source_path": "",
+      "kernel_image_name": "Image.gz-dtb"
+    }
+  },
+  "build": {
+    "device": "flame",
+    "vendor": "Google",
+    "vendor_short": "google",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/flame/20260528/lineage-23.2-20260528-nightly-flame-signed.zip",
+    "boot_source_sha256": "b1189579cf9382eefd247efed84ba7174610562c5c63904db94f82ee0aea57a4",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_google_msm-4.14.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [],
+    "image_target": "Image.gz-dtb",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

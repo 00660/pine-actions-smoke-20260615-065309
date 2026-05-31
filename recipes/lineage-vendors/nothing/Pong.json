@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/Pong/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/Pong.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/Pong/builds",
+    "latest_official_build": {
+      "date": "2026-05-27",
+      "datetime": 1779849601,
+      "filename": "lineage-23.2-20260527-nightly-Pong-signed.zip",
+      "filepath": "/full/Pong/20260527/lineage-23.2-20260527-nightly-Pong-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "payload_metadata.bin:4431:191538,payload.bin:4431:2770690875,payload_properties.txt:2770695364:156,apex_info.pb:2078:1279,care_map.pb:3404:980,metadata:69:666,metadata.pb:803:1227                        ",
+      "sha1": "ae407ab28dc499c40078f7044da41723f41ee338",
+      "sha256": "c6c3c8a5274da3e325a2cfc52dcba60d4e33f43eceff1ad0b31c06a4d1c881fa",
+      "size": 2770698511,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/Pong/20260527/lineage-23.2-20260527-nightly-Pong-signed.zip"
+    },
+    "names": [
+      "Phone (2)"
+    ],
+    "models": [
+      "A065",
+      "AIN065"
+    ],
+    "vendor": "Nothing",
+    "vendor_short": "nothing",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_nothing_Pong",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_nothing_sm8475",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "5.10"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_nothing_Pong",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "gki_defconfig",
+        "vendor/waipio_GKI.config",
+        "vendor/nothing/waipio_GKI.config",
+        "vendor/debugfs.config"
+      ],
+      "kernel_source_path": "kernel/nothing/sm8475",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "Pong",
+    "vendor": "Nothing",
+    "vendor_short": "nothing",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/Pong/20260527/lineage-23.2-20260527-nightly-Pong-signed.zip",
+    "boot_source_sha256": "c6c3c8a5274da3e325a2cfc52dcba60d4e33f43eceff1ad0b31c06a4d1c881fa",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_nothing_sm8475.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "gki_defconfig",
+      "vendor/waipio_GKI.config",
+      "vendor/nothing/waipio_GKI.config",
+      "vendor/debugfs.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}

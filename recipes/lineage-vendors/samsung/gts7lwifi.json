@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "rom": "LineageOS",
+  "status": "build_ready",
+  "blocked_reasons": [],
+  "source_facts": {
+    "lineage_devices_url": "https://wiki.lineageos.org/devices/",
+    "lineage_wiki_url": "https://wiki.lineageos.org/devices/gts7lwifi/",
+    "lineage_wiki_files": [
+      "https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/gts7lwifi.yml"
+    ],
+    "download_api_url": "https://download.lineageos.org/api/v2/devices/gts7lwifi/builds",
+    "latest_official_build": {
+      "date": "2026-05-25",
+      "datetime": 1779674183,
+      "filename": "lineage-23.2-20260525-nightly-gts7lwifi-signed.zip",
+      "filepath": "/full/gts7lwifi/20260525/lineage-23.2-20260525-nightly-gts7lwifi-signed.zip",
+      "os_patch_level": "2026-05-01",
+      "os_sdk_level": 36,
+      "ota_property_files": "metadata:69:335,metadata.pb:472:219                 ",
+      "sha1": "86bc2bdd6d9495b7217493b7f907cf7faf9c80a5",
+      "sha256": "48007ebe88374a501a001caba204d1e1c1d8ddaf78146131f954096ac41b4452",
+      "size": 1274013537,
+      "type": "nightly",
+      "url": "https://mirrorbits.lineageos.org/full/gts7lwifi/20260525/lineage-23.2-20260525-nightly-gts7lwifi-signed.zip"
+    },
+    "names": [
+      "Galaxy Tab S7 (Wi-Fi)"
+    ],
+    "models": [
+      "SM-T870"
+    ],
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "architecture": "arm64",
+    "current_branch": "23.2",
+    "versions": [
+      "23.2",
+      "23.0",
+      "22.2"
+    ],
+    "recovery_partition_name": "recovery",
+    "device_tree": {
+      "repo": "https://github.com/LineageOS/android_device_samsung_gts7lwifi",
+      "ref": "lineage-23.2",
+      "validation": "found"
+    },
+    "kernel_source": {
+      "repo": "https://github.com/LineageOS/android_kernel_samsung_sm8250",
+      "ref": "lineage-23.2",
+      "validation": "full_source",
+      "version": "4.19"
+    },
+    "board_config": {
+      "files": [
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_sm8250-common",
+          "ref": "lineage-23.2",
+          "file": "BoardConfigCommon.mk"
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_device_samsung_gts7lwifi",
+          "ref": "lineage-23.2",
+          "file": "BoardConfig.mk"
+        }
+      ],
+      "kernel_configs": [
+        "vendor/kona-perf_defconfig",
+        "vendor/samsung/kona-sec-common.config",
+        "vendor/samsung/gts7lwifi.config"
+      ],
+      "kernel_source_path": "kernel/samsung/sm8250",
+      "kernel_image_name": "Image"
+    }
+  },
+  "build": {
+    "device": "gts7lwifi",
+    "vendor": "Samsung",
+    "vendor_short": "samsung",
+    "lineage_branch": "lineage-23.2",
+    "boot_source_url": "https://mirrorbits.lineageos.org/full/gts7lwifi/20260525/lineage-23.2-20260525-nightly-gts7lwifi-signed.zip",
+    "boot_source_sha256": "48007ebe88374a501a001caba204d1e1c1d8ddaf78146131f954096ac41b4452",
+    "kernel_repo": "https://github.com/LineageOS/android_kernel_samsung_sm8250.git",
+    "kernel_ref": "lineage-23.2",
+    "arch": "arm64",
+    "kernel_configs": [
+      "vendor/kona-perf_defconfig",
+      "vendor/samsung/kona-sec-common.config",
+      "vendor/samsung/gts7lwifi.config"
+    ],
+    "image_target": "Image",
+    "fragment_path": "config/docker-required.fragment"
+  }
+}
