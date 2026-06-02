@@ -1,8 +1,14 @@
 {
   "schema": 1,
   "rom": "LineageOS",
-  "status": "build_ready",
-  "blocked_reasons": [],
+  "status": "blocked",
+  "blocked_reasons": [
+    "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+    "Kernel Kconfig mandatory source is missing: drivers/base/magtransfer/Kconfig (referenced by drivers/base/Kconfig).",
+    "Kernel Kconfig mandatory source is missing: drivers/base/touchpanel_notify/Kconfig (referenced by drivers/base/Kconfig).",
+    "Kernel Kconfig mandatory source is missing: drivers/misc/vibrator/haptic_feedback/Kconfig (referenced by drivers/misc/Kconfig).",
+    "Kernel Kconfig has 13 more missing mandatory source references."
+  ],
   "source_facts": {
     "lineage_devices_url": "https://wiki.lineageos.org/devices/",
     "lineage_wiki_url": "https://wiki.lineageos.org/devices/dodge/",
@@ -51,7 +57,109 @@
       "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8750",
       "ref": "lineage-23.2",
       "validation": "full_source",
-      "version": "6.6"
+      "version": "6.6",
+      "kconfig_validation": {
+        "checked": true,
+        "root": "Kconfig",
+        "architecture": "arm64",
+        "visited_files": 1557,
+        "missing_sources": [
+          {
+            "path": "drivers/base/kernelFwUpdate/Kconfig",
+            "referenced_by": "drivers/base/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/base/magtransfer/Kconfig",
+            "referenced_by": "drivers/base/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/base/touchpanel_notify/Kconfig",
+            "referenced_by": "drivers/base/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/misc/vibrator/haptic_feedback/Kconfig",
+            "referenced_by": "drivers/misc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/misc/vibrator/oplus_haptic/Kconfig",
+            "referenced_by": "drivers/misc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/power/oplus/Kconfig",
+            "referenced_by": "drivers/power/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/boot/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/device_info/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/dft/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/fpga_notify/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/mdmrst/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/multimedia/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/storage/common/ufs_oplus_dbg/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/trackpoint/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "usr/Kconfig",
+            "referenced_by": "init/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "virt/kvm/Kconfig",
+            "referenced_by": "arch/arm64/kvm/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "virt/lib/Kconfig",
+            "referenced_by": "drivers/vfio/Kconfig",
+            "keyword": "source"
+          }
+        ],
+        "skipped_sources": [
+          {
+            "source": "\"$(KCONFIG_EXT_PREFIX)Kconfig.ext\"",
+            "referenced_by": "Kconfig",
+            "keyword": "source",
+            "reason": "unsupported dynamic Kconfig source path: \"$(KCONFIG_EXT_PREFIX)Kconfig.ext\""
+          }
+        ],
+        "capped": false
+      }
     },
     "board_config": {
       "files": [

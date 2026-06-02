@@ -2410,6 +2410,35 @@
       ]
     },
     {
+      "device": "dodge",
+      "vendor_short": "oneplus",
+      "names": [
+        "13"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/base/magtransfer/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/base/touchpanel_notify/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/misc/vibrator/haptic_feedback/Kconfig (referenced by drivers/misc/Kconfig).",
+        "Kernel Kconfig has 13 more missing mandatory source references."
+      ]
+    },
+    {
+      "device": "erhai",
+      "vendor_short": "oneplus",
+      "names": [
+        "Pad 2 Pro",
+        "Pad 3"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/base/magtransfer/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/base/touchpanel_notify/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/misc/vibrator/haptic_feedback/Kconfig (referenced by drivers/misc/Kconfig).",
+        "Kernel Kconfig has 13 more missing mandatory source references."
+      ]
+    },
+    {
       "device": "giulia",
       "vendor_short": "oneplus",
       "names": [
