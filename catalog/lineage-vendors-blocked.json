@@ -2157,6 +2157,30 @@
       ]
     },
     {
+      "device": "foster",
+      "vendor_short": "nvidia",
+      "names": [
+        "Shield TV (2015 / 2015 Pro / 2017 / 2019 Pro) [Android TV]",
+        "Jetson TX1 [Android TV]"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
+      ]
+    },
+    {
+      "device": "foster_tab",
+      "vendor_short": "nvidia",
+      "names": [
+        "Shield TV (2015 / 2015 Pro / 2017 / 2019 Pro) [Tablet]",
+        "Jetson TX1 [Tablet]"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
+      ]
+    },
+    {
       "device": "mdarcy",
       "vendor_short": "nvidia",
       "names": [
@@ -2174,6 +2198,30 @@
       ],
       "reasons": [
         "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "porg",
+      "vendor_short": "nvidia",
+      "names": [
+        "Jetson Nano [Android TV]",
+        "Jetson Nano 2GB [Android TV]"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
+      ]
+    },
+    {
+      "device": "porg_tab",
+      "vendor_short": "nvidia",
+      "names": [
+        "Jetson Nano [Tablet]",
+        "Jetson Nano 2GB [Tablet]"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
       ]
     },
     {
@@ -2232,6 +2280,34 @@
       ]
     },
     {
+      "device": "aston",
+      "vendor_short": "oneplus",
+      "names": [
+        "12R"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/oplus_touchscreen_v2/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/synaptics_hbp/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/touch_custom/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig has 14 more missing mandatory source references."
+      ]
+    },
+    {
+      "device": "astonc",
+      "vendor_short": "oneplus",
+      "names": [
+        "Ace 3"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/oplus_touchscreen_v2/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/synaptics_hbp/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/touch_custom/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig has 14 more missing mandatory source references."
+      ]
+    },
+    {
       "device": "avicii",
       "vendor_short": "oneplus",
       "names": [
@@ -2250,6 +2326,20 @@
       "reasons": [
         "Device architecture is arm; only arm64 devices are built.",
         "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "benz",
+      "vendor_short": "oneplus",
+      "names": [
+        "Nord CE4"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/oplus_touchscreen_v2/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/synaptics_hbp/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/touch_custom/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig has 14 more missing mandatory source references."
       ]
     },
     {
@@ -2293,6 +2383,20 @@
         "Device architecture is arm; only arm64 devices are built.",
         "No shared LineageOS branch found for device tree and kernel repo.",
         "No official LineageOS build found in download API."
+      ]
+    },
+    {
+      "device": "salami",
+      "vendor_short": "oneplus",
+      "names": [
+        "11 5G"
+      ],
+      "reasons": [
+        "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/oplus_touchscreen_v2/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/synaptics_hbp/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/touch_custom/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+        "Kernel Kconfig has 14 more missing mandatory source references."
       ]
     },
     {
@@ -4041,54 +4145,6 @@
       ],
       "reasons": [
         "No official LineageOS build found in download API."
-      ]
-    },
-    {
-      "device": "foster",
-      "vendor_short": "nvidia",
-      "names": [
-        "Shield TV (2015 / 2015 Pro / 2017 / 2019 Pro) [Android TV]",
-        "Jetson TX1 [Android TV]"
-      ],
-      "reasons": [
-        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
-        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
-      ]
-    },
-    {
-      "device": "foster_tab",
-      "vendor_short": "nvidia",
-      "names": [
-        "Shield TV (2015 / 2015 Pro / 2017 / 2019 Pro) [Tablet]",
-        "Jetson TX1 [Tablet]"
-      ],
-      "reasons": [
-        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
-        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
-      ]
-    },
-    {
-      "device": "porg",
-      "vendor_short": "nvidia",
-      "names": [
-        "Jetson Nano [Android TV]",
-        "Jetson Nano 2GB [Android TV]"
-      ],
-      "reasons": [
-        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
-        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
-      ]
-    },
-    {
-      "device": "porg_tab",
-      "vendor_short": "nvidia",
-      "names": [
-        "Jetson Nano [Tablet]",
-        "Jetson Nano 2GB [Tablet]"
-      ],
-      "reasons": [
-        "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
-        "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
       ]
     }
   ]

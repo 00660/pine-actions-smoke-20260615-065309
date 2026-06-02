@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 240
     steps:
       - name: Checkout
@@ -72,7 +72,7 @@ jobs:
 
       - name: Build Docker-capable boot image
         env:
-          JOBS: "1"
+          JOBS: ${{ vars.LINEAGE_BUILD_JOBS || '' }}
         run: |
           chmod +x scripts/build-lineage-recipe.sh
           scripts/build-lineage-recipe.sh "$RECIPE_PATH"

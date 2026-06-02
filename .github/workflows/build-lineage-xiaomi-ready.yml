@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   prepare:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.matrix.outputs.matrix }}
       count: ${{ steps.matrix.outputs.count }}
@@ -76,7 +76,7 @@ jobs:
     needs: prepare
     if: needs.prepare.outputs.count != '0'
     name: Build ${{ matrix.model }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     timeout-minutes: 240
     strategy:
       fail-fast: false
@@ -118,7 +118,7 @@ jobs:
 
       - name: Build ${{ matrix.model }}
         env:
-          JOBS: "1"
+          JOBS: ${{ vars.LINEAGE_BUILD_JOBS || '' }}
         run: |
           chmod +x scripts/build-lineage-recipe.sh
           scripts/build-lineage-recipe.sh "${{ matrix.recipe }}"

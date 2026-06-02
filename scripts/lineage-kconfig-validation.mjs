@@ -1,7 +1,7 @@
 import path from "node:path";
 
-const defaultMaxFiles = Number(process.env.LINEAGE_KCONFIG_MAX_FILES || "1200");
-const defaultConcurrency = Number(process.env.LINEAGE_KCONFIG_CONCURRENCY || "16");
+const defaultMaxFiles = Number(process.env.LINEAGE_KCONFIG_MAX_FILES || "3000");
+const defaultConcurrency = Number(process.env.LINEAGE_KCONFIG_CONCURRENCY || "8");
 
 function stripSourceValue(value) {
   return String(value || "")
@@ -96,7 +96,7 @@ async function mapLimit(items, limit, worker) {
   return results;
 }
 
-function shouldReadKconfig(filePath, architecture) {
+export function isRelevantKconfigPath(filePath, architecture) {
   const base = path.posix.basename(filePath);
   if (!base.startsWith("Kconfig")) return false;
 
@@ -117,53 +117,135 @@ function referencedPath(currentPath, directive, architecture) {
   return { path: nextPath, reason: "" };
 }
 
-async function validateFromTree({ ownerRepo, ref, architecture, repoText, repoTree, concurrency }) {
-  const tree = await repoTree(ownerRepo, ref);
-  const paths = new Set(tree.map((entry) => entry.path).filter(Boolean));
-  const kconfigFiles = tree
-    .filter((entry) => entry.type === "blob")
-    .map((entry) => entry.path)
-    .filter((filePath) => shouldReadKconfig(filePath, architecture))
-    .sort();
-  const validation = {
-    checked: true,
-    root: "Kconfig",
-    architecture: sourceArch(architecture),
-    visited_files: kconfigFiles.length,
-    missing_sources: [],
-    skipped_sources: [],
-    capped: false,
-  };
+function isMissingTextError(error) {
+  const message = String(error?.message || "");
+  return error?.code === "ENOENT" || /^404\b/.test(message);
+}
 
-  await mapLimit(kconfigFiles, concurrency, async (filePath) => {
-    const text = await repoText(ownerRepo, ref, filePath);
-    for (const directive of extractSourceDirectives(text)) {
-      if (directive.optional) continue;
-      const next = referencedPath(filePath, directive, architecture);
-      if (!next.path) {
-        validation.skipped_sources.push({
-          source: directive.source,
-          referenced_by: filePath,
-          keyword: directive.keyword,
-          reason: next.reason,
-        });
-        continue;
-      }
-      if (!paths.has(next.path)) {
-        validation.missing_sources.push({
-          path: next.path,
-          referenced_by: filePath,
-          keyword: directive.keyword,
-        });
-      }
-    }
-  });
-
+function sortValidation(validation) {
   validation.missing_sources.sort((a, b) => `${a.path}:${a.referenced_by}`.localeCompare(`${b.path}:${b.referenced_by}`));
   validation.skipped_sources.sort((a, b) =>
     `${a.source}:${a.referenced_by}`.localeCompare(`${b.source}:${b.referenced_by}`),
   );
   return validation;
+}
+
+async function validateFromTree({ ownerRepo, ref, architecture, repoText, repoTree, maxFiles, concurrency }) {
+  const tree = await repoTree(ownerRepo, ref);
+  const paths = new Set(tree.filter((entry) => entry.type === "blob").map((entry) => entry.path).filter(Boolean));
+  const validation = {
+    checked: false,
+    root: "Kconfig",
+    architecture: sourceArch(architecture),
+    visited_files: 0,
+    missing_sources: [],
+    skipped_sources: [],
+    capped: false,
+  };
+
+  const queue = [{ path: "Kconfig", referenced_by: "", keyword: "root" }];
+  const queued = new Set(queue.map((item) => item.path));
+  const visited = new Set();
+
+  while (queue.length > 0) {
+    if (visited.size >= maxFiles) {
+      validation.capped = true;
+      break;
+    }
+
+    const slots = Math.max(1, maxFiles - visited.size);
+    const batch = queue.splice(0, Math.max(1, Math.min(concurrency, slots)));
+    await mapLimit(batch, concurrency, async (current) => {
+      if (visited.has(current.path)) return;
+      if (!paths.has(current.path)) {
+        validation.missing_sources.push({
+          path: current.path,
+          referenced_by: current.referenced_by || "<root>",
+          keyword: current.keyword,
+        });
+        return;
+      }
+
+      let text = "";
+      try {
+        text = await repoText(ownerRepo, ref, current.path);
+      } catch (error) {
+        if (isMissingTextError(error)) {
+          validation.missing_sources.push({
+            path: current.path,
+            referenced_by: current.referenced_by || "<root>",
+            keyword: current.keyword,
+          });
+          return;
+        }
+        throw error;
+      }
+
+      visited.add(current.path);
+      validation.checked = true;
+
+      for (const directive of extractSourceDirectives(text)) {
+        if (directive.optional) continue;
+        const next = referencedPath(current.path, directive, architecture);
+        if (!next.path) {
+          validation.skipped_sources.push({
+            source: directive.source,
+            referenced_by: current.path,
+            keyword: directive.keyword,
+            reason: next.reason,
+          });
+          continue;
+        }
+        if (!queued.has(next.path)) {
+          queued.add(next.path);
+          queue.push({
+            path: next.path,
+            referenced_by: current.path,
+            keyword: directive.keyword,
+          });
+        }
+      }
+    });
+  }
+
+  validation.visited_files = visited.size;
+  return sortValidation(validation);
+}
+
+export function validateKconfigSourceReferences({ paths, directives, architecture }) {
+  const pathSet = new Set(paths);
+  const validation = {
+    checked: true,
+    root: "Kconfig",
+    architecture: sourceArch(architecture),
+    visited_files: new Set(directives.map((item) => item.referenced_by)).size,
+    missing_sources: [],
+    skipped_sources: [],
+    capped: false,
+  };
+
+  for (const directive of directives) {
+    if (directive.optional) continue;
+    const next = referencedPath(directive.referenced_by, directive, architecture);
+    if (!next.path) {
+      validation.skipped_sources.push({
+        source: directive.source,
+        referenced_by: directive.referenced_by,
+        keyword: directive.keyword,
+        reason: next.reason,
+      });
+      continue;
+    }
+    if (!pathSet.has(next.path)) {
+      validation.missing_sources.push({
+        path: next.path,
+        referenced_by: directive.referenced_by,
+        keyword: directive.keyword,
+      });
+    }
+  }
+
+  return sortValidation(validation);
 }
 
 export function kconfigMissingReasons(validation, limit = 4) {
@@ -185,7 +267,7 @@ export async function validateKernelKconfigSources({
   concurrency = defaultConcurrency,
 }) {
   if (repoTree) {
-    return validateFromTree({ ownerRepo, ref, architecture, repoText, repoTree, concurrency });
+    return validateFromTree({ ownerRepo, ref, architecture, repoText, repoTree, maxFiles, concurrency });
   }
 
   const validation = {
@@ -217,7 +299,7 @@ export async function validateKernelKconfigSources({
     try {
       text = await repoText(ownerRepo, ref, current.path);
     } catch (error) {
-      if (/^404\b/.test(String(error?.message || ""))) {
+      if (isMissingTextError(error)) {
         validation.missing_sources.push({
           path: current.path,
           referenced_by: current.referenced_by || "<root>",
@@ -254,5 +336,5 @@ export async function validateKernelKconfigSources({
   }
 
   validation.visited_files = visited.size;
-  return validation;
+  return sortValidation(validation);
 }

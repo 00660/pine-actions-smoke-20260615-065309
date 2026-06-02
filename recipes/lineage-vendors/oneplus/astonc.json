@@ -1,8 +1,14 @@
 {
   "schema": 1,
   "rom": "LineageOS",
-  "status": "build_ready",
-  "blocked_reasons": [],
+  "status": "blocked",
+  "blocked_reasons": [
+    "Kernel Kconfig mandatory source is missing: drivers/base/kernelFwUpdate/Kconfig (referenced by drivers/base/Kconfig).",
+    "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/oplus_touchscreen_v2/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+    "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/synaptics_hbp/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+    "Kernel Kconfig mandatory source is missing: drivers/input/touchscreen/touch_custom/Kconfig (referenced by drivers/input/touchscreen/Kconfig).",
+    "Kernel Kconfig has 14 more missing mandatory source references."
+  ],
   "source_facts": {
     "lineage_devices_url": "https://wiki.lineageos.org/devices/",
     "lineage_wiki_url": "https://wiki.lineageos.org/devices/astonc/",
@@ -48,7 +54,114 @@
       "repo": "https://github.com/LineageOS/android_kernel_oneplus_sm8550",
       "ref": "lineage-23.2",
       "validation": "full_source",
-      "version": "5.15"
+      "version": "5.15",
+      "kconfig_validation": {
+        "checked": true,
+        "root": "Kconfig",
+        "architecture": "arm64",
+        "visited_files": 1410,
+        "missing_sources": [
+          {
+            "path": "drivers/base/kernelFwUpdate/Kconfig",
+            "referenced_by": "drivers/base/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/input/touchscreen/oplus_touchscreen_v2/Kconfig",
+            "referenced_by": "drivers/input/touchscreen/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/input/touchscreen/synaptics_hbp/Kconfig",
+            "referenced_by": "drivers/input/touchscreen/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/input/touchscreen/touch_custom/Kconfig",
+            "referenced_by": "drivers/input/touchscreen/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/input/uff_fp_drivers/Kconfig",
+            "referenced_by": "drivers/input/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/leds/aw210xx/Kconfig",
+            "referenced_by": "drivers/leds/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/misc/aw8697_haptic/Kconfig",
+            "referenced_by": "drivers/misc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/misc/oplus_secure/Kconfig",
+            "referenced_by": "drivers/misc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/misc/tri_state_key/Kconfig",
+            "referenced_by": "drivers/misc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/nfc/oplus_nfc/Kconfig",
+            "referenced_by": "drivers/nfc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/power/oplus/Kconfig",
+            "referenced_by": "drivers/power/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/boot/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/device_info/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/dfr/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/dft/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/oplus_consumer_ir/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/soc/oplus/sensor/Kconfig",
+            "referenced_by": "drivers/soc/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "kernel/oplus_cpu/thermal/Kconfig",
+            "referenced_by": "init/Kconfig",
+            "keyword": "source"
+          }
+        ],
+        "skipped_sources": [
+          {
+            "source": "\"$(KCONFIG_EXT_PREFIX)Kconfig.ext\"",
+            "referenced_by": "Kconfig",
+            "keyword": "source",
+            "reason": "unsupported dynamic Kconfig source path: \"$(KCONFIG_EXT_PREFIX)Kconfig.ext\""
+          }
+        ],
+        "capped": false
+      }
     },
     "board_config": {
       "files": [

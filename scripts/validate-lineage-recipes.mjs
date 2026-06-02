@@ -1,7 +1,12 @@
 #!/usr/bin/env node
+import { execFileSync } from "node:child_process";
 import fs from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
-import { kconfigMissingReasons, validateKernelKconfigSources } from "./lineage-kconfig-validation.mjs";
+import {
+  kconfigMissingReasons,
+  validateKernelKconfigSources,
+} from "./lineage-kconfig-validation.mjs";
 
 const catalogPath = process.env.LINEAGE_RECIPE_CATALOG || process.argv[2] || "catalog/lineage-vendors-recipes.json";
 const blockedCatalogPath =
@@ -20,10 +25,13 @@ const requested = new Set(
     .map((item) => item.trim())
     .filter(Boolean),
 );
+const validateAll = process.env.LINEAGE_VALIDATE_ALL === "1";
 
 const githubApi = "https://api.github.com";
 const textCache = new Map();
 const treeCache = new Map();
+const validationCache = new Map();
+const useGitKconfig = process.env.LINEAGE_KCONFIG_USE_GIT === "1";
 
 function githubHeaders(raw = false) {
   const headers = {
@@ -61,7 +69,7 @@ async function repoText(ownerRepo, ref, subpath) {
     .map(encodeURIComponent)
     .join("/");
   const value = await (await fetchWithRetry(
-    `${githubApi}/repos/${ownerRepo}/contents/${encodedPath}?ref=${encodeURIComponent(ref)}`,
+    `https://raw.githubusercontent.com/${ownerRepo}/${encodeURIComponent(ref)}/${encodedPath}`,
     true,
   )).text();
   textCache.set(cacheKey, value);
@@ -80,6 +88,49 @@ async function repoTree(ownerRepo, ref) {
   return tree;
 }
 
+function safeCacheName(value) {
+  return String(value || "").replace(/[^A-Za-z0-9._-]+/g, "_");
+}
+
+async function ensureGitMetadataClone(ownerRepo, ref) {
+  const cacheRoot = process.env.LINEAGE_KCONFIG_CLONE_CACHE || path.join(os.tmpdir(), "lineage-kconfig-kernels");
+  const cloneDir = path.join(cacheRoot, safeCacheName(`${ownerRepo}_${ref}`));
+  const completeMarker = path.join(cloneDir, ".kconfig-git-ok");
+  try {
+    await fs.access(completeMarker);
+    return cloneDir;
+  } catch {
+    await fs.rm(cloneDir, { recursive: true, force: true });
+  }
+
+  await fs.mkdir(cacheRoot, { recursive: true });
+  const repoUrl = `https://github.com/${ownerRepo}.git`;
+  execFileSync("git", ["clone", "--depth", "1", "--filter=blob:none", "--branch", ref, "--no-checkout", repoUrl, cloneDir], {
+    stdio: "pipe",
+  });
+  await fs.writeFile(completeMarker, "ok\n", "utf8");
+  return cloneDir;
+}
+
+async function validateWithGit(ownerRepo, ref, architecture) {
+  const kernelDir = await ensureGitMetadataClone(ownerRepo, ref);
+  return validateKernelKconfigSources({
+    ownerRepo: "local/kernel",
+    ref: "local",
+    architecture,
+    repoText: async (_ownerRepo, _ref, subpath) => {
+      try {
+        return execFileSync("git", ["-C", kernelDir, "show", `HEAD:${subpath}`], {
+          encoding: "utf8",
+          maxBuffer: 16 * 1024 * 1024,
+        });
+      } catch (error) {
+        throw new Error(`404 Not Found: ${subpath}`);
+      }
+    },
+  });
+}
+
 function ownerRepoFromGitUrl(url) {
   const match = String(url || "").match(/github\.com[:/]([^/\s]+\/[^/\s]+?)(?:\.git)?$/);
   return match ? match[1].replace(/\.git$/, "") : "";
@@ -89,13 +140,35 @@ function recipeKey(recipe) {
   return `${recipe.build?.vendor_short || ""}/${recipe.build?.device || ""}`;
 }
 
+function kernelIdentity(recipe) {
+  const ownerRepo = ownerRepoFromGitUrl(recipe.build?.kernel_repo);
+  const ref = recipe.build?.kernel_ref || "";
+  const arch = recipe.build?.arch || "";
+  if (!ownerRepo || !ref || !arch) return null;
+  return {
+    ownerRepo,
+    ref,
+    arch,
+    key: `${ownerRepo}:${ref}:${arch}`,
+  };
+}
+
 function recipePath(recipe) {
   return path.join(recipeDir, recipe.build.vendor_short, `${recipe.build.device}.json`);
 }
 
+function isSupportedRecipe(recipe) {
+  return supportedArchitectures.has(recipe.build?.arch || "");
+}
+
+function matchesRequested(recipe) {
+  return requested.has(recipe.build?.device) || requested.has(recipeKey(recipe));
+}
+
 function shouldValidate(recipe) {
-  if (!supportedArchitectures.has(recipe.build?.arch || "")) return false;
-  if (requested.size > 0) return requested.has(recipe.build.device) || requested.has(recipeKey(recipe));
+  if (!isSupportedRecipe(recipe)) return false;
+  if (requested.size > 0) return matchesRequested(recipe);
+  if (!validateAll) return false;
   return recipe.status === "build_ready";
 }
 
@@ -131,37 +204,68 @@ function blockedEntry(recipe) {
 const catalog = await readJson(catalogPath);
 const recipes = catalog.recipes || [];
 const changedKeys = new Set();
+const selectedRecipes = recipes.filter(shouldValidate);
+const validatedKernelKeys = new Set();
 
-for (const recipe of recipes.filter(shouldValidate)) {
-  const ownerRepo = ownerRepoFromGitUrl(recipe.build.kernel_repo);
-  if (!ownerRepo || !recipe.build.kernel_ref) continue;
+if (selectedRecipes.length === 0) {
+  console.log("validated=0");
+  console.log("validated_kernel_groups=0");
+  console.log("newly_blocked=0");
+  process.exit(0);
+}
 
-  const validation = await validateKernelKconfigSources({
-    ownerRepo,
-    ref: recipe.build.kernel_ref,
-    architecture: recipe.build.arch,
-    repoText,
-    repoTree,
+for (const recipe of selectedRecipes) {
+  const identity = kernelIdentity(recipe);
+  if (!identity || validatedKernelKeys.has(identity.key)) continue;
+  validatedKernelKeys.add(identity.key);
+
+  const validationKey = identity.key;
+  let validation = validationCache.get(validationKey);
+  if (!validation) {
+    validation = useGitKconfig
+      ? await validateWithGit(identity.ownerRepo, identity.ref, identity.arch)
+      : await validateKernelKconfigSources({
+          ownerRepo: identity.ownerRepo,
+          ref: identity.ref,
+          architecture: identity.arch,
+          repoText,
+          repoTree,
+        });
+    validationCache.set(validationKey, validation);
+  }
+
+  const kernelGroup = recipes.filter((candidate) => {
+    if (!isSupportedRecipe(candidate)) return false;
+    if (candidate.status !== "build_ready" && candidate.status !== "blocked" && !matchesRequested(candidate)) return false;
+    const candidateIdentity = kernelIdentity(candidate);
+    return candidateIdentity?.key === identity.key;
   });
-  recipe.source_facts ??= {};
-  recipe.source_facts.kernel_source ??= {};
-  recipe.source_facts.kernel_source.kconfig_validation = validation;
 
-  if (blockRecipe(recipe, validation)) {
-    changedKeys.add(recipeKey(recipe));
-    const filePath = recipePath(recipe);
-    try {
-      const fileRecipe = await readJson(filePath);
-      blockRecipe(fileRecipe, validation);
-      await writeJson(filePath, fileRecipe);
-    } catch (error) {
-      if (!/^ENOENT\b/.test(String(error?.code || ""))) throw error;
+  if ((validation.missing_sources || []).length > 0) {
+    for (const target of kernelGroup) {
+      if (!blockRecipe(target, validation)) continue;
+      changedKeys.add(recipeKey(target));
+      const filePath = recipePath(target);
+      try {
+        const fileRecipe = await readJson(filePath);
+        blockRecipe(fileRecipe, validation);
+        await writeJson(filePath, fileRecipe);
+      } catch (error) {
+        if (!/^ENOENT\b/.test(String(error?.code || ""))) throw error;
+      }
     }
   }
 
   console.log(
-    `${recipeKey(recipe)} checked=${validation.checked} visited=${validation.visited_files} missing=${validation.missing_sources.length}`,
+    `${recipeKey(recipe)} kernel_group=${kernelGroup.length} checked=${validation.checked} visited=${validation.visited_files} missing=${validation.missing_sources.length}`,
   );
+}
+
+if (changedKeys.size === 0) {
+  console.log(`validated=${selectedRecipes.length}`);
+  console.log(`validated_kernel_groups=${validatedKernelKeys.size}`);
+  console.log("newly_blocked=0");
+  process.exit(0);
 }
 
 await writeJson(catalogPath, catalog);
@@ -187,9 +291,11 @@ for (const recipe of recipes) {
     blockedItems.push(entry);
   }
 }
+blockedItems.sort((a, b) => `${a.vendor_short || ""}/${a.device}`.localeCompare(`${b.vendor_short || ""}/${b.device}`));
 blockedCatalog.blocked = blockedItems;
 await writeJson(blockedCatalogPath, blockedCatalog);
 
-console.log(`validated=${recipes.filter(shouldValidate).length}`);
+console.log(`validated=${selectedRecipes.length}`);
+console.log(`validated_kernel_groups=${validatedKernelKeys.size}`);
 console.log(`newly_blocked=${changedKeys.size}`);
 if (changedKeys.size) console.log(Array.from(changedKeys).sort().join("\n"));
