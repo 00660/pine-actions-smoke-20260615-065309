@@ -150,6 +150,7 @@ jobs:
         run: |
           rsync -a .vendor-artifacts/recipes/lineage-vendors/ recipes/lineage-vendors/
           node scripts/merge-lineage-vendor-catalog.mjs .vendor-artifacts
+          node scripts/validate-lineage-recipes.mjs catalog/lineage-vendors-recipes.json
 
       - name: Upload merged catalog artifact
         uses: actions/upload-artifact@v4

@@ -1,8 +1,11 @@
 {
   "schema": 1,
   "rom": "LineageOS",
-  "status": "build_ready",
-  "blocked_reasons": [],
+  "status": "blocked",
+  "blocked_reasons": [
+    "Kernel Kconfig mandatory source is missing: drivers/firmware/tegra/Kconfig (referenced by arch/arm64/Kconfig).",
+    "Kernel Kconfig mandatory source is missing: drivers/net/ethernet/nvidia/eqos/Kconfig (referenced by drivers/net/ethernet/nvidia/Kconfig)."
+  ],
   "source_facts": {
     "lineage_devices_url": "https://wiki.lineageos.org/devices/",
     "lineage_wiki_url": "https://wiki.lineageos.org/devices/foster/",
@@ -60,7 +63,27 @@
       "repo": "https://github.com/LineageOS/android_kernel_nvidia_kernel",
       "ref": "lineage-18.1",
       "validation": "full_source",
-      "version": "4.9"
+      "version": "4.9",
+      "kconfig_validation": {
+        "checked": true,
+        "root": "Kconfig",
+        "architecture": "arm64",
+        "visited_files": 1119,
+        "missing_sources": [
+          {
+            "path": "drivers/firmware/tegra/Kconfig",
+            "referenced_by": "arch/arm64/Kconfig",
+            "keyword": "source"
+          },
+          {
+            "path": "drivers/net/ethernet/nvidia/eqos/Kconfig",
+            "referenced_by": "drivers/net/ethernet/nvidia/Kconfig",
+            "keyword": "source"
+          }
+        ],
+        "skipped_sources": [],
+        "capped": false
+      }
     },
     "board_config": {
       "files": [

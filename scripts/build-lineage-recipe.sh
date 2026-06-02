@@ -215,6 +215,9 @@ else
 fi
 UPSTREAM_COMMIT="$(git -C "$SRC_DIR" rev-parse HEAD)"
 
+log "Preflight kernel Kconfig sources"
+node "$ROOT_DIR/scripts/check-local-kconfig-sources.mjs" "$SRC_DIR" "$ARCH"
+
 MAKE_ARGS=(
   -C "$SRC_DIR"
   O="$OUT_DIR"

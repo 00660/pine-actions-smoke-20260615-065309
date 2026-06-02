@@ -2,6 +2,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { kconfigMissingReasons, validateKernelKconfigSources } from "./lineage-kconfig-validation.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.resolve(__dirname, "..");
@@ -17,6 +18,7 @@ const options = {
   wikiDir: process.env.LINEAGE_WIKI_DIR || "",
   listVendors: process.env.LINEAGE_LIST_VENDORS === "1",
   includeUnofficial: process.env.LINEAGE_INCLUDE_UNOFFICIAL === "1",
+  validateKconfigSources: process.env.LINEAGE_VALIDATE_KCONFIG_SOURCES === "1",
 };
 const supportedArchitectures = new Set(
   (process.env.LINEAGE_SUPPORTED_ARCHES || "arm64")
@@ -38,6 +40,7 @@ const contentsCache = new Map();
 const textCache = new Map();
 const branchCache = new Map();
 const downloadCache = new Map();
+const treeCache = new Map();
 
 function githubHeaders(raw = false) {
   const headers = {
@@ -303,6 +306,17 @@ async function repoText(ownerRepo, ref, subpath) {
   return value;
 }
 
+async function repoTree(ownerRepo, ref) {
+  const cacheKey = `${ownerRepo}:${ref}`;
+  if (treeCache.has(cacheKey)) return treeCache.get(cacheKey);
+  const value = await fetchJson(
+    `${githubApi}/repos/${ownerRepo}/git/trees/${encodeURIComponent(ref)}?recursive=1`,
+  );
+  const tree = value.tree || [];
+  treeCache.set(cacheKey, tree);
+  return tree;
+}
+
 async function branchExists(ownerRepo, ref) {
   const cacheKey = `${ownerRepo}:${ref}`;
   if (branchCache.has(cacheKey)) return branchCache.get(cacheKey);
@@ -467,6 +481,7 @@ async function inspectDevice(device) {
   if (!lineageBranch) blocked.push("No shared LineageOS branch found for device tree and kernel repo.");
 
   let kernelValidation = "not_checked";
+  let kconfigValidation = { checked: false, missing_sources: [], skipped_sources: [] };
   let boardFacts = { files: [], kernel_configs: [], kernel_source_path: "", kernel_image_name: "Image.gz-dtb" };
   if (lineageBranch && kernelRepo) {
     const kernelContents = await repoContents(kernelRepo, lineageBranch).catch((error) => {
@@ -477,6 +492,16 @@ async function inspectDevice(device) {
     if (kernelValidation !== "full_source") blocked.push(`Kernel repo validation is ${kernelValidation}.`);
     boardFacts = boardConfigFacts(await collectBoardConfigs(deviceRepo, lineageBranch));
     if (boardFacts.kernel_configs.length === 0) blocked.push("No TARGET_KERNEL_CONFIG found in LineageOS BoardConfig.");
+    if (options.validateKconfigSources && kernelValidation === "full_source" && supportedArchitectures.has(architecture)) {
+      kconfigValidation = await validateKernelKconfigSources({
+        ownerRepo: kernelRepo,
+        ref: lineageBranch,
+        architecture,
+        repoText,
+        repoTree,
+      });
+      blocked.push(...kconfigMissingReasons(kconfigValidation));
+    }
   }
 
   const download = await latestLineageBuild(device.codename).catch((error) => {
@@ -523,6 +548,7 @@ async function inspectDevice(device) {
         ref: lineageBranch,
         validation: kernelValidation,
         version: device.kernel?.version || "",
+        kconfig_validation: kconfigValidation,
       },
       board_config: boardFacts,
     },
