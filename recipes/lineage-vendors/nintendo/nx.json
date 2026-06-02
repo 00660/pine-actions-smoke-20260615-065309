@@ -1,8 +1,10 @@
 {
   "schema": 1,
   "rom": "LineageOS",
-  "status": "build_ready",
-  "blocked_reasons": [],
+  "status": "blocked",
+  "blocked_reasons": [
+    "kernel repo references missing drivers/net/ethernet/nvidia/eqos/Kconfig; standalone LineageOS kernel tree cannot run tegra_android_defconfig"
+  ],
   "source_facts": {
     "lineage_devices_url": "https://wiki.lineageos.org/devices/",
     "lineage_wiki_url": "https://wiki.lineageos.org/devices/nx/",
