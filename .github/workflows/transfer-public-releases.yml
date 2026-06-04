@@ -154,13 +154,3 @@ jobs:
           } | tee "$work/final-summary.txt"
 
           cat "$work/final-summary.txt" >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Upload transfer report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: transfer-public-releases-report
-          path: |
-            ${{ runner.temp }}/release-transfer/*.jsonl
-            ${{ runner.temp }}/release-transfer/*.txt
-          if-no-files-found: ignore
