@@ -32,7 +32,6 @@ jobs:
     name: build ${{ matrix.device }}
     runs-on: ubuntu-22.04
     timeout-minutes: 150
-    if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
     strategy:
       fail-fast: false
       matrix:
@@ -58,9 +57,11 @@ jobs:
 
     steps:
       - name: Checkout build inputs
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         uses: actions/checkout@v4
 
       - name: Resolve boot URL
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         env:
           INPUT_BOOT_URL: ${{ inputs.boot_source_url }}
           DEVICE: ${{ matrix.device }}
@@ -83,11 +84,13 @@ jobs:
           echo "BOOT_URL=$BOOT_URL" >> "$GITHUB_ENV"
 
       - name: Install boot download tools
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends curl file unzip
 
       - name: Download matching boot image
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         run: |
           mkdir -p "$(dirname "${{ matrix.base_boot }}")"
           TMP_BOOT_SOURCE="$(mktemp)"
@@ -103,6 +106,7 @@ jobs:
           sha256sum "${{ matrix.base_boot }}"
 
       - name: Build kernel from upstream
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         env:
           KERNEL_REPO: ${{ inputs.kernel_repo || matrix.default_kernel_repo }}
           KERNEL_REF: ${{ inputs.kernel_ref || matrix.default_kernel_ref }}
@@ -111,6 +115,7 @@ jobs:
           "${{ matrix.script }}"
 
       - name: Repack boot image
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         run: |
           chmod +x scripts/repack-boot.sh
           scripts/repack-boot.sh \
@@ -119,6 +124,7 @@ jobs:
             "devices/${{ matrix.device }}/artifacts/boot-docker.img"
 
       - name: Write build manifest
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         run: |
           {
             echo "device=${{ matrix.device }}"
@@ -133,6 +139,7 @@ jobs:
           } > "devices/${{ matrix.device }}/artifacts/build-manifest.env"
 
       - name: Upload boot artifact
+        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
