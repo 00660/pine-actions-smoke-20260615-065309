@@ -11,6 +11,7 @@ on:
         options:
           - pine
           - riva
+          - mido
       boot_source_url:
         description: Direct URL to matching boot.img or ROM zip. Empty uses repo variables.
         required: false
@@ -48,6 +49,12 @@ jobs:
             default_kernel_ref: "14.0"
             base_boot: devices/riva/base/boot-current.img
             artifact_name: riva-docker-boot
+          - device: mido
+            script: devices/mido/scripts/build-mido-docker-kernel.sh
+            default_kernel_repo: https://github.com/AlphaDroid-devices/kernel_xiaomi_mido.git
+            default_kernel_ref: alpha-14
+            base_boot: devices/mido/base/boot-current.img
+            artifact_name: mido-docker-droidspaces-audio-boot
 
     steps:
       - name: Checkout build inputs
@@ -59,16 +66,18 @@ jobs:
           DEVICE: ${{ matrix.device }}
           PINE_BOOT_SOURCE_URL: ${{ vars.PINE_BOOT_SOURCE_URL }}
           RIVA_BOOT_SOURCE_URL: ${{ vars.RIVA_BOOT_SOURCE_URL }}
+          MIDO_BOOT_SOURCE_URL: ${{ vars.MIDO_BOOT_SOURCE_URL }}
         run: |
           case "$DEVICE" in
             pine) DEFAULT_BOOT_URL="$PINE_BOOT_SOURCE_URL" ;;
             riva) DEFAULT_BOOT_URL="$RIVA_BOOT_SOURCE_URL" ;;
+            mido) DEFAULT_BOOT_URL="${MIDO_BOOT_SOURCE_URL:-https://sourceforge.net/projects/kamisroms/files/Mido/Crdroid/A15/crDroidAndroid-15.0-20260531-mido-v11.16.zip/download}" ;;
             *) echo "Unknown device: $DEVICE"; exit 1 ;;
           esac
           BOOT_URL="${INPUT_BOOT_URL:-$DEFAULT_BOOT_URL}"
           if [ -z "$BOOT_URL" ]; then
             echo "Missing boot image URL."
-            echo "Set repository variable PINE_BOOT_SOURCE_URL or RIVA_BOOT_SOURCE_URL, or pass workflow_dispatch boot_source_url."
+            echo "Set repository variable PINE_BOOT_SOURCE_URL, RIVA_BOOT_SOURCE_URL, MIDO_BOOT_SOURCE_URL, or pass workflow_dispatch boot_source_url."
             exit 1
           fi
           echo "BOOT_URL=$BOOT_URL" >> "$GITHUB_ENV"

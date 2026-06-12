@@ -84,6 +84,7 @@ lineage-<version>-<date>-<public-models>-docker-boot
 
 - `pine`：Redmi 7A
 - `riva`：Redmi 5A
+- `mido`：Redmi Note 4/4X，Docker / Droidspaces / ALSA loopback virtual mic build entry
 
 workflow：`.github/workflows/build-boot.yml`
 
@@ -98,5 +99,8 @@ workflow：`.github/workflows/build-boot.yml`
 
 - `PINE_BOOT_SOURCE_URL`
 - `RIVA_BOOT_SOURCE_URL`
+- `MIDO_BOOT_SOURCE_URL`，可选；未设置时默认使用 `crDroidAndroid-15.0-20260531-mido-v11.16.zip` 的 SourceForge 地址
 
 `boot_source_url` 必须匹配目标 ROM 和设备，不能跨设备或跨 ROM 复用 boot 基线。
+
+`mido` 额外要求 ROM/vendor audio 同步接入 ALSA loopback capture。只启用 `CONFIG_SND_ALOOP=y` 会产生内核 PCM 节点，但 Android 应用层仍需要 Audio HAL 和 `audio_policy_configuration.xml` 暴露 input profile/device，详见 `devices/mido/HANDOFF.md`。
