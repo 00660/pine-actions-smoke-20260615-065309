@@ -57,18 +57,23 @@ jobs:
 
     steps:
       - name: Checkout build inputs
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         uses: actions/checkout@v4
 
       - name: Resolve boot URL
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
         env:
           INPUT_BOOT_URL: ${{ inputs.boot_source_url }}
+          INPUT_DEVICE: ${{ inputs.device }}
           DEVICE: ${{ matrix.device }}
           PINE_BOOT_SOURCE_URL: ${{ vars.PINE_BOOT_SOURCE_URL }}
           RIVA_BOOT_SOURCE_URL: ${{ vars.RIVA_BOOT_SOURCE_URL }}
           MIDO_BOOT_SOURCE_URL: ${{ vars.MIDO_BOOT_SOURCE_URL }}
         run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] && [ "$INPUT_DEVICE" != "$DEVICE" ]; then
+            echo "Skipping matrix device $DEVICE; requested $INPUT_DEVICE."
+            echo "SKIP_DEVICE=1" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          echo "SKIP_DEVICE=0" >> "$GITHUB_ENV"
           case "$DEVICE" in
             pine) DEFAULT_BOOT_URL="$PINE_BOOT_SOURCE_URL" ;;
             riva) DEFAULT_BOOT_URL="$RIVA_BOOT_SOURCE_URL" ;;
@@ -84,13 +89,13 @@ jobs:
           echo "BOOT_URL=$BOOT_URL" >> "$GITHUB_ENV"
 
       - name: Install boot download tools
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
+        if: env.SKIP_DEVICE != '1'
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends curl file unzip
 
       - name: Download matching boot image
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
+        if: env.SKIP_DEVICE != '1'
         run: |
           mkdir -p "$(dirname "${{ matrix.base_boot }}")"
           TMP_BOOT_SOURCE="$(mktemp)"
@@ -106,7 +111,7 @@ jobs:
           sha256sum "${{ matrix.base_boot }}"
 
       - name: Build kernel from upstream
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
+        if: env.SKIP_DEVICE != '1'
         env:
           KERNEL_REPO: ${{ inputs.kernel_repo || matrix.default_kernel_repo }}
           KERNEL_REF: ${{ inputs.kernel_ref || matrix.default_kernel_ref }}
@@ -115,7 +120,7 @@ jobs:
           "${{ matrix.script }}"
 
       - name: Repack boot image
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
+        if: env.SKIP_DEVICE != '1'
         run: |
           chmod +x scripts/repack-boot.sh
           scripts/repack-boot.sh \
@@ -124,7 +129,7 @@ jobs:
             "devices/${{ matrix.device }}/artifacts/boot-docker.img"
 
       - name: Write build manifest
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
+        if: env.SKIP_DEVICE != '1'
         run: |
           {
             echo "device=${{ matrix.device }}"
@@ -139,7 +144,7 @@ jobs:
           } > "devices/${{ matrix.device }}/artifacts/build-manifest.env"
 
       - name: Upload boot artifact
-        if: github.event_name != 'workflow_dispatch' || inputs.device == matrix.device
+        if: env.SKIP_DEVICE != '1'
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
