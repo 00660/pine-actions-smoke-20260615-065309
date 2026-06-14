@@ -1,6 +1,9 @@
 name: Build pine internal unpack hook boot
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       boot_source_url:
