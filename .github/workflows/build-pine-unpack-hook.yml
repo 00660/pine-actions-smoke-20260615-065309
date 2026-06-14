@@ -57,8 +57,14 @@ jobs:
           curl -L --fail --retry 5 --retry-delay 5 \
             -o "$TMP_BOOT_SOURCE" \
             "$BOOT_URL"
-          if file "$TMP_BOOT_SOURCE" | grep -qi 'zip archive'; then
-            unzip -p "$TMP_BOOT_SOURCE" boot.img > devices/pine/base/boot-current.img
+          if unzip -tqq "$TMP_BOOT_SOURCE" >/dev/null 2>&1; then
+            BOOT_ENTRY="$(unzip -Z1 "$TMP_BOOT_SOURCE" | grep -E '(^|/)boot[.]img$' | head -n 1 || true)"
+            if [ -z "$BOOT_ENTRY" ]; then
+              echo "No boot.img found inside boot source zip."
+              unzip -Z1 "$TMP_BOOT_SOURCE" | head -n 80
+              exit 1
+            fi
+            unzip -p "$TMP_BOOT_SOURCE" "$BOOT_ENTRY" > devices/pine/base/boot-current.img
           else
             cp -f "$TMP_BOOT_SOURCE" devices/pine/base/boot-current.img
           fi
