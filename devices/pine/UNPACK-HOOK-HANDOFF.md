@@ -61,6 +61,28 @@ Linux 4.9 没有新版 BPF ringbuf map，所以不能直接照搬 Android 13-17 
 
 2026-06-15 公开 Actions run `27521473658` 已确认：内核编译和 boot repack 成功，`boot-pine-unpack-hook.img` SHA256 为 `797a2aaa39bddb50ad6f7772b3f0755d25f16d5385604574947667d227b82874`；失败点只是 workflow 过度要求 `CONFIG_UPROBES=y`。该 4.9 tree 最终配置保留 `CONFIG_KPROBES=y`、`CONFIG_KPROBE_EVENT=y`、`CONFIG_BPF_JIT=y`、`CONFIG_PERF_EVENTS=y`、`CONFIG_TRACEPOINTS=y`，但 `# CONFIG_UPROBES is not set`。后续校验已把 UPROBES 改成 warning。
 
+2026-06-15 公开 Actions run `27522588739` 已成功生成辅助 hook boot artifact `pine-internal-unpack-hook`。本地已拉回：
+
+```text
+C:\Users\16547\Desktop\android-docker-boot-builder-github-work\artifacts\pine-internal-unpack-hook-27522588739
+```
+
+关键产物：
+
+```text
+boot-pine-unpack-hook.img
+boot-pine-unpack-hook.img.sha256
+config-docker-final
+pine-internal-unpack-panel.zip
+pine-unpack-hook-build-manifest.env
+```
+
+最终 `boot-pine-unpack-hook.img` SHA256：
+
+```text
+fd3393cc62819d3d9d0de094ce6ccc5b118f6029220cb646d793e8bae26cc0e5
+```
+
 ## ART 源码补丁
 
 已落地的正式补丁：
@@ -97,6 +119,18 @@ git -C "$ANDROID_BUILD_TOP/art" apply devices/pine/patches/art/android-12.0.0_r3
 ```
 
 旧的 `/data/local/tmp/pine-art-dexdump` 进程扫描器不再是主线，只保留为手动 fallback；`.github/workflows/build-pine-art-dexdump.yml` 已改为仅 `workflow_dispatch`。
+
+2026-06-15 公开 Actions run `27522588750` 已成功验证 ART patch 可干净应用到 `android-12.0.0_r32`。本地已拉回：
+
+```text
+C:\Users\16547\Desktop\android-docker-boot-builder-github-work\artifacts\pine-art-rom-patch-verify-27522588750
+```
+
+其中 `pine-art-registerdexfile-dump.patch` / `applied-art.diff` SHA256：
+
+```text
+59981a99e42dd882b531a9e93895212246c027ae374fca70f3c3e02c9930097f
+```
 
 ## xiaojianbang stealth hook 结论
 
@@ -249,4 +283,5 @@ C:\Users\16547\Desktop\android-docker-boot-builder-github-work\.backups\pine-unp
 C:\Users\16547\Desktop\android-docker-boot-builder-github-work\.backups\pine-art-rom-20260615-090544
 C:\Users\16547\Desktop\android-docker-boot-builder-github-work\.backups\pine-art-rom-20260615-092620
 C:\Users\16547\Desktop\android-docker-boot-builder-github-work\.backups\pine-boot-validate-20260615-113507
+C:\Users\16547\Desktop\android-docker-boot-builder-github-work\.backups\pine-final-artifacts-20260615-115854
 ```
