@@ -243,16 +243,16 @@ static int scan_map(pid_t pid, const map_entry_t *entry, const char *out_dir, in
 }
 
 static int scan_pid(pid_t pid, const char *out_dir, int *dump_index) {
+    if (!attach_pid(pid)) {
+        return 0;
+    }
+
     char maps_path[64];
     snprintf(maps_path, sizeof(maps_path), "/proc/%d/maps", pid);
     FILE *maps = fopen(maps_path, "re");
     if (!maps) {
         log_line("pid=%d open maps failed: %s", pid, strerror(errno));
-        return 0;
-    }
-
-    if (!attach_pid(pid)) {
-        fclose(maps);
+        detach_pid(pid);
         return 0;
     }
 
